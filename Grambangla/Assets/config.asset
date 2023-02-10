@@ -20,10 +20,22 @@ MonoBehaviour:
     isPrivate: 0
     createdAt: 2023-02-10T04:27:28-0800
     trainingStatus: 1
-    lastTrainDuration: 0
-    lastTrainedAt: 1969-12-31T16:00:00-0800
-    nextTrainAt: 1969-12-31T16:00:00-0800
-    intents: []
+    lastTrainDuration: 52
+    lastTrainedAt: 2023-02-10T05:22:05-0800
+    nextTrainAt: 2023-02-10T05:21:13-0800
+    intents:
+    - id: 1327148754684561
+      name: ask_name
+      entities: []
+    - id: 925442362203749
+      name: ask_where_going
+      entities: []
+    - id: 1253397915263942
+      name: hello
+      entities: []
+    - id: 2238489559689656
+      name: lets_go
+      entities: []
     entities: []
     traits: []
     voices:
