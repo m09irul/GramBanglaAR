@@ -123,18 +123,15 @@ public class ObjectSpawner : MonoBehaviour
             objectToSpawn.SetActive(true);
 
             objectToSpawn.transform.position = spawnPoint;
-            GameObject particle =  Instantiate(spawnVFX, spawnPoint, Quaternion.identity);
-            Destroy(particle, 5f);
+            //GameObject particle =  Instantiate(spawnVFX, spawnPoint, Quaternion.identity);
+            //Destroy(particle, 5f);
 
             //scale up
             //objectToSpawn.transform.DOScale(afterPlacementScale, 1f);
 
-            
-
             tapToPlaceTxt.SetActive(false);
 
-
-            StartCoroutine(startScene());
+           // StartCoroutine(startScene());
 
         }
     }
