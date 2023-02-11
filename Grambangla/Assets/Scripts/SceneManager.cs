@@ -23,7 +23,7 @@ public class SceneManager : MonoBehaviour
             if (current >= waypoints.Length)
                 current = 0;
         }
-        transform.position = Vector3.MoveTowards(character.transform.position, waypoints[current].transform.position, Time.deltaTime* speed);
+        character.transform.position = Vector3.MoveTowards(character.transform.position, waypoints[current].transform.position, Time.deltaTime* speed);
         character.transform.LookAt(waypoints[current].transform);
     }
 }
