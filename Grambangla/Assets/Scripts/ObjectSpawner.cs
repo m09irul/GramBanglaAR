@@ -32,6 +32,7 @@ public class ObjectSpawner : MonoBehaviour
     PlacementIndicator placementIndicator;
 
     [SerializeField] Vector3 afterPlacementScale;
+    [SerializeField] Vector3 afterPlacementOffset;
 
     bool canSpawn = false;
     bool hasInternet = false;
@@ -122,7 +123,7 @@ public class ObjectSpawner : MonoBehaviour
 
             objectToSpawn.SetActive(true);
 
-            objectToSpawn.transform.position = spawnPoint;
+            objectToSpawn.transform.position = spawnPoint + afterPlacementOffset;
             //GameObject particle =  Instantiate(spawnVFX, spawnPoint, Quaternion.identity);
             //Destroy(particle, 5f);
 
@@ -131,7 +132,7 @@ public class ObjectSpawner : MonoBehaviour
 
             tapToPlaceTxt.SetActive(false);
 
-           // StartCoroutine(startScene());
+            StartCoroutine(startScene());
 
         }
     }
@@ -143,7 +144,7 @@ public class ObjectSpawner : MonoBehaviour
         //mainCharacter.GetComponent<Animator>().Play("start");
         mainCharacter.transform.GetChild(0).GetComponent<Animator>().enabled = true;
         AudioSource s = mainCharacter.GetComponent<AudioSource>();
-        s.clip = startAudio;
+        //s.clip = startAudio;
         s.Play();
     }
 
