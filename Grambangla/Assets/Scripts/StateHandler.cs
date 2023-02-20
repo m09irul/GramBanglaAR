@@ -17,19 +17,20 @@ public class StateHandler : MonoBehaviour
     [SerializeField] AudioClip c8;
     [SerializeField] AudioClip c9;
     AudioSource audioSource;
-
+    Animator animator;
     int potCount = 0;
 
     private void Start()
     {
         audioSource =  GetComponent<AudioSource>();
+        animator = ObjectSpawner.instance.mainCharacter.transform.GetChild(0).GetComponent<Animator>();
     }
     public void AppearButtonsForFirst()
     {
         recordButton.SetActive(true);
         tutPanel.SetActive(true);
         TextManager.instance.LoadNextText();
-
+        animator.Play("Idle");
     }
     public void AppearButtonsForRest()
     {

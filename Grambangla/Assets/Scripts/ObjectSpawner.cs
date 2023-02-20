@@ -34,13 +34,13 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] Vector3 afterPlacementScale;
     [SerializeField] Vector3 afterPlacementOffset;
 
-    bool canSpawn = false;
+    public bool canSpawn = false;
     bool hasInternet = false;
 
     [SerializeField] GameObject tapToPlaceTxt;
     [SerializeField] ARPlaneManager aRPlaneManager;
     [SerializeField] AudioClip startAudio;
-    [SerializeField] GameObject mainCharacter;
+    public GameObject mainCharacter;
     [SerializeField] GameObject spawnVFX;
     [SerializeField] GameObject noInternetPanel;
 
@@ -76,7 +76,6 @@ public class ObjectSpawner : MonoBehaviour
         {
             noInternetPanel.SetActive(false);
             hasInternet = true;
-            //Debug.LogError(hasInternet);
         }
         else
         {
@@ -121,33 +120,40 @@ public class ObjectSpawner : MonoBehaviour
             placementIndicator.enabled = false;
             placementIndicator.gameObject.SetActive(false);
 
-            objectToSpawn.SetActive(true);
-
-            objectToSpawn.transform.position = spawnPoint + afterPlacementOffset;
-            //GameObject particle =  Instantiate(spawnVFX, spawnPoint, Quaternion.identity);
-            //Destroy(particle, 5f);
-
-            //scale up
-            //objectToSpawn.transform.DOScale(afterPlacementScale, 1f);
-
-            tapToPlaceTxt.SetActive(false);
-
-            StartCoroutine(startScene());
-
+            setScene();
         }
     }
 
-    IEnumerator startScene()
+    void setScene()
     {
-        yield return new WaitForSeconds(2f);
+        objectToSpawn.SetActive(true);
 
-        //mainCharacter.GetComponent<Animator>().Play("start");
-        mainCharacter.transform.GetChild(0).GetComponent<Animator>().enabled = true;
-        AudioSource s = mainCharacter.GetComponent<AudioSource>();
+        objectToSpawn.transform.position = spawnPoint + afterPlacementOffset;
+        //GameObject particle =  Instantiate(spawnVFX, spawnPoint, Quaternion.identity);
+        //Destroy(particle, 5f);
+
+        //scale well
+        LeanTween.scale(objectToSpawn.transform.GetChild(0).GetChild(4).gameObject, Vector3.one*10f, 2f).setEase(LeanTweenType.easeOutQuad).setOnComplete(()=>
+        {
+            mainCharacter.SetActive(true);
+
+            //bring fences, rock and flower from downward
+            LeanTween.moveLocalZ(objectToSpawn.transform.GetChild(0).GetChild(1).gameObject, 0f, 12f).setEase(LeanTweenType.easeOutCirc);
+
+            //bring house, tracktor and water tank from upward
+            LeanTween.moveLocalZ(objectToSpawn.transform.GetChild(0).GetChild(2).gameObject, 0f, 7f).setEase(LeanTweenType.easeOutExpo);
+
+            //grow trees
+            LeanTween.scaleZ(objectToSpawn.transform.GetChild(0).GetChild(3).gameObject, 1f, 15f).setEase(LeanTweenType.easeOutCirc);
+        });
+
+        //objectToSpawn.transform.DOScale(afterPlacementScale, 1f);
+
+        tapToPlaceTxt.SetActive(false);
+
+        AudioSource s = GetComponent<AudioSource>();
         //s.clip = startAudio;
         s.Play();
     }
-
-
 
 }
