@@ -11,34 +11,18 @@ public class HandleWitResponse : MonoBehaviour
 	[SerializeField] GameObject endPanel;
 	[SerializeField] GameObject rainPrefab;
 	[SerializeField] GameObject character;
-	// Class Variables
-	float[] confidences = new float[10];
-    float totalPlayedTime;
 
     string _name = "";
-
-    int totalAttempt;
 
     private void Start()
     {
         micWitInteraction = GetComponent<MicWitInteraction>();
-
-        for (int i = 0; i < confidences.Length; i++)
-        {
-            confidences[i] = 0f;
-        }
-    }
-
-    void UpdateConfidence(int i, float newConfidence)
-    {
-        confidences[i] += newConfidence;
     }
 
     public void OnResponse(WitResponseNode response)
     {
         if (!string.IsNullOrEmpty(response["text"]))
         {
-            totalAttempt++;
 
             float intent_Confidence = float.Parse(response["intents"][0]["confidence"].Value);
             string intent_Name = response["intents"][0]["name"].Value.ToLower();
@@ -50,17 +34,15 @@ public class HandleWitResponse : MonoBehaviour
 			//Debug.Log("I heard: " + response[""]);
 
 			// what function should I call?
-			if (intent_Name.Equals("drinking_water_intent"))
+			if (intent_Name.Equals("hello"))
 			{
-
-				UpdateConfidence(0, intent_Confidence);
 
 				if (intent_Confidence >= 0.97f)
 				{
 					micWitInteraction.recordingButton.SetActive(false);
 					TextManager.instance.ResetDisplayTexts();
 
-					StartCoroutine(AfterRain());
+					Debug.Log("Donnnnneeeeeee....");
 				}
 				else
 					micWitInteraction.HandleException();
@@ -70,7 +52,6 @@ public class HandleWitResponse : MonoBehaviour
 			{
 				_name = userSpoken_text.Substring(9);
 				
-				UpdateConfidence(1, intent_Confidence);
 
 				if (intent_Confidence >= 0.98f)
 				{
@@ -84,7 +65,6 @@ public class HandleWitResponse : MonoBehaviour
 			else if (intent_Name.Equals("im_fine_intent"))
 			{
 				
-				UpdateConfidence(2, intent_Confidence);
 
 				if (intent_Confidence >= 0.97f)
 				{
@@ -99,7 +79,6 @@ public class HandleWitResponse : MonoBehaviour
 			else if (intent_Name.Equals("asking_sad_intent"))
 			{
 				
-				UpdateConfidence(3, intent_Confidence);
 
 				if (intent_Confidence >= 0.97f)
 				{
@@ -116,7 +95,6 @@ public class HandleWitResponse : MonoBehaviour
 			else if (intent_Name.Equals("asking_getting_big_intent"))
 			{
 				
-				UpdateConfidence(4, intent_Confidence);
 
 				if (intent_Confidence >= 0.95f)
 				{
@@ -131,7 +109,6 @@ public class HandleWitResponse : MonoBehaviour
 			else if (intent_Name.Equals("asking_getting_big2_intent"))
 			{
 				
-				UpdateConfidence(5, intent_Confidence);
 
 				if (intent_Confidence >= 0.92f)
 				{
@@ -152,7 +129,6 @@ public class HandleWitResponse : MonoBehaviour
 			else if (intent_Name.Equals("asking_where_intent"))
 			{
 				
-				UpdateConfidence(6, intent_Confidence);
 
 				if (intent_Confidence >= 0.96f)
 				{
@@ -192,13 +168,6 @@ public class HandleWitResponse : MonoBehaviour
 	{
 		micWitInteraction.HandleException();
 	}
-	IEnumerator AfterRain()
-{
-	
-	yield return new WaitForSeconds(3f);
-	character.GetComponent<StateHandler>().PlayC3();
-
-}
 
 	private void Update()
 	{

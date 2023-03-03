@@ -18,7 +18,6 @@ public class StateHandler : MonoBehaviour
     [SerializeField] AudioClip c9;
     AudioSource audioSource;
     Animator animator;
-    int potCount = 0;
 
     private void Start()
     {
@@ -130,34 +129,6 @@ public class StateHandler : MonoBehaviour
         DeactiveOtherModels(2);
         transform.GetChild(2).GetComponent<Animator>().enabled = true;
         
-    }
-
-    private void Update()
-    {
-        if(potCount == 3)
-        {
-            StartCoroutine(AfterPot());
-            potCount = 0;
-        }
-    }
-
-    public void IncreasePotCount()
-    {
-        potCount += 1;
-    }
-
-    IEnumerator AfterPot()
-    {
-        TextManager.instance.ResetDisplayTexts();
-
-        transform.GetChild(10).gameObject.SetActive(false);
-
-        PlayStar();
-        yield return new WaitForSeconds(4f);
-
-        yield return new WaitForSeconds(3f);
-
-        PlayC9();
     }
 
     public void EndGame()

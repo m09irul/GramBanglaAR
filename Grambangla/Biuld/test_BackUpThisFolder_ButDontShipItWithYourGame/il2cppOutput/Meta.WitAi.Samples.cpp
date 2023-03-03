@@ -295,6 +295,8 @@ struct WitMicLevelChangedEvent_tA9B2889CB33EAA09656739F26AA70252ED15DEF7;
 struct WitRequest_t6DE282D281BDA3D5726C9775385BDFBA1EC6A900;
 // Meta.WitAi.Events.WitRequestCreatedEvent
 struct WitRequestCreatedEvent_t1A01ABB6F9E3C02D0251B5DC9F5B290EDA0E319B;
+// Meta.WitAi.Configuration.WitRequestOptions
+struct WitRequestOptions_tB2E8B103538F7E42F0568C6F62F2158FA45EF483;
 // Meta.WitAi.Events.WitRequestOptionsEvent
 struct WitRequestOptionsEvent_t84FCD56D356445821DECABA3F66CADF6B07ABB1B;
 // Meta.WitAi.Json.WitResponseArray
@@ -1476,10 +1478,10 @@ struct WitRequest_t6DE282D281BDA3D5726C9775385BDFBA1EC6A900  : public RuntimeObj
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___postData_17;
 	// System.String Meta.WitAi.WitRequest::postContentType
 	String_t* ___postContentType_18;
-	// System.String Meta.WitAi.WitRequest::requestIdOverride
-	String_t* ___requestIdOverride_19;
 	// System.String Meta.WitAi.WitRequest::forcedHttpMethodType
-	String_t* ___forcedHttpMethodType_20;
+	String_t* ___forcedHttpMethodType_19;
+	// Meta.WitAi.Configuration.WitRequestOptions Meta.WitAi.WitRequest::<Options>k__BackingField
+	WitRequestOptions_tB2E8B103538F7E42F0568C6F62F2158FA45EF483* ___U3COptionsU3Ek__BackingField_20;
 	// System.Object Meta.WitAi.WitRequest::streamLock
 	RuntimeObject* ___streamLock_21;
 	// System.Int32 Meta.WitAi.WitRequest::bytesWritten

@@ -1,31 +1,50 @@
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using System.Net;
+using Meta.WitAi.Json;
 using Meta.WitAi;
 using TMPro;
+using UnityEngine;
 public class MicWitInteraction : MonoBehaviour
 {
     Wit wit;
-
+    HandleWitResponse handleWitResponse;
     public GameObject recordingButton;
     public GameObject tryAgainTxt;
 
     [SerializeField] GameObject tutPanel;
 
 
-    private void Start()
+   private void OnValidate()
     {
         wit = GetComponent<Wit>();
+        handleWitResponse = GetComponent<HandleWitResponse>();
 
     }
-    /*public void ToggleActivation()
+    private void OnEnable()
     {
-        if (wit.Active) wit.Deactivate();
-        else
+        wit.VoiceEvents.OnRequestCreated.AddListener(OnRequestStarted);
+    }
+
+    private void OnDisable()
+    {
+        wit.VoiceEvents.OnRequestCreated.RemoveListener(OnRequestStarted);
+    }
+
+    private void OnRequestStarted(WitRequest request)
+    {
+        // The raw response comes back on a different thread. We store the
+        // message received for display on the next frame.
+        request.onResponse += (r) =>
         {
-            wit.Activate();
-        }
-    }*/
+            if (r.StatusCode == (int)HttpStatusCode.OK)
+            {
+                handleWitResponse.OnResponse(r.ResponseData);
+            }
+            else
+            {
+                Debug.LogError($"Error {r.StatusCode}"+ r.StatusDescription);
+            }
+        };
+    }
 
     public void StopRecording()
     {

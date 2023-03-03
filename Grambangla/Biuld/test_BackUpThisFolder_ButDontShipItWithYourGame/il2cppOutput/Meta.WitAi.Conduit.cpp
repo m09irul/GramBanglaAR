@@ -3025,6 +3025,11 @@ inline ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Enumerable_ToArra
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MethodBase_Invoke_mEEF3218648F111A8C338001A7804091A0747C826 (MethodBase_t* __this, RuntimeObject* ___obj0, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___parameters1, const RuntimeMethod* method) ;
 // System.Void Meta.Conduit.ConduitDispatcher/InvocationContextFilter/<>c__DisplayClass4_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_0__ctor_m495887DD9D2DFD38613889A1DD5D0436F5281A4F (U3CU3Ec__DisplayClass4_0_t184D41063548C430031B3A365D2E7464D56CBB16* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Meta.Conduit.InvocationContext>::.ctor()
+inline void List_1__ctor_mA9DB7D489C42EFD1209ACB32EFCDA34C6D258EEF (List_1_t94DD792BDF578F202193C4307B641B72F69191B2* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t94DD792BDF578F202193C4307B641B72F69191B2*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
 // System.Void System.Func`2<Meta.Conduit.InvocationContext,System.Boolean>::.ctor(System.Object,System.IntPtr)
 inline void Func_2__ctor_m4932387574E68D73615432E11E76083973A30BEC (Func_2_tF2189E41E0E3309C9E37438B3D56D3CFE31384B0* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
@@ -3276,11 +3281,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ManifestAction_get_Name
 inline bool Dictionary_2_ContainsKey_mB357DECBA4665589E4487237DB991B54177AF77F (Dictionary_2_t27637911D95F8F26CB00E5FF60BB5EA9DCEEEFC1* __this, String_t* ___key0, const RuntimeMethod* method)
 {
 	return ((  bool (*) (Dictionary_2_t27637911D95F8F26CB00E5FF60BB5EA9DCEEEFC1*, String_t*, const RuntimeMethod*))Dictionary_2_ContainsKey_m703047C213F7AB55C9DC346596287773A1F670CD_gshared)(__this, ___key0, method);
-}
-// System.Void System.Collections.Generic.List`1<Meta.Conduit.InvocationContext>::.ctor()
-inline void List_1__ctor_mA9DB7D489C42EFD1209ACB32EFCDA34C6D258EEF (List_1_t94DD792BDF578F202193C4307B641B72F69191B2* __this, const RuntimeMethod* method)
-{
-	((  void (*) (List_1_t94DD792BDF578F202193C4307B641B72F69191B2*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.List`1<Meta.Conduit.InvocationContext>>::Add(TKey,TValue)
 inline void Dictionary_2_Add_m5BA82DA4EA1F2C08820A2DF2F8A128E16043D404 (Dictionary_2_t27637911D95F8F26CB00E5FF60BB5EA9DCEEEFC1* __this, String_t* ___key0, List_1_t94DD792BDF578F202193C4307B641B72F69191B2* ___value1, const RuntimeMethod* method)
@@ -5457,6 +5457,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t94DD792BDF578F202193C4307B641B72F6919
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_ToList_TisInvocationContext_t92F73874689E6A06564D76BA5055ED99392F26D1_mDECA5A7D2FF94431EB7A514F1F69F19284B1483D_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_Where_TisInvocationContext_t92F73874689E6A06564D76BA5055ED99392F26D1_mAE59B4116E15C8775F67B603063AAADF8EA4E75D_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_2_tF2189E41E0E3309C9E37438B3D56D3CFE31384B0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mA9DB7D489C42EFD1209ACB32EFCDA34C6D258EEF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t94DD792BDF578F202193C4307B641B72F69191B2_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass4_0_U3CResolveInvocationContextsU3Eb__0_m7CC47DCBD9FDD39B8A9EF46F8B59C03605C8AE65_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass4_0_t184D41063548C430031B3A365D2E7464D56CBB16_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
@@ -5479,18 +5481,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t94DD792BDF578F202193C4307B641B72F6919
 		bool L_5 = ___partial2;
 		NullCheck(L_4);
 		L_4->___partial_2 = L_5;
-		// return _actionContexts.Where(context => CompatibleInvocationContext(context, confidence, partial))
-		//     .ToList();
+		// return _actionContexts != null ? _actionContexts.Where(context => CompatibleInvocationContext(context, confidence, partial))
+		//     .ToList() : new List<InvocationContext>();
 		List_1_t94DD792BDF578F202193C4307B641B72F69191B2* L_6 = __this->____actionContexts_0;
-		U3CU3Ec__DisplayClass4_0_t184D41063548C430031B3A365D2E7464D56CBB16* L_7 = V_0;
-		Func_2_tF2189E41E0E3309C9E37438B3D56D3CFE31384B0* L_8 = (Func_2_tF2189E41E0E3309C9E37438B3D56D3CFE31384B0*)il2cpp_codegen_object_new(Func_2_tF2189E41E0E3309C9E37438B3D56D3CFE31384B0_il2cpp_TypeInfo_var);
-		NullCheck(L_8);
-		Func_2__ctor_m4932387574E68D73615432E11E76083973A30BEC(L_8, L_7, (intptr_t)((void*)U3CU3Ec__DisplayClass4_0_U3CResolveInvocationContextsU3Eb__0_m7CC47DCBD9FDD39B8A9EF46F8B59C03605C8AE65_RuntimeMethod_var), NULL);
-		RuntimeObject* L_9;
-		L_9 = Enumerable_Where_TisInvocationContext_t92F73874689E6A06564D76BA5055ED99392F26D1_mAE59B4116E15C8775F67B603063AAADF8EA4E75D(L_6, L_8, Enumerable_Where_TisInvocationContext_t92F73874689E6A06564D76BA5055ED99392F26D1_mAE59B4116E15C8775F67B603063AAADF8EA4E75D_RuntimeMethod_var);
-		List_1_t94DD792BDF578F202193C4307B641B72F69191B2* L_10;
-		L_10 = Enumerable_ToList_TisInvocationContext_t92F73874689E6A06564D76BA5055ED99392F26D1_mDECA5A7D2FF94431EB7A514F1F69F19284B1483D(L_9, Enumerable_ToList_TisInvocationContext_t92F73874689E6A06564D76BA5055ED99392F26D1_mDECA5A7D2FF94431EB7A514F1F69F19284B1483D_RuntimeMethod_var);
-		return L_10;
+		if (L_6)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		List_1_t94DD792BDF578F202193C4307B641B72F69191B2* L_7 = (List_1_t94DD792BDF578F202193C4307B641B72F69191B2*)il2cpp_codegen_object_new(List_1_t94DD792BDF578F202193C4307B641B72F69191B2_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		List_1__ctor_mA9DB7D489C42EFD1209ACB32EFCDA34C6D258EEF(L_7, List_1__ctor_mA9DB7D489C42EFD1209ACB32EFCDA34C6D258EEF_RuntimeMethod_var);
+		return L_7;
+	}
+
+IL_0029:
+	{
+		List_1_t94DD792BDF578F202193C4307B641B72F69191B2* L_8 = __this->____actionContexts_0;
+		U3CU3Ec__DisplayClass4_0_t184D41063548C430031B3A365D2E7464D56CBB16* L_9 = V_0;
+		Func_2_tF2189E41E0E3309C9E37438B3D56D3CFE31384B0* L_10 = (Func_2_tF2189E41E0E3309C9E37438B3D56D3CFE31384B0*)il2cpp_codegen_object_new(Func_2_tF2189E41E0E3309C9E37438B3D56D3CFE31384B0_il2cpp_TypeInfo_var);
+		NullCheck(L_10);
+		Func_2__ctor_m4932387574E68D73615432E11E76083973A30BEC(L_10, L_9, (intptr_t)((void*)U3CU3Ec__DisplayClass4_0_U3CResolveInvocationContextsU3Eb__0_m7CC47DCBD9FDD39B8A9EF46F8B59C03605C8AE65_RuntimeMethod_var), NULL);
+		RuntimeObject* L_11;
+		L_11 = Enumerable_Where_TisInvocationContext_t92F73874689E6A06564D76BA5055ED99392F26D1_mAE59B4116E15C8775F67B603063AAADF8EA4E75D(L_8, L_10, Enumerable_Where_TisInvocationContext_t92F73874689E6A06564D76BA5055ED99392F26D1_mAE59B4116E15C8775F67B603063AAADF8EA4E75D_RuntimeMethod_var);
+		List_1_t94DD792BDF578F202193C4307B641B72F69191B2* L_12;
+		L_12 = Enumerable_ToList_TisInvocationContext_t92F73874689E6A06564D76BA5055ED99392F26D1_mDECA5A7D2FF94431EB7A514F1F69F19284B1483D(L_11, Enumerable_ToList_TisInvocationContext_t92F73874689E6A06564D76BA5055ED99392F26D1_mDECA5A7D2FF94431EB7A514F1F69F19284B1483D_RuntimeMethod_var);
+		return L_12;
 	}
 }
 // System.Boolean Meta.Conduit.ConduitDispatcher/InvocationContextFilter::CompatibleInvocationContext(Meta.Conduit.InvocationContext,System.Single,System.Boolean)
@@ -5986,7 +6003,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_0__ctor_m495887DD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass4_0_U3CResolveInvocationContextsU3Eb__0_m7CC47DCBD9FDD39B8A9EF46F8B59C03605C8AE65 (U3CU3Ec__DisplayClass4_0_t184D41063548C430031B3A365D2E7464D56CBB16* __this, InvocationContext_t92F73874689E6A06564D76BA5055ED99392F26D1* ___context0, const RuntimeMethod* method) 
 {
 	{
-		// return _actionContexts.Where(context => CompatibleInvocationContext(context, confidence, partial))
+		// return _actionContexts != null ? _actionContexts.Where(context => CompatibleInvocationContext(context, confidence, partial))
 		InvocationContextFilter_t8413A2AA4B704BDD23311BDD0811195C2E1EBC26* L_0 = __this->___U3CU3E4__this_0;
 		InvocationContext_t92F73874689E6A06564D76BA5055ED99392F26D1* L_1 = ___context0;
 		float L_2 = __this->___confidence_1;
@@ -8317,17 +8334,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t94DD792BDF578F202193C4307B641B72F6919
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_mB357DECBA4665589E4487237DB991B54177AF77F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Item_m49886F2794ED77CA70445483F644699F7C7003D2_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// return _methodLookup[actionId];
+		// return _methodLookup.ContainsKey(actionId) ? _methodLookup[actionId] : null;
 		Dictionary_2_t27637911D95F8F26CB00E5FF60BB5EA9DCEEEFC1* L_0 = __this->____methodLookup_6;
 		String_t* L_1 = ___actionId0;
 		NullCheck(L_0);
-		List_1_t94DD792BDF578F202193C4307B641B72F69191B2* L_2;
-		L_2 = Dictionary_2_get_Item_m49886F2794ED77CA70445483F644699F7C7003D2(L_0, L_1, Dictionary_2_get_Item_m49886F2794ED77CA70445483F644699F7C7003D2_RuntimeMethod_var);
-		return L_2;
+		bool L_2;
+		L_2 = Dictionary_2_ContainsKey_mB357DECBA4665589E4487237DB991B54177AF77F(L_0, L_1, Dictionary_2_ContainsKey_mB357DECBA4665589E4487237DB991B54177AF77F_RuntimeMethod_var);
+		if (L_2)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		return (List_1_t94DD792BDF578F202193C4307B641B72F69191B2*)NULL;
+	}
+
+IL_0010:
+	{
+		Dictionary_2_t27637911D95F8F26CB00E5FF60BB5EA9DCEEEFC1* L_3 = __this->____methodLookup_6;
+		String_t* L_4 = ___actionId0;
+		NullCheck(L_3);
+		List_1_t94DD792BDF578F202193C4307B641B72F69191B2* L_5;
+		L_5 = Dictionary_2_get_Item_m49886F2794ED77CA70445483F644699F7C7003D2(L_3, L_4, Dictionary_2_get_Item_m49886F2794ED77CA70445483F644699F7C7003D2_RuntimeMethod_var);
+		return L_5;
 	}
 }
 // System.String Meta.Conduit.Manifest::ToString()

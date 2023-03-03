@@ -597,6 +597,7 @@ IL2CPP_EXTERN_C RuntimeClass* Utility_t8BCC393462C6270211734BE47CF5350F05EC97AD_
 IL2CPP_EXTERN_C RuntimeClass* WaitCallback_tFB2C7FD58D024BBC2B0333DC7A4CB63B8DEBD5D3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XRObjectTrackingSubsystemDescriptor_t21DB07F1D28AC1D369BB28EA12003F12F57AE5F3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XRParticipantSubsystemDescriptor_t2852FEA32C67D29993952B64E2C2C20EA8D8FDCE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral053EEFAEF1C074E36F0A13EAC660D9884666B708;
 IL2CPP_EXTERN_C String_t* _stringLiteral14E338D17C42E552FA7AF42CDAE40CA1F0E8A04D;
 IL2CPP_EXTERN_C String_t* _stringLiteral24CC8D396132365E532646F936DFC8579E2299B2;
 IL2CPP_EXTERN_C String_t* _stringLiteral36282FAC116D9FD6B37CC425310E1A8510F08A53;
@@ -19041,8 +19042,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool VRequest_RequestJson_TisRuntimeObject_m9
 		return L_8;
 	}
 }
-// System.Boolean Meta.WitAi.Requests.VRequest::RequestJson<System.Object>(System.Uri,Meta.WitAi.Requests.VRequest/RequestCompleteDelegate`1<TData>,Meta.WitAi.Requests.VRequest/RequestProgressDelegate)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool VRequest_RequestJson_TisRuntimeObject_m4F3EBAC62FECEEE8E68AFC05A3FE478EAA923A82_gshared (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1* __this, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri0, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* ___onComplete1, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* ___onProgress2, const RuntimeMethod* method) 
+// System.Boolean Meta.WitAi.Requests.VRequest::RequestJsonGet<System.Object>(System.Uri,Meta.WitAi.Requests.VRequest/RequestCompleteDelegate`1<TData>,Meta.WitAi.Requests.VRequest/RequestProgressDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool VRequest_RequestJsonGet_TisRuntimeObject_mC73C2C9D3D1D4C9D6755D696F6200C6C6F21A2F8_gshared (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1* __this, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri0, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* ___onComplete1, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* ___onProgress2, const RuntimeMethod* method) 
 {
 	{
 		// return RequestJson(UnityWebRequest.Get(uri), onComplete, onProgress);
@@ -19056,8 +19057,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool VRequest_RequestJson_TisRuntimeObject_m4
 		return L_4;
 	}
 }
-// System.Boolean Meta.WitAi.Requests.VRequest::RequestJson<System.Object>(System.Uri,System.Byte[],Meta.WitAi.Requests.VRequest/RequestCompleteDelegate`1<TData>,Meta.WitAi.Requests.VRequest/RequestProgressDelegate)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool VRequest_RequestJson_TisRuntimeObject_m1352BC63FC4FC90DAFD9F74F791A390E437834D4_gshared (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1* __this, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___postData1, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* ___onComplete2, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* ___onProgress3, const RuntimeMethod* method) 
+// System.Boolean Meta.WitAi.Requests.VRequest::RequestJsonPost<System.Object>(System.Uri,System.Byte[],Meta.WitAi.Requests.VRequest/RequestCompleteDelegate`1<TData>,Meta.WitAi.Requests.VRequest/RequestProgressDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool VRequest_RequestJsonPost_TisRuntimeObject_m2E4DC9817B38B2DE0281CF6FFB6CA8A95DA2E6AC_gshared (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1* __this, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___postData1, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* ___onComplete2, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* ___onProgress3, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19108,15 +19109,86 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool VRequest_RequestJson_TisRuntimeObject_m1
 		return L_12;
 	}
 }
-// System.Boolean Meta.WitAi.Requests.VRequest::RequestJson<System.Object>(System.Uri,System.String,Meta.WitAi.Requests.VRequest/RequestCompleteDelegate`1<TData>,Meta.WitAi.Requests.VRequest/RequestProgressDelegate)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool VRequest_RequestJson_TisRuntimeObject_mDB0B5BFE86FF5A8A58DAF88B63FF59325FD58751_gshared (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1* __this, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri0, String_t* ___postText1, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* ___onComplete2, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* ___onProgress3, const RuntimeMethod* method) 
+// System.Boolean Meta.WitAi.Requests.VRequest::RequestJsonPost<System.Object>(System.Uri,System.String,Meta.WitAi.Requests.VRequest/RequestCompleteDelegate`1<TData>,Meta.WitAi.Requests.VRequest/RequestProgressDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool VRequest_RequestJsonPost_TisRuntimeObject_mA2D8CE5CC278CD7BA7C7C898D1C0B3024CA079CE_gshared (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1* __this, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri0, String_t* ___postText1, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* ___onComplete2, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* ___onProgress3, const RuntimeMethod* method) 
 {
 	{
-		// return RequestJson(uri, Encoding.UTF8.GetBytes(postText), onComplete, onProgress);
+		// return RequestJsonPost(uri, Encoding.UTF8.GetBytes(postText), onComplete, onProgress);
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_0 = ___uri0;
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_1;
 		L_1 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 		String_t* L_2 = ___postText1;
+		NullCheck(L_1);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3;
+		L_3 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_1, L_2);
+		RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* L_4 = ___onComplete2;
+		RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* L_5 = ___onProgress3;
+		bool L_6;
+		L_6 = ((  bool (*) (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738*, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))(__this, L_0, L_3, L_4, L_5, il2cpp_rgctx_method(method->rgctx_data, 0));
+		return L_6;
+	}
+}
+// System.Boolean Meta.WitAi.Requests.VRequest::RequestJsonPut<System.Object>(System.Uri,System.Byte[],Meta.WitAi.Requests.VRequest/RequestCompleteDelegate`1<TData>,Meta.WitAi.Requests.VRequest/RequestProgressDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool VRequest_RequestJsonPut_TisRuntimeObject_m94B3F3BCD4874399607B3C46D9CADE6A028CE091_gshared (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1* __this, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___putData1, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* ___onComplete2, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* ___onProgress3, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DownloadHandlerBuffer_t34C626F6513FA9A44FDDDEE85455CF2CD9DA5974_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UploadHandlerRaw_t0A24CF320CDF16F1BC6C5C086DE71A1908CBB91A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral053EEFAEF1C074E36F0A13EAC660D9884666B708);
+		s_Il2CppMethodInitialized = true;
+	}
+	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* V_0 = NULL;
+	{
+		// var unityRequest = new UnityWebRequest(uri, UnityWebRequest.kHttpVerbPUT);
+		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_0 = ___uri0;
+		UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_1 = (UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F*)il2cpp_codegen_object_new(UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		UnityWebRequest__ctor_m357B5E7078790E0CEF7259D76512B031F37F2DEA(L_1, L_0, _stringLiteral053EEFAEF1C074E36F0A13EAC660D9884666B708, NULL);
+		V_0 = L_1;
+		// unityRequest.uploadHandler = new UploadHandlerRaw(putData);
+		UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_2 = V_0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___putData1;
+		UploadHandlerRaw_t0A24CF320CDF16F1BC6C5C086DE71A1908CBB91A* L_4 = (UploadHandlerRaw_t0A24CF320CDF16F1BC6C5C086DE71A1908CBB91A*)il2cpp_codegen_object_new(UploadHandlerRaw_t0A24CF320CDF16F1BC6C5C086DE71A1908CBB91A_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		UploadHandlerRaw__ctor_m168C957B67E29CB3072E3542044D37E2F16C42B7(L_4, L_3, NULL);
+		NullCheck(L_2);
+		UnityWebRequest_set_uploadHandler_m68F346550136DE178C79238944985892196027FE(L_2, (UploadHandler_t7E504B1A83346248A0C8C4AF73A893226CB83EF6*)L_4, NULL);
+		// unityRequest.disposeUploadHandlerOnDispose = true;
+		UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_5 = V_0;
+		NullCheck(L_5);
+		UnityWebRequest_set_disposeUploadHandlerOnDispose_mFE16234F005357FECF4A45F842D17C0C52B7CA6E_inline(L_5, (bool)1, NULL);
+		// unityRequest.downloadHandler = new DownloadHandlerBuffer();
+		UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_6 = V_0;
+		DownloadHandlerBuffer_t34C626F6513FA9A44FDDDEE85455CF2CD9DA5974* L_7 = (DownloadHandlerBuffer_t34C626F6513FA9A44FDDDEE85455CF2CD9DA5974*)il2cpp_codegen_object_new(DownloadHandlerBuffer_t34C626F6513FA9A44FDDDEE85455CF2CD9DA5974_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		DownloadHandlerBuffer__ctor_m5EE7C9E8AB468B2B937A7C9C66B4176A884147AF(L_7, NULL);
+		NullCheck(L_6);
+		UnityWebRequest_set_downloadHandler_m6CB94492012097DFC44E5773D1A627753788292F(L_6, (DownloadHandler_t1B56C7D3F65D97A1E4B566A14A1E783EA8AE4EBB*)L_7, NULL);
+		// unityRequest.disposeDownloadHandlerOnDispose = true;
+		UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_8 = V_0;
+		NullCheck(L_8);
+		UnityWebRequest_set_disposeDownloadHandlerOnDispose_m1BF640E233D231F8C0333864C0FE5D9E1DC2E7C6_inline(L_8, (bool)1, NULL);
+		// return RequestJson(unityRequest, onComplete, onProgress);
+		UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_9 = V_0;
+		RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* L_10 = ___onComplete2;
+		RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* L_11 = ___onProgress3;
+		bool L_12;
+		L_12 = ((  bool (*) (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*, UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F*, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738*, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))(__this, L_9, L_10, L_11, il2cpp_rgctx_method(method->rgctx_data, 0));
+		return L_12;
+	}
+}
+// System.Boolean Meta.WitAi.Requests.VRequest::RequestJsonPut<System.Object>(System.Uri,System.String,Meta.WitAi.Requests.VRequest/RequestCompleteDelegate`1<TData>,Meta.WitAi.Requests.VRequest/RequestProgressDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool VRequest_RequestJsonPut_TisRuntimeObject_mFBA45D34113DB8154A66FF5A69395AC23FA76224_gshared (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1* __this, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri0, String_t* ___putText1, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* ___onComplete2, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* ___onProgress3, const RuntimeMethod* method) 
+{
+	{
+		// return RequestJsonPut(uri, Encoding.UTF8.GetBytes(putText), onComplete, onProgress);
+		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_0 = ___uri0;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_1;
+		L_1 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
+		String_t* L_2 = ___putText1;
 		NullCheck(L_1);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3;
 		L_3 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_1, L_2);
@@ -19605,47 +19677,57 @@ IL_014c:
 		return ((RuntimeObject*)Castclass((RuntimeObject*)L_62, il2cpp_rgctx_data(method->rgctx_data, 0)));
 	}
 }
-// System.Boolean Meta.WitAi.Requests.WitVRequest::RequestWit<System.Object>(System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>,Meta.WitAi.Requests.VRequest/RequestCompleteDelegate`1<TData>,Meta.WitAi.Requests.VRequest/RequestProgressDelegate)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WitVRequest_RequestWit_TisRuntimeObject_mCB4D370BAB4C8EFA5CE18671D1F4F0FB682BA3C4_gshared (WitVRequest_t8604AB4F31C0E6BB2572F16A2C0992E09DEA1534* __this, String_t* ___uriEndpoint0, Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___uriParams1, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* ___onComplete2, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* ___onProgress3, const RuntimeMethod* method) 
+// System.Boolean Meta.WitAi.Requests.WitVRequest::RequestWitGet<System.Object>(System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>,Meta.WitAi.Requests.VRequest/RequestCompleteDelegate`1<TData>,Meta.WitAi.Requests.VRequest/RequestProgressDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WitVRequest_RequestWitGet_TisRuntimeObject_m72127E97338AE57B4572123A6A29FDECFE0CA37E_gshared (WitVRequest_t8604AB4F31C0E6BB2572F16A2C0992E09DEA1534* __this, String_t* ___uriEndpoint0, Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___uriParams1, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* ___onComplete2, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* ___onProgress3, const RuntimeMethod* method) 
 {
-	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* V_0 = NULL;
 	{
-		// Uri uri = GetUri(uriEndpoint, uriParams);
+		// return RequestJsonGet(GetUri(uriEndpoint, uriParams), onComplete, onProgress);
 		String_t* L_0 = ___uriEndpoint0;
 		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_1 = ___uriParams1;
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_2;
 		L_2 = WitVRequest_GetUri_m2B02986E00CD6AB6903AA77A2418494D1494B468(__this, L_0, L_1, NULL);
-		V_0 = L_2;
-		// return RequestJson(uri, onComplete, onProgress);
-		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_3 = V_0;
-		RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* L_4 = ___onComplete2;
-		RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* L_5 = ___onProgress3;
+		RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* L_3 = ___onComplete2;
+		RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* L_4 = ___onProgress3;
+		NullCheck((VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*)__this);
+		bool L_5;
+		L_5 = ((  bool (*) (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738*, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))((VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*)__this, L_2, L_3, L_4, il2cpp_rgctx_method(method->rgctx_data, 0));
+		return L_5;
+	}
+}
+// System.Boolean Meta.WitAi.Requests.WitVRequest::RequestWitPost<System.Object>(System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.String,Meta.WitAi.Requests.VRequest/RequestCompleteDelegate`1<TData>,Meta.WitAi.Requests.VRequest/RequestProgressDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WitVRequest_RequestWitPost_TisRuntimeObject_m1476771A0ADAE6290184D5A82FC304D710EE33EA_gshared (WitVRequest_t8604AB4F31C0E6BB2572F16A2C0992E09DEA1534* __this, String_t* ___uriEndpoint0, Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___uriParams1, String_t* ___postText2, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* ___onComplete3, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* ___onProgress4, const RuntimeMethod* method) 
+{
+	{
+		// return RequestJsonPost(GetUri(uriEndpoint, uriParams), postText, onComplete, onProgress);
+		String_t* L_0 = ___uriEndpoint0;
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_1 = ___uriParams1;
+		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_2;
+		L_2 = WitVRequest_GetUri_m2B02986E00CD6AB6903AA77A2418494D1494B468(__this, L_0, L_1, NULL);
+		String_t* L_3 = ___postText2;
+		RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* L_4 = ___onComplete3;
+		RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* L_5 = ___onProgress4;
 		NullCheck((VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*)__this);
 		bool L_6;
-		L_6 = ((  bool (*) (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738*, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))((VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*)__this, L_3, L_4, L_5, il2cpp_rgctx_method(method->rgctx_data, 0));
+		L_6 = ((  bool (*) (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*, String_t*, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738*, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))((VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*)__this, L_2, L_3, L_4, L_5, il2cpp_rgctx_method(method->rgctx_data, 0));
 		return L_6;
 	}
 }
-// System.Boolean Meta.WitAi.Requests.WitVRequest::RequestWit<System.Object>(System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.String,Meta.WitAi.Requests.VRequest/RequestCompleteDelegate`1<TData>,Meta.WitAi.Requests.VRequest/RequestProgressDelegate)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WitVRequest_RequestWit_TisRuntimeObject_mA2F505D810BCEACD632AA74C7ED85794B63A3558_gshared (WitVRequest_t8604AB4F31C0E6BB2572F16A2C0992E09DEA1534* __this, String_t* ___uriEndpoint0, Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___uriParams1, String_t* ___postText2, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* ___onComplete3, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* ___onProgress4, const RuntimeMethod* method) 
+// System.Boolean Meta.WitAi.Requests.WitVRequest::RequestWitPut<System.Object>(System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>,System.String,Meta.WitAi.Requests.VRequest/RequestCompleteDelegate`1<TData>,Meta.WitAi.Requests.VRequest/RequestProgressDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WitVRequest_RequestWitPut_TisRuntimeObject_m937686681BF37EB32CD421ED7EAD09C299F4466E_gshared (WitVRequest_t8604AB4F31C0E6BB2572F16A2C0992E09DEA1534* __this, String_t* ___uriEndpoint0, Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___uriParams1, String_t* ___putText2, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* ___onComplete3, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* ___onProgress4, const RuntimeMethod* method) 
 {
-	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* V_0 = NULL;
 	{
-		// Uri uri = GetUri(uriEndpoint, uriParams);
+		// return RequestJsonPut(GetUri(uriEndpoint, uriParams), putText, onComplete, onProgress);
 		String_t* L_0 = ___uriEndpoint0;
 		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_1 = ___uriParams1;
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_2;
 		L_2 = WitVRequest_GetUri_m2B02986E00CD6AB6903AA77A2418494D1494B468(__this, L_0, L_1, NULL);
-		V_0 = L_2;
-		// return RequestJson(uri, postText, onComplete, onProgress);
-		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_3 = V_0;
-		String_t* L_4 = ___postText2;
-		RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* L_5 = ___onComplete3;
-		RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* L_6 = ___onProgress4;
+		String_t* L_3 = ___putText2;
+		RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738* L_4 = ___onComplete3;
+		RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4* L_5 = ___onProgress4;
 		NullCheck((VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*)__this);
-		bool L_7;
-		L_7 = ((  bool (*) (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*, String_t*, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738*, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))((VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*)__this, L_3, L_4, L_5, L_6, il2cpp_rgctx_method(method->rgctx_data, 0));
-		return L_7;
+		bool L_6;
+		L_6 = ((  bool (*) (VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*, String_t*, RequestCompleteDelegate_1_t336E76112EC94D50E34938D06BC1F55D2227D738*, RequestProgressDelegate_tCEE5B616F4FDCD488E4914A7F554F2F57B7D03A4*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))((VRequest_tFD9B8F15B7482BF5BE064752EAE7162E3588B8A1*)__this, L_2, L_3, L_4, L_5, il2cpp_rgctx_method(method->rgctx_data, 0));
+		return L_6;
 	}
 }
 // System.Void UnityEngine.XR.ARSubsystems.XRFaceMesh::Resize<System.Int32>(System.Int32,Unity.Collections.Allocator,Unity.Collections.NativeArray`1<T>&,System.Boolean)
