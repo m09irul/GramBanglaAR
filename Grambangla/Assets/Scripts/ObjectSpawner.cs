@@ -45,10 +45,12 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] GameObject noInternetPanel;
 
     Vector3 spawnPoint;
+    Quaternion spawnRot;
 
-    public void SetSpawnPoint(Vector3 pos)
+    public void SetSpawnPoint(Vector3 pos, Quaternion rot)
     {
         spawnPoint = pos;
+        spawnRot = rot;
     }
     void Start()
     {
@@ -129,6 +131,10 @@ public class ObjectSpawner : MonoBehaviour
         objectToSpawn.SetActive(true);
 
         objectToSpawn.transform.position = spawnPoint + afterPlacementOffset;
+        objectToSpawn.transform.rotation = spawnRot;
+        //objectToSpawn.transform.LookAt(Camera.main.transform);
+        
+
         //GameObject particle =  Instantiate(spawnVFX, spawnPoint, Quaternion.identity);
         //Destroy(particle, 5f);
 

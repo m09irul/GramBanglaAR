@@ -19500,7 +19500,7 @@ IL_000d:
 		Type_t* L_3 = ___derivedType0;
 		NullCheck(L_3);
 		Type_t* L_4;
-		L_4 = VirtualFuncInvoker0< Type_t* >::Invoke(108 /* System.Type System.Type::get_BaseType() */, L_3);
+		L_4 = VirtualFuncInvoker0< Type_t* >::Invoke(109 /* System.Type System.Type::get_BaseType() */, L_3);
 		___derivedType0 = L_4;
 	}
 

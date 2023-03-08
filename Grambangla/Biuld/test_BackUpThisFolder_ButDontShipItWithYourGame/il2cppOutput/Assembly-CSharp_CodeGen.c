@@ -78,8 +78,8 @@ extern void MicWitInteraction__ctor_mBF296BCA0114EA88A2570593C37A416C8141B2C3 (v
 extern void MicWitInteraction_U3COnRequestStartedU3Eb__8_0_m0B37A7DE48CD0C548962989EDA2EC5378A233545 (void);
 // 0x00000021 System.Void ObjectSpawner::Awake()
 extern void ObjectSpawner_Awake_m4CAB7A5201CAF72D44C72310AC38344AE34CEB6E (void);
-// 0x00000022 System.Void ObjectSpawner::SetSpawnPoint(UnityEngine.Vector3)
-extern void ObjectSpawner_SetSpawnPoint_mAA55587B9C392230E17B90036B452BB2E482A219 (void);
+// 0x00000022 System.Void ObjectSpawner::SetSpawnPoint(UnityEngine.Vector3,UnityEngine.Quaternion)
+extern void ObjectSpawner_SetSpawnPoint_mFC2B3F22D4FD51B2236DDE8143E3B8AB1A156358 (void);
 // 0x00000023 System.Void ObjectSpawner::Start()
 extern void ObjectSpawner_Start_mE19667397EFFE281AF098051957A34B21C97B6C3 (void);
 // 0x00000024 System.Collections.IEnumerator ObjectSpawner::LookForInternetConnection()
@@ -98,32 +98,32 @@ extern void ObjectSpawner_SpawnSystem_m467FCF9AF6399470B9072BBE3C9A4B962262D585 
 extern void ObjectSpawner_setScene_m15EE707ED497DA83AC789B808779AACF23087FCB (void);
 // 0x0000002B System.Void ObjectSpawner::.ctor()
 extern void ObjectSpawner__ctor_mF75EFE9AB26EAEF6D1995A34FB35C2BDE08A083C (void);
-// 0x0000002C System.Void ObjectSpawner::<setScene>b__23_0()
-extern void ObjectSpawner_U3CsetSceneU3Eb__23_0_m439785A21C71E88049C61BE691344FCC7D34EDC2 (void);
-// 0x0000002D System.Void ObjectSpawner/<LookForInternetConnection>d__17::.ctor(System.Int32)
-extern void U3CLookForInternetConnectionU3Ed__17__ctor_m42BFB5E75336DE014C697052D4720760CF0D203B (void);
-// 0x0000002E System.Void ObjectSpawner/<LookForInternetConnection>d__17::System.IDisposable.Dispose()
-extern void U3CLookForInternetConnectionU3Ed__17_System_IDisposable_Dispose_m2F75162ACD2DC80F0BCB0E2071F71B47D015F4CB (void);
-// 0x0000002F System.Boolean ObjectSpawner/<LookForInternetConnection>d__17::MoveNext()
-extern void U3CLookForInternetConnectionU3Ed__17_MoveNext_mEBB411AC6CC5CA625ABA1A0E3E116AB3649B5E26 (void);
-// 0x00000030 System.Object ObjectSpawner/<LookForInternetConnection>d__17::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CLookForInternetConnectionU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC4C966E4E54773EFE832B5F5385E455B9CD7DE90 (void);
-// 0x00000031 System.Void ObjectSpawner/<LookForInternetConnection>d__17::System.Collections.IEnumerator.Reset()
-extern void U3CLookForInternetConnectionU3Ed__17_System_Collections_IEnumerator_Reset_m792105BEC9AF1D8455757206CD78C7D0BF69C658 (void);
-// 0x00000032 System.Object ObjectSpawner/<LookForInternetConnection>d__17::System.Collections.IEnumerator.get_Current()
-extern void U3CLookForInternetConnectionU3Ed__17_System_Collections_IEnumerator_get_Current_m45AB76E550DCC91722FB4403F371B8448BC5F790 (void);
-// 0x00000033 System.Void ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__20::.ctor(System.Int32)
-extern void U3CShowMarkerAndReadyToSpawnU3Ed__20__ctor_m341AF9EDBA970CC303307D85450884909F091AA4 (void);
-// 0x00000034 System.Void ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__20::System.IDisposable.Dispose()
-extern void U3CShowMarkerAndReadyToSpawnU3Ed__20_System_IDisposable_Dispose_m5AFA49ACDD0842EE09BA79505AD32067CCDD3D18 (void);
-// 0x00000035 System.Boolean ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__20::MoveNext()
-extern void U3CShowMarkerAndReadyToSpawnU3Ed__20_MoveNext_m3665AF527DBDB5EB3EA43B75CE6F428153C672F0 (void);
-// 0x00000036 System.Object ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__20::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CShowMarkerAndReadyToSpawnU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m6D0A2AE91ED0E4E1C36ECB0164D695E3675CDDEE (void);
-// 0x00000037 System.Void ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__20::System.Collections.IEnumerator.Reset()
-extern void U3CShowMarkerAndReadyToSpawnU3Ed__20_System_Collections_IEnumerator_Reset_mDFB71792A4EB476F57B987F1AF4FC94FBB1BD9D5 (void);
-// 0x00000038 System.Object ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__20::System.Collections.IEnumerator.get_Current()
-extern void U3CShowMarkerAndReadyToSpawnU3Ed__20_System_Collections_IEnumerator_get_Current_mF62ADAA37D7FCC44A24510D3135F73555EBDC73F (void);
+// 0x0000002C System.Void ObjectSpawner::<setScene>b__24_0()
+extern void ObjectSpawner_U3CsetSceneU3Eb__24_0_m76FDD0088311A72BCF6D0DEB17B61CC83295EA02 (void);
+// 0x0000002D System.Void ObjectSpawner/<LookForInternetConnection>d__18::.ctor(System.Int32)
+extern void U3CLookForInternetConnectionU3Ed__18__ctor_m4A1E755EBDE7AF53B6C692F68F61C70823FA5292 (void);
+// 0x0000002E System.Void ObjectSpawner/<LookForInternetConnection>d__18::System.IDisposable.Dispose()
+extern void U3CLookForInternetConnectionU3Ed__18_System_IDisposable_Dispose_m02F99BC624314C7F8A5F01BC801F5DCA26705690 (void);
+// 0x0000002F System.Boolean ObjectSpawner/<LookForInternetConnection>d__18::MoveNext()
+extern void U3CLookForInternetConnectionU3Ed__18_MoveNext_m8C29CF87AF8A15F3C1D70825F9905DBC59D1A069 (void);
+// 0x00000030 System.Object ObjectSpawner/<LookForInternetConnection>d__18::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CLookForInternetConnectionU3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m70B5890E26CEA812D6F223ECF36A1B0CC390EA29 (void);
+// 0x00000031 System.Void ObjectSpawner/<LookForInternetConnection>d__18::System.Collections.IEnumerator.Reset()
+extern void U3CLookForInternetConnectionU3Ed__18_System_Collections_IEnumerator_Reset_m4EEE5F3891215C2726BEFC64F8ACFB18378E2FB4 (void);
+// 0x00000032 System.Object ObjectSpawner/<LookForInternetConnection>d__18::System.Collections.IEnumerator.get_Current()
+extern void U3CLookForInternetConnectionU3Ed__18_System_Collections_IEnumerator_get_Current_m05A4690693B0155BD562C1521FD48224DC7A608E (void);
+// 0x00000033 System.Void ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__21::.ctor(System.Int32)
+extern void U3CShowMarkerAndReadyToSpawnU3Ed__21__ctor_mA91AC0BEF3D6AE7A115191832341E6E0B453DE8D (void);
+// 0x00000034 System.Void ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__21::System.IDisposable.Dispose()
+extern void U3CShowMarkerAndReadyToSpawnU3Ed__21_System_IDisposable_Dispose_m44BFD8717AD1864DF6143CB6188688CEA805E4EB (void);
+// 0x00000035 System.Boolean ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__21::MoveNext()
+extern void U3CShowMarkerAndReadyToSpawnU3Ed__21_MoveNext_m63D22F7B2C7DB1BC69F251CED3A4568E67019771 (void);
+// 0x00000036 System.Object ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__21::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CShowMarkerAndReadyToSpawnU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m948FE5BD40513E2774B4C32AB0AECB322B85647D (void);
+// 0x00000037 System.Void ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__21::System.Collections.IEnumerator.Reset()
+extern void U3CShowMarkerAndReadyToSpawnU3Ed__21_System_Collections_IEnumerator_Reset_m618C04D98861C9EB21BB6206030D74B7078E1FA1 (void);
+// 0x00000038 System.Object ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__21::System.Collections.IEnumerator.get_Current()
+extern void U3CShowMarkerAndReadyToSpawnU3Ed__21_System_Collections_IEnumerator_get_Current_m76178F843C3B18864DB79D66CED1465EE3D8C0DF (void);
 // 0x00000039 System.Void PermissionGranting::Start()
 extern void PermissionGranting_Start_m984386B3EA82F5B52DCD2A520E7E3B4BDEC7118D (void);
 // 0x0000003A System.Void PermissionGranting::.ctor()
@@ -271,7 +271,7 @@ static Il2CppMethodPointer s_methodPointers[112] =
 	MicWitInteraction__ctor_mBF296BCA0114EA88A2570593C37A416C8141B2C3,
 	MicWitInteraction_U3COnRequestStartedU3Eb__8_0_m0B37A7DE48CD0C548962989EDA2EC5378A233545,
 	ObjectSpawner_Awake_m4CAB7A5201CAF72D44C72310AC38344AE34CEB6E,
-	ObjectSpawner_SetSpawnPoint_mAA55587B9C392230E17B90036B452BB2E482A219,
+	ObjectSpawner_SetSpawnPoint_mFC2B3F22D4FD51B2236DDE8143E3B8AB1A156358,
 	ObjectSpawner_Start_mE19667397EFFE281AF098051957A34B21C97B6C3,
 	ObjectSpawner_LookForInternetConnection_m35CD1B077E6E46985D9B373F271284F7E6AA425B,
 	ObjectSpawner_CompleteMethod_mE58E6AED84438CF3615FD2AAF0770F15497D2C42,
@@ -281,19 +281,19 @@ static Il2CppMethodPointer s_methodPointers[112] =
 	ObjectSpawner_SpawnSystem_m467FCF9AF6399470B9072BBE3C9A4B962262D585,
 	ObjectSpawner_setScene_m15EE707ED497DA83AC789B808779AACF23087FCB,
 	ObjectSpawner__ctor_mF75EFE9AB26EAEF6D1995A34FB35C2BDE08A083C,
-	ObjectSpawner_U3CsetSceneU3Eb__23_0_m439785A21C71E88049C61BE691344FCC7D34EDC2,
-	U3CLookForInternetConnectionU3Ed__17__ctor_m42BFB5E75336DE014C697052D4720760CF0D203B,
-	U3CLookForInternetConnectionU3Ed__17_System_IDisposable_Dispose_m2F75162ACD2DC80F0BCB0E2071F71B47D015F4CB,
-	U3CLookForInternetConnectionU3Ed__17_MoveNext_mEBB411AC6CC5CA625ABA1A0E3E116AB3649B5E26,
-	U3CLookForInternetConnectionU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC4C966E4E54773EFE832B5F5385E455B9CD7DE90,
-	U3CLookForInternetConnectionU3Ed__17_System_Collections_IEnumerator_Reset_m792105BEC9AF1D8455757206CD78C7D0BF69C658,
-	U3CLookForInternetConnectionU3Ed__17_System_Collections_IEnumerator_get_Current_m45AB76E550DCC91722FB4403F371B8448BC5F790,
-	U3CShowMarkerAndReadyToSpawnU3Ed__20__ctor_m341AF9EDBA970CC303307D85450884909F091AA4,
-	U3CShowMarkerAndReadyToSpawnU3Ed__20_System_IDisposable_Dispose_m5AFA49ACDD0842EE09BA79505AD32067CCDD3D18,
-	U3CShowMarkerAndReadyToSpawnU3Ed__20_MoveNext_m3665AF527DBDB5EB3EA43B75CE6F428153C672F0,
-	U3CShowMarkerAndReadyToSpawnU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m6D0A2AE91ED0E4E1C36ECB0164D695E3675CDDEE,
-	U3CShowMarkerAndReadyToSpawnU3Ed__20_System_Collections_IEnumerator_Reset_mDFB71792A4EB476F57B987F1AF4FC94FBB1BD9D5,
-	U3CShowMarkerAndReadyToSpawnU3Ed__20_System_Collections_IEnumerator_get_Current_mF62ADAA37D7FCC44A24510D3135F73555EBDC73F,
+	ObjectSpawner_U3CsetSceneU3Eb__24_0_m76FDD0088311A72BCF6D0DEB17B61CC83295EA02,
+	U3CLookForInternetConnectionU3Ed__18__ctor_m4A1E755EBDE7AF53B6C692F68F61C70823FA5292,
+	U3CLookForInternetConnectionU3Ed__18_System_IDisposable_Dispose_m02F99BC624314C7F8A5F01BC801F5DCA26705690,
+	U3CLookForInternetConnectionU3Ed__18_MoveNext_m8C29CF87AF8A15F3C1D70825F9905DBC59D1A069,
+	U3CLookForInternetConnectionU3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m70B5890E26CEA812D6F223ECF36A1B0CC390EA29,
+	U3CLookForInternetConnectionU3Ed__18_System_Collections_IEnumerator_Reset_m4EEE5F3891215C2726BEFC64F8ACFB18378E2FB4,
+	U3CLookForInternetConnectionU3Ed__18_System_Collections_IEnumerator_get_Current_m05A4690693B0155BD562C1521FD48224DC7A608E,
+	U3CShowMarkerAndReadyToSpawnU3Ed__21__ctor_mA91AC0BEF3D6AE7A115191832341E6E0B453DE8D,
+	U3CShowMarkerAndReadyToSpawnU3Ed__21_System_IDisposable_Dispose_m44BFD8717AD1864DF6143CB6188688CEA805E4EB,
+	U3CShowMarkerAndReadyToSpawnU3Ed__21_MoveNext_m63D22F7B2C7DB1BC69F251CED3A4568E67019771,
+	U3CShowMarkerAndReadyToSpawnU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m948FE5BD40513E2774B4C32AB0AECB322B85647D,
+	U3CShowMarkerAndReadyToSpawnU3Ed__21_System_Collections_IEnumerator_Reset_m618C04D98861C9EB21BB6206030D74B7078E1FA1,
+	U3CShowMarkerAndReadyToSpawnU3Ed__21_System_Collections_IEnumerator_get_Current_m76178F843C3B18864DB79D66CED1465EE3D8C0DF,
 	PermissionGranting_Start_m984386B3EA82F5B52DCD2A520E7E3B4BDEC7118D,
 	PermissionGranting__ctor_m0D3A7EB1F7D72678E9831A25A8291723BC6BD356,
 	PlacementIndicator_Start_m92791E0A4D6E907C1BA32A25E07872A9A2E6C9D7,
@@ -353,118 +353,118 @@ static Il2CppMethodPointer s_methodPointers[112] =
 };
 static const int32_t s_InvokerIndices[112] = 
 {
-	5257,
-	4344,
-	5320,
-	5320,
-	5320,
-	4207,
-	4311,
-	5320,
-	8358,
-	5320,
-	5320,
-	5320,
-	4207,
-	5320,
-	5320,
-	5320,
-	5320,
-	4311,
-	2395,
-	5320,
-	5320,
-	4288,
-	5320,
-	5320,
-	5320,
-	5320,
-	4311,
-	5320,
-	5320,
-	5320,
-	5320,
-	4311,
-	5320,
-	4393,
-	5320,
-	5218,
-	4288,
-	5320,
-	5218,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	4288,
-	5320,
-	5143,
-	5218,
-	5320,
-	5218,
-	4288,
-	5320,
-	5143,
-	5218,
-	5320,
-	5218,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	4288,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	5320,
-	4311,
-	4311,
-	2395,
-	5320,
-	5320,
-	4311,
-	5320,
-	4311,
-	4311,
-	2384,
-	4311,
-	2395,
-	5320,
-	4311,
-	2188,
-	2188,
-	4311,
-	5320,
-	5320,
-	5320,
-	4311,
-	5320,
-	4311,
-	2395,
-	5320,
-	5320,
-	4311,
+	5388,
+	4459,
+	5452,
+	5452,
+	5452,
+	4319,
+	4426,
+	5452,
+	8518,
+	5452,
+	5452,
+	5452,
+	4319,
+	5452,
+	5452,
+	5452,
+	5452,
+	4426,
+	2474,
+	5452,
+	5452,
+	4403,
+	5452,
+	5452,
+	5452,
+	5452,
+	4426,
+	5452,
+	5452,
+	5452,
+	5452,
+	4426,
+	5452,
+	2550,
+	5452,
+	5349,
+	4403,
+	5452,
+	5349,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	4403,
+	5452,
+	5272,
+	5349,
+	5452,
+	5349,
+	4403,
+	5452,
+	5272,
+	5349,
+	5452,
+	5349,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	4403,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	4426,
+	4426,
+	2474,
+	5452,
+	5452,
+	4426,
+	5452,
+	4426,
+	4426,
+	2463,
+	4426,
+	2474,
+	5452,
+	4426,
+	2263,
+	2263,
+	4426,
+	5452,
+	5452,
+	5452,
+	4426,
+	5452,
+	4426,
+	2474,
+	5452,
+	5452,
+	4426,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
