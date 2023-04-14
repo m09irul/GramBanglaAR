@@ -154,7 +154,6 @@ public class HandleWitResponse : MonoBehaviour
 	
         else
         {
-            //Debug.Log("Try pressing the Activate button and saying \"Make the cube red\"");
 			micWitInteraction.HandleException();
 		}
     }

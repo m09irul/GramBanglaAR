@@ -11,11 +11,13 @@ public class MicWitInteraction : MonoBehaviour
     public GameObject tryAgainTxt;
 
     [SerializeField] GameObject tutPanel;
+    [SerializeField] private TextMeshProUGUI textArea;
+    [Header("Configuration")]
+    [SerializeField] private bool showJson;
 
-
-   private void OnValidate()
+    private void OnValidate()
     {
-        wit = GetComponent<Wit>();
+        if (!wit) wit = GetComponent<Wit>();
         handleWitResponse = GetComponent<HandleWitResponse>();
 
     }
@@ -37,15 +39,24 @@ public class MicWitInteraction : MonoBehaviour
         {
             if (r.StatusCode == (int)HttpStatusCode.OK)
             {
-                handleWitResponse.OnResponse(r.ResponseData);
+                OnResponse(r.ResponseData);
             }
             else
             {
-                Debug.LogError($"Error {r.StatusCode}"+ r.StatusDescription);
+                OnError($"Error {r.StatusCode}", r.StatusDescription);
             }
         };
     }
 
+    public void OnResponse(WitResponseNode response)
+    {
+        handleWitResponse.OnResponse(response);
+    }
+
+    public void OnError(string error, string message)
+    {
+        textArea.text = $"Error: {error}\n\n{message}";
+    }
     public void StopRecording()
     {
         try
@@ -69,8 +80,7 @@ public class MicWitInteraction : MonoBehaviour
 
         try
         {
-            if (!wit.Active)
-                wit.Activate();
+            wit.Activate();
         }
         catch
         {
@@ -81,6 +91,6 @@ public class MicWitInteraction : MonoBehaviour
     public void HandleException()
     {
         tryAgainTxt.SetActive(true);
-        recordingButton.SetActive(true);
+        //recordingButton.SetActive(true);
     }
 }                                                                                                                                                                                                                                              
