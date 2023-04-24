@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//using DG.Tweening;
 using TMPro;
 using System.Text;
 using UnityEngine.XR.ARFoundation;
@@ -51,6 +50,9 @@ public class ObjectSpawner : MonoBehaviour
     {
         spawnPoint = pos;
         spawnRot = rot;
+
+        objectToSpawn.transform.position = spawnPoint;
+        objectToSpawn.transform.rotation = spawnRot;
     }
     void Start()
     {
@@ -128,10 +130,10 @@ public class ObjectSpawner : MonoBehaviour
 
     void setScene()
     {
-        objectToSpawn.SetActive(true);
+        //objectToSpawn.SetActive(true);
 
-        objectToSpawn.transform.position = spawnPoint + afterPlacementOffset;
-        objectToSpawn.transform.rotation = spawnRot;
+        //objectToSpawn.transform.position = spawnPoint + afterPlacementOffset;
+        //objectToSpawn.transform.rotation = spawnRot;
         //objectToSpawn.transform.LookAt(Camera.main.transform);
         
 
@@ -153,7 +155,6 @@ public class ObjectSpawner : MonoBehaviour
             LeanTween.scaleZ(objectToSpawn.transform.GetChild(0).GetChild(3).gameObject, 1f, 15f).setEase(LeanTweenType.easeOutCirc);
         });
 
-        //objectToSpawn.transform.DOScale(afterPlacementScale, 1f);
 
         tapToPlaceTxt.SetActive(false);
 
