@@ -8,6 +8,7 @@ public class StateHandler : MonoBehaviour
     [SerializeField] GameObject recordButton;
     [SerializeField] GameObject tutPanel;
     [SerializeField] GameObject rainPrefab;
+    [SerializeField] AudioClip c1;
     [SerializeField] AudioClip c2;
     [SerializeField] AudioClip c3;
     [SerializeField] AudioClip c4;
@@ -24,15 +25,15 @@ public class StateHandler : MonoBehaviour
         audioSource =  GetComponent<AudioSource>();
         animator = ObjectSpawner.instance.mainCharacter.transform.GetChild(0).GetComponent<Animator>();
     }
-    public void AppearButtonsForFirst()
+
+    public IEnumerator AppearButtons(float time)
     {
-        recordButton.SetActive(true);
-        tutPanel.SetActive(true);
-        TextManager.instance.LoadNextText();
-        animator.Play("Idle");
-    }
-    public void AppearButtonsForRest()
-    {
+        if(time == 0)
+            tutPanel.SetActive(true);
+
+        yield return new WaitForSeconds(time);
+
+        animator.Play("G_Idle_Combined");
         recordButton.SetActive(true);
         TextManager.instance.LoadNextText();
 
@@ -51,14 +52,30 @@ public class StateHandler : MonoBehaviour
         }
         transform.GetChild(currentModel).gameObject.SetActive(true);
     }
+    public IEnumerator PlayC1()
+    {
+        animator.Play("G_1_1_Hi_Tomake");
+        audioSource.PlayOneShot(c1);
+        StartCoroutine(AppearButtons(c1.length));
+
+        yield return new WaitForSeconds(1.75f);
+        LeanTween.rotateY(ObjectSpawner.instance.mainCharacter, -180f, 1f);
+
+    }
     public void PlayC2()
     {
-        //GetComponent<Animator>().Play("c2");
-        DeactiveOtherModels(1);
-        transform.GetChild(1).GetComponent<Animator>().enabled = true;
-        //AudioSource s = GetComponent<AudioSource>();
-        audioSource.clip = c2;
-        audioSource.Play();
+        animator.Play("G_1_2_Amar_Naam_001");
+        audioSource.PlayOneShot(c2);
+
+        //Fetch the current Animation clip information for the base layer
+        var m_CurrentClipInfo = this.animator.GetCurrentAnimatorClipInfo(0);
+        //Access the current length of the clip
+        var m_CurrentClipLength = m_CurrentClipInfo[0].clip.length;
+        //Access the Animation clip name
+        var m_ClipName = m_CurrentClipInfo[0].clip.name;
+        print(m_ClipName);
+        print(m_CurrentClipLength);
+        StartCoroutine(AppearButtons(m_CurrentClipLength));
     }
     public void PlayC3()
     {

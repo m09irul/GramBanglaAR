@@ -11,13 +11,14 @@ public class HandleWitResponse : MonoBehaviour
 	[SerializeField] GameObject endPanel;
 	[SerializeField] GameObject rainPrefab;
 	[SerializeField] GameObject character;
-
-    string _name = "";
+	ObjectSpawner objectSpawner;
 
     private void Start()
     {
         micWitInteraction = GetComponent<MicWitInteraction>();
-    }
+		objectSpawner = ObjectSpawner.instance;
+
+	}
 
     public void OnResponse(WitResponseNode response)
     {
@@ -29,7 +30,7 @@ public class HandleWitResponse : MonoBehaviour
             string userSpoken_text = response["text"];
 
             Debug.LogError(intent_Confidence);
-            //Debug.LogError(intent_Name);
+            Debug.LogError(intent_Name);
             Debug.LogError(userSpoken_text);
 			//Debug.Log("I heard: " + response[""]);
 
@@ -42,22 +43,20 @@ public class HandleWitResponse : MonoBehaviour
 					micWitInteraction.recordingButton.SetActive(false);
 					TextManager.instance.ResetDisplayTexts();
 
-					Debug.Log("Donnnnneeeeeee....");
+					NextAnim(1);
 				}
 				else
 					micWitInteraction.HandleException();
 
 			}
-			else if (intent_Name.Equals("name_intent"))
-			{
-				_name = userSpoken_text.Substring(9);
-				
+			else if (intent_Name.Equals("ask_name"))
+			{				
 
-				if (intent_Confidence >= 0.98f)
+				if (intent_Confidence >= 0.965f)
 				{
 					micWitInteraction.recordingButton.SetActive(false);
 					TextManager.instance.ResetDisplayTexts();
-					NextAnim(0);
+					NextAnim(2);
 				}
 				else
 					micWitInteraction.HandleException();
@@ -178,9 +177,9 @@ public class HandleWitResponse : MonoBehaviour
 			s.clip = debugAudio;
 			s.Play();
 		}
-		else if (Input.GetKeyDown(KeyCode.Alpha3))
+		else if (Input.GetKeyDown(KeyCode.Alpha2))
 		{
-			character.GetComponent<StateHandler>().PlayC3();
+			objectSpawner.stateHandler.PlayC2();
 		}
 		else if (Input.GetKeyDown(KeyCode.Alpha4))
 			NextAnim(0);
@@ -198,12 +197,10 @@ public class HandleWitResponse : MonoBehaviour
 
 	void NextAnim(int which)
 	{
-		if (which == 0)
-			character.GetComponent<StateHandler>().PlayC4();
-		else if (which == 1)
-			character.GetComponent<StateHandler>().PlayC5();
+		if (which == 1)
+			StartCoroutine(objectSpawner.stateHandler.PlayC1());
 		else if (which == 2)
-			character.GetComponent<StateHandler>().PlayC6();
+			objectSpawner.stateHandler.PlayC2();
 		else if (which == 3)
 			character.GetComponent<StateHandler>().PlayC7();
 		else if (which == 4)

@@ -9,6 +9,7 @@ using UnityEngine.XR.ARSubsystems;
 using System;
 using UnityEngine.Networking;
 using GleyInternetAvailability;
+using Dreamteck.Splines;
 
 public class ObjectSpawner : MonoBehaviour
 {
@@ -42,6 +43,7 @@ public class ObjectSpawner : MonoBehaviour
     public GameObject mainCharacter;
     [SerializeField] GameObject spawnVFX;
     [SerializeField] GameObject noInternetPanel;
+    public StateHandler stateHandler;
 
     Vector3 spawnPoint;
     Quaternion spawnRot;
@@ -60,8 +62,13 @@ public class ObjectSpawner : MonoBehaviour
 
         StartCoroutine(LookForInternetConnection());
 
+        var sf = mainCharacter.GetComponent<SplineFollower>();
+        sf.onEndReached += (o) =>
+        {
+            StartCoroutine(stateHandler.AppearButtons(0));
+            sf.follow = false;
+        };
     }
-
 
     IEnumerator LookForInternetConnection()
     {
@@ -141,7 +148,7 @@ public class ObjectSpawner : MonoBehaviour
         //Destroy(particle, 5f);
 
         //scale well
-        LeanTween.scale(objectToSpawn.transform.GetChild(0).GetChild(4).gameObject, Vector3.one*10f, 2f).setEase(LeanTweenType.easeOutQuad).setOnComplete(()=>
+/*        LeanTween.scale(objectToSpawn.transform.GetChild(0).GetChild(4).gameObject, Vector3.one*10f, 2f).setEase(LeanTweenType.easeOutQuad).setOnComplete(()=>
         {
             mainCharacter.SetActive(true);
 
@@ -153,7 +160,7 @@ public class ObjectSpawner : MonoBehaviour
 
             //grow trees
             LeanTween.scaleZ(objectToSpawn.transform.GetChild(0).GetChild(3).gameObject, 1f, 15f).setEase(LeanTweenType.easeOutCirc);
-        });
+        });*/
 
 
         tapToPlaceTxt.SetActive(false);
