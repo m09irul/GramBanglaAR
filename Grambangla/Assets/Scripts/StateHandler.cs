@@ -54,98 +54,24 @@ public class StateHandler : MonoBehaviour
     }
     public IEnumerator PlayC1()
     {
-        animator.Play("G_1_1_Hi_Tomake");
-        audioSource.PlayOneShot(c1);
-        StartCoroutine(AppearButtons(c1.length));
+        OnPlayConvo("G_1_1_Hi_Tomake", c1);
 
         yield return new WaitForSeconds(1.75f);
         LeanTween.rotateY(ObjectSpawner.instance.mainCharacter, -180f, 1f);
-
     }
     public void PlayC2()
     {
-        animator.Play("G_1_2_Amar_Naam_001");
-        audioSource.PlayOneShot(c2);
-
-        //Fetch the current Animation clip information for the base layer
-        var m_CurrentClipInfo = this.animator.GetCurrentAnimatorClipInfo(0);
-        //Access the current length of the clip
-        var m_CurrentClipLength = m_CurrentClipInfo[0].clip.length;
-        //Access the Animation clip name
-        var m_ClipName = m_CurrentClipInfo[0].clip.name;
-        print(m_ClipName);
-        print(m_CurrentClipLength);
-        StartCoroutine(AppearButtons(m_CurrentClipLength));
+        OnPlayConvo("G_1_2_Amar_Naam_001", c2);
     }
     public void PlayC3()
     {
-        //GetComponent<Animator>().Play("c3");
-        DeactiveOtherModels(3);
-        transform.GetChild(3).GetComponent<Animator>().enabled = true;
-        //AudioSource s = GetComponent<AudioSource>();
-        audioSource.clip = c3;
-        audioSource.Play();
+        OnPlayConvo("G_1_3_Montir_Bari_001", c3);
     }
-    public void PlayC4()
+    private void OnPlayConvo(string anim, AudioClip clip)
     {
-        //GetComponent<Animator>().Play("c4");
-        DeactiveOtherModels(4);
-        transform.GetChild(4).GetComponent<Animator>().enabled = true;
-        //AudioSource s = GetComponent<AudioSource>();
-        audioSource.clip = c4;
-        audioSource.Play();
-    }
-    public void PlayC5()
-    {
-        //GetComponent<Animator>().Play("c5");
-        DeactiveOtherModels(5);
-        transform.GetChild(5).GetComponent<Animator>().enabled = true;
-        //AudioSource s = GetComponent<AudioSource>();
-        audioSource.clip = c5;
-        audioSource.Play();
-    }
-    public void PlayC6()
-    {
-        //GetComponent<Animator>().Play("c6");
-        DeactiveOtherModels(6);
-        transform.GetChild(6).GetComponent<Animator>().enabled = true;
-        //AudioSource s = GetComponent<AudioSource>();
-        audioSource.clip = c6;
-        audioSource.Play();
-    }
-    public void PlayC7()
-    {
-        //GetComponent<Animator>().Play("c7");
-        DeactiveOtherModels(7);
-        transform.GetChild(7).GetComponent<Animator>().enabled = true;
-        //AudioSource s = GetComponent<AudioSource>();
-        audioSource.clip = c7;
-        audioSource.Play();
-    }
-    public void PlayC8()
-    {
-        //GetComponent<Animator>().Play("c8");
-        DeactiveOtherModels(8);
-        transform.GetChild(8).GetComponent<Animator>().enabled = true;
-        //AudioSource s = GetComponent<AudioSource>();
-        audioSource.clip = c8;
-        audioSource.Play();
-    }
-    public void PlayC9()
-    {
-        //GetComponent<Animator>().Play("c9");
-        DeactiveOtherModels(9);
-        transform.GetChild(9).GetComponent<Animator>().enabled = true;
-        //AudioSource s = GetComponent<AudioSource>();
-        audioSource.clip = c9;
-        audioSource.Play();
-    }
-    public void PlayStar()
-    {
-        //GetComponent<Animator>().Play("c9");
-        DeactiveOtherModels(2);
-        transform.GetChild(2).GetComponent<Animator>().enabled = true;
-        
+        animator.Play(anim); 
+        audioSource.PlayOneShot(clip);
+        StartCoroutine(AppearButtons(clip.length));
     }
 
     public void EndGame()

@@ -3,10 +3,12 @@ using Meta.WitAi.Json;
 using Meta.WitAi;
 using TMPro;
 using UnityEngine;
+using System;
+
 public class MicWitInteraction : MonoBehaviour
 {
-    Wit wit;
-    HandleWitResponse handleWitResponse;
+    public Wit wit;
+    public HandleWitResponse handleWitResponse;
     public GameObject recordingButton;
     public GameObject tryAgainTxt;
 
@@ -17,8 +19,8 @@ public class MicWitInteraction : MonoBehaviour
 
     private void OnValidate()
     {
-        if (!wit) wit = GetComponent<Wit>();
-        handleWitResponse = GetComponent<HandleWitResponse>();
+        if (!wit) wit = FindObjectOfType<Wit>();
+        if (!handleWitResponse) handleWitResponse = FindObjectOfType<HandleWitResponse>();
 
     }
     private void OnEnable()
@@ -51,6 +53,7 @@ public class MicWitInteraction : MonoBehaviour
     public void OnResponse(WitResponseNode response)
     {
         handleWitResponse.OnResponse(response);
+        textArea.text = response["text"];
     }
 
     public void OnError(string error, string message)
@@ -63,9 +66,9 @@ public class MicWitInteraction : MonoBehaviour
         {
             wit.Deactivate();
         }
-        catch
+        catch(Exception e)
         {
-            HandleException();
+            HandleException(e);
         }
 
     }
@@ -82,15 +85,17 @@ public class MicWitInteraction : MonoBehaviour
         {
             wit.Activate();
         }
-        catch
+        catch(Exception e)
         {
-            HandleException();
+            HandleException(e);
         }
     }
 
-    public void HandleException()
+    public void HandleException(Exception e = null)
     {
         tryAgainTxt.SetActive(true);
+        textArea.text = e.ToString();
+        print(e.ToString());
         //recordingButton.SetActive(true);
     }
 }                                                                                                                                                                                                                                              
