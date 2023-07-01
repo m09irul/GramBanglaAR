@@ -10,6 +10,7 @@ using System;
 using UnityEngine.Networking;
 using GleyInternetAvailability;
 using Dreamteck.Splines;
+using System.Threading.Tasks;
 
 [System.Serializable]
 public class ToSpawnObject
@@ -35,20 +36,18 @@ public class ObjectSpawner : MonoBehaviour
     }
 
     [SerializeField] GameObject objectToSpawn;
+    [SerializeField] SplineComputer splineForScene1;
 
     PlacementIndicator placementIndicator;
-
-    [SerializeField] Vector3 afterPlacementScale;
-    [SerializeField] Vector3 afterPlacementOffset;
 
     public bool canSpawn = false;
     bool hasInternet = false;
 
     [SerializeField] GameObject tapToPlaceTxt;
     [SerializeField] ARPlaneManager aRPlaneManager;
-    [SerializeField] AudioClip startAudio;
     public GameObject mainCharacter;
     [SerializeField] GameObject spawnVFXForScene1;
+    [SerializeField] GameObject planeVFXForScene1;
     [SerializeField] GameObject noInternetPanel;
     public StateHandler stateHandler;
     public List<ToSpawnObject> toSpawnObjects;
@@ -68,13 +67,6 @@ public class ObjectSpawner : MonoBehaviour
         placementIndicator = FindObjectOfType<PlacementIndicator>();
 
         StartCoroutine(LookForInternetConnection());
-
-        var sf = mainCharacter.GetComponent<SplineFollower>();
-        sf.onEndReached += (o) =>
-        {
-            StartCoroutine(stateHandler.AppearButtons(0));
-            sf.follow = false;
-        };
     }
 
     IEnumerator LookForInternetConnection()
@@ -84,8 +76,6 @@ public class ObjectSpawner : MonoBehaviour
             GleyInternetAvailability.Network.IsAvailable(CompleteMethod);
             yield return new WaitForSeconds(10f);
         }
-
-
     }
 
     private void CompleteMethod(ConnectionResult connectionResult)
@@ -100,7 +90,6 @@ public class ObjectSpawner : MonoBehaviour
             noInternetPanel.SetActive(true);
             hasInternet = false;
         }
-
     }
 
     public void CloseApplication()
@@ -144,66 +133,96 @@ public class ObjectSpawner : MonoBehaviour
 
     void setScene()
     {
+        var initialScaleOfScene = objectToSpawn.transform.localScale.x;
+
+        LeanTween.scale(objectToSpawn, Vector3.one * 0.001f, 0.5f).setEase(LeanTweenType.easeInElastic).setOnComplete(() =>
+        {
+            var tmpPlaneVFX = Instantiate(planeVFXForScene1, objectToSpawn.transform.position, Quaternion.identity);
+            tmpPlaneVFX.transform.localScale = Vector3.zero;
+
+            LeanTween.scale(tmpPlaneVFX, initialScaleOfScene * 1.5f * Vector3.one, 0.7f).setEase(LeanTweenType.easeOutElastic).setOnComplete(() =>
+            {
+                LeanTween.value(gameObject, 0, 1, 1f).setOnComplete(() =>
+                {
+                    LeanTween.scale(tmpPlaneVFX, Vector3.one * 1.5f, 2f).setEase(LeanTweenType.easeOutElastic).setOnComplete(() =>
+                    {
+                        LeanTween.value(gameObject, 0, 1, 1f).setOnComplete(() =>
+                        {
+                            tmpPlaneVFX.GetComponent<ParticleSystem>().Stop();
+
+                            GameObject particle = Instantiate(spawnVFXForScene1, objectToSpawn.transform.position, Quaternion.identity);
+                            particle.transform.localScale /= initialScaleOfScene;
+
+                            Destroy(particle, 5f);
+
+                            LeanTween.scale(objectToSpawn, Vector3.one, 0.5f).setEase(LeanTweenType.easeOutElastic).setOnComplete(() =>
+                            {
+                                LeanTween.value(gameObject, 0, 1, 1f).setOnComplete(() =>
+                                {
+                                    StartCoroutine(SpawnWithDelay(initialScaleOfScene));
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+
+        tapToPlaceTxt.SetActive(false);
+    }
+
+    IEnumerator SpawnWithDelay(float initialScaleOfScene)
+    {
+        float waitTime;
+
+        for (int k = 0; k < toSpawnObjects.Count; k++)
+        {
+            toSpawnObjects[k].objectsToSpawn.SetActive(true);
+
+            if (toSpawnObjects[k].objectsToSpawn.transform.childCount > 0)
+            {
+                for (int i = 0; i < toSpawnObjects[k].objectsToSpawn.transform.childCount; i++)
+                {
+                    toSpawnObjects[k].objectsToSpawn.transform.GetChild(i).gameObject.SetActive(true);
+
+                    GameObject tmpParticle = Instantiate(toSpawnObjects[k].VFX, toSpawnObjects[k].objectsToSpawn.transform.GetChild(i).transform.position, Quaternion.identity);
+                    tmpParticle.transform.localScale = toSpawnObjects[k].VFXScale / initialScaleOfScene;
+                    Destroy(tmpParticle, 5f);
+
+                    //waitTime = ((float)(toSpawnObjects[k].objectsToSpawn.transform.childCount - i) / toSpawnObjects[k].objectsToSpawn.transform.childCount) * 0.2f;
+
+                    yield return null;
+                }
+            }
+            else
+            {
+                GameObject tmpParticle = Instantiate(toSpawnObjects[k].VFX, toSpawnObjects[k].objectsToSpawn.transform.position, Quaternion.identity);
+                tmpParticle.transform.localScale = toSpawnObjects[k].VFXScale / initialScaleOfScene;
+                Destroy(tmpParticle, 5f);
+            }
+
+            waitTime = ((float)(toSpawnObjects.Count - k) / toSpawnObjects.Count) * 0.2f;
+
+            yield return new WaitForSeconds(waitTime);
+
+        }
+
         AudioSource s = GetComponent<AudioSource>();
         s.Play();
 
-        GameObject particle = Instantiate(spawnVFXForScene1, objectToSpawn.transform.position, Quaternion.identity);
-        Destroy(particle, 5f);
+        mainCharacter.SetActive(true);
+        var spline = Instantiate(splineForScene1, objectToSpawn.transform);
+        var sf = mainCharacter.GetComponent<SplineFollower>();
+        sf.spline = spline;
+        sf.enabled = true;
+        sf.follow = true;
 
-        LeanTween.scale(objectToSpawn, Vector3.one, 0.7f).setEase(LeanTweenType.easeOutElastic).setOnComplete(() =>
+        sf.onEndReached += (o) =>
         {
-            LeanTween.value(gameObject, 0, 1, 1f).setOnComplete(() =>
-            {
-                foreach (var item in toSpawnObjects)
-                {
-                    item.objectsToSpawn.SetActive(true);
-
-                    if (item.objectsToSpawn.transform.childCount > 0)
-                    {
-                        for (int i = 0; i < item.objectsToSpawn.transform.childCount; i++)
-                        {
-                            GameObject tmpParticle = Instantiate(item.VFX, item.objectsToSpawn.transform.GetChild(i).transform.position, Quaternion.identity);
-                            tmpParticle.transform.localScale = item.VFXScale;
-                            Destroy(tmpParticle, 5f);
-                        }
-                    }
-                    else
-                    {
-                        GameObject tmpParticle = Instantiate(item.VFX, item.objectsToSpawn.transform.position, Quaternion.identity);
-                        tmpParticle.transform.localScale = item.VFXScale;
-                        Destroy(tmpParticle, 5f);
-                    }
-                }
-            });
-        });
-        //objectToSpawn.SetActive(true);
-
-        //objectToSpawn.transform.position = spawnPoint + afterPlacementOffset;
-        //objectToSpawn.transform.rotation = spawnRot;
-        //objectToSpawn.transform.LookAt(Camera.main.transform);
-
-
-        //GameObject particle =  Instantiate(spawnVFX, spawnPoint, Quaternion.identity);
-        //Destroy(particle, 5f);
-
-        //scale well
-        /*        LeanTween.scale(objectToSpawn.transform.GetChild(0).GetChild(4).gameObject, Vector3.one*10f, 2f).setEase(LeanTweenType.easeOutQuad).setOnComplete(()=>
-                {
-                    mainCharacter.SetActive(true);
-
-                    //bring fences, rock and flower from downward
-                    LeanTween.moveLocalZ(objectToSpawn.transform.GetChild(0).GetChild(1).gameObject, 0f, 12f).setEase(LeanTweenType.easeOutCirc);
-
-                    //bring house, tracktor and water tank from upward
-                    LeanTween.moveLocalZ(objectToSpawn.transform.GetChild(0).GetChild(2).gameObject, 0f, 7f).setEase(LeanTweenType.easeOutExpo);
-
-                    //grow trees
-                    LeanTween.scaleZ(objectToSpawn.transform.GetChild(0).GetChild(3).gameObject, 1f, 15f).setEase(LeanTweenType.easeOutCirc);
-                });*/
-
-
-        tapToPlaceTxt.SetActive(false);
-
+            StartCoroutine(stateHandler.AppearButtons(0));
+            sf.follow = false;
+        };
+        
     }
 }
     
