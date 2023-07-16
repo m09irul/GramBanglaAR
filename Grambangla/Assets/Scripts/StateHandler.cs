@@ -52,7 +52,7 @@ public class StateHandler : MonoBehaviour
         OnPlayConvo("G_1_1_Hi_Tomake", c1);
 
         yield return new WaitForSeconds(1.75f);
-        LeanTween.rotateY(ObjectSpawner.instance.mainCharacter, -180f, 1f);
+        LeanTween.rotateY(ObjectSpawner.instance.mainCharacter, -160f, 1f);
     }
     public void PlayC2()
     {

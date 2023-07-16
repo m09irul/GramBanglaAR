@@ -53,7 +53,12 @@ public class ObjectSpawner : MonoBehaviour
     public List<ToSpawnObject> toSpawnObjects;
     Vector3 spawnPoint;
     Quaternion spawnRot;
+    float initialScaleOfScene;
 
+    [Header("SFX")]
+    AudioSource audioSource;
+    public AudioClip spawnRingClip;
+    public AudioClip spawnClip, popClip;
     public void SetSpawnPoint(Vector3 pos, Quaternion rot)
     {
         spawnPoint = pos;
@@ -64,9 +69,13 @@ public class ObjectSpawner : MonoBehaviour
     }
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         placementIndicator = FindObjectOfType<PlacementIndicator>();
 
         StartCoroutine(LookForInternetConnection());
+
+        initialScaleOfScene = objectToSpawn.transform.localScale.x;
     }
 
     IEnumerator LookForInternetConnection()
@@ -133,10 +142,12 @@ public class ObjectSpawner : MonoBehaviour
 
     void setScene()
     {
-        var initialScaleOfScene = objectToSpawn.transform.localScale.x;
-
+        
         LeanTween.scale(objectToSpawn, Vector3.one * 0.001f, 0.5f).setEase(LeanTweenType.easeInElastic).setOnComplete(() =>
         {
+            //audioSource.Play();
+            audioSource.PlayOneShot(spawnRingClip);
+
             var tmpPlaneVFX = Instantiate(planeVFXForScene1, objectToSpawn.transform.position, Quaternion.identity);
             tmpPlaneVFX.transform.localScale = Vector3.zero;
 
@@ -150,8 +161,10 @@ public class ObjectSpawner : MonoBehaviour
                         {
                             tmpPlaneVFX.GetComponent<ParticleSystem>().Stop();
 
-                            GameObject particle = Instantiate(spawnVFXForScene1, objectToSpawn.transform.position, Quaternion.identity);
+                            GameObject particle = Instantiate(spawnVFXForScene1, objectToSpawn.transform.position, Quaternion.Euler(90, 0, 0));
                             particle.transform.localScale /= initialScaleOfScene;
+
+                            audioSource.PlayOneShot(spawnClip);
 
                             Destroy(particle, 5f);
 
@@ -179,24 +192,29 @@ public class ObjectSpawner : MonoBehaviour
         {
             toSpawnObjects[k].objectsToSpawn.SetActive(true);
 
+            audioSource.PlayOneShot(popClip);
+            
             if (toSpawnObjects[k].objectsToSpawn.transform.childCount > 0)
             {
+                
                 for (int i = 0; i < toSpawnObjects[k].objectsToSpawn.transform.childCount; i++)
                 {
                     toSpawnObjects[k].objectsToSpawn.transform.GetChild(i).gameObject.SetActive(true);
 
-                    GameObject tmpParticle = Instantiate(toSpawnObjects[k].VFX, toSpawnObjects[k].objectsToSpawn.transform.GetChild(i).transform.position, Quaternion.identity);
+                    GameObject tmpParticle = Instantiate(toSpawnObjects[k].VFX, toSpawnObjects[k].objectsToSpawn.transform.GetChild(i).transform.position, Quaternion.Euler(90, 0, 0));
                     tmpParticle.transform.localScale = toSpawnObjects[k].VFXScale / initialScaleOfScene;
                     Destroy(tmpParticle, 5f);
+
 
                     yield return null;
                 }
             }
             else
             {
-                GameObject tmpParticle = Instantiate(toSpawnObjects[k].VFX, toSpawnObjects[k].objectsToSpawn.transform.position, Quaternion.identity);
+                GameObject tmpParticle = Instantiate(toSpawnObjects[k].VFX, toSpawnObjects[k].objectsToSpawn.transform.position, Quaternion.Euler(90, 0, 0));
                 tmpParticle.transform.localScale = toSpawnObjects[k].VFXScale / initialScaleOfScene;
                 Destroy(tmpParticle, 5f);
+
             }
 
             waitTime = ((float)(toSpawnObjects.Count - k) / toSpawnObjects.Count) * 0.2f;
@@ -205,8 +223,8 @@ public class ObjectSpawner : MonoBehaviour
 
         }
 
-        AudioSource s = GetComponent<AudioSource>();
-        s.Play();
+        //audioSource.PlayOneShot(birdsChrimpClip);
+        audioSource.Play();
 
         mainCharacter.SetActive(true);
         var spline = Instantiate(splineForScene1, objectToSpawn.transform);
@@ -221,6 +239,24 @@ public class ObjectSpawner : MonoBehaviour
             sf.follow = false;
         };
         
+    }
+
+    public void Spawn2ndScene()
+    {
+        GameObject particle1 = Instantiate(spawnVFXForScene1, objectToSpawn.transform.position, Quaternion.Euler(90, 0, 0));
+        particle1.transform.localScale /= initialScaleOfScene;
+        GameObject particle2 = Instantiate(spawnVFXForScene1, objectToSpawn.transform.position, Quaternion.Euler(90, 0, 0));
+        particle2.transform.localScale /= initialScaleOfScene;
+        GameObject particle3 = Instantiate(spawnVFXForScene1, objectToSpawn.transform.position, Quaternion.Euler(90, 0, 0));
+        particle3.transform.localScale /= initialScaleOfScene;
+        Destroy(particle1, 5f);
+        Destroy(particle2, 5f);
+        Destroy(particle3, 5f);
+
+        audioSource.PlayOneShot(spawnClip);
+
+        objectToSpawn.transform.GetChild(0).gameObject.SetActive(false);
+        objectToSpawn.transform.GetChild(1).gameObject.SetActive(true);
     }
 }
     

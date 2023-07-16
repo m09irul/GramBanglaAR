@@ -49,6 +49,10 @@ public class HandleWitResponse : MonoBehaviour
 				micWitInteraction.HandleException();
 			}
 		}
+		else
+		{
+			micWitInteraction.HandleException();
+		}
 	}
 
     private void HandleResponse(float intent_Confidence, float threshold, int index)
@@ -106,6 +110,8 @@ public class HandleWitResponse : MonoBehaviour
 			objectSpawner.stateHandler.PlayC2();
 		else if (which == 3)
 			objectSpawner.stateHandler.PlayC3();
+		else if (which == 4)
+			objectSpawner.Spawn2ndScene();
 
 	}
 }
