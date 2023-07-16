@@ -1,0 +1,693 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 System.Single ARFeatheredPlaneMeshVisualizer::get_featheringWidth()
+extern void ARFeatheredPlaneMeshVisualizer_get_featheringWidth_m14D3A8BE3E9A745E6FD525B19ADDC892B8399B4D (void);
+// 0x00000002 System.Void ARFeatheredPlaneMeshVisualizer::set_featheringWidth(System.Single)
+extern void ARFeatheredPlaneMeshVisualizer_set_featheringWidth_mD616A09A3B426EA5DE1FA37334DD194E43EEC110 (void);
+// 0x00000003 System.Void ARFeatheredPlaneMeshVisualizer::Awake()
+extern void ARFeatheredPlaneMeshVisualizer_Awake_mC5DB0414A2514BF4851266C25141C903F0AC57BA (void);
+// 0x00000004 System.Void ARFeatheredPlaneMeshVisualizer::OnEnable()
+extern void ARFeatheredPlaneMeshVisualizer_OnEnable_m8781C85CFED871C8A81A5B88DB1031856E0FC9F0 (void);
+// 0x00000005 System.Void ARFeatheredPlaneMeshVisualizer::OnDisable()
+extern void ARFeatheredPlaneMeshVisualizer_OnDisable_m2343B05B1A8F14BAD4DD516C584281B66FE6A4E8 (void);
+// 0x00000006 System.Void ARFeatheredPlaneMeshVisualizer::ARPlane_boundaryUpdated(UnityEngine.XR.ARFoundation.ARPlaneBoundaryChangedEventArgs)
+extern void ARFeatheredPlaneMeshVisualizer_ARPlane_boundaryUpdated_mB3D9BBD14EA1FE3ECDBACC2DB89C1B110B8B6B5F (void);
+// 0x00000007 System.Void ARFeatheredPlaneMeshVisualizer::GenerateBoundaryUVs(UnityEngine.Mesh)
+extern void ARFeatheredPlaneMeshVisualizer_GenerateBoundaryUVs_mF756D3C1F7925A69CD8C7C8CCE56209AB321FEF5 (void);
+// 0x00000008 System.Void ARFeatheredPlaneMeshVisualizer::.ctor()
+extern void ARFeatheredPlaneMeshVisualizer__ctor_m9A77651BCAE58AA0B994FFF6C6B63B1CFF2729F6 (void);
+// 0x00000009 System.Void ARFeatheredPlaneMeshVisualizer::.cctor()
+extern void ARFeatheredPlaneMeshVisualizer__cctor_m56285A000EE27A1631BE9C5BCDA5C376E5D133C3 (void);
+// 0x0000000A System.Void FadePlaneOnBoundaryChange::OnEnable()
+extern void FadePlaneOnBoundaryChange_OnEnable_m22E25DEBA5FBF6A21C8CFADE4146BD279B8ACBF5 (void);
+// 0x0000000B System.Void FadePlaneOnBoundaryChange::OnDisable()
+extern void FadePlaneOnBoundaryChange_OnDisable_m6B4D5B7E454E979C71FCCAA70C51158FE500F714 (void);
+// 0x0000000C System.Void FadePlaneOnBoundaryChange::Update()
+extern void FadePlaneOnBoundaryChange_Update_mBC7766340522905237C9B5A3877866128C8E801C (void);
+// 0x0000000D System.Void FadePlaneOnBoundaryChange::PlaneOnBoundaryChanged(UnityEngine.XR.ARFoundation.ARPlaneBoundaryChangedEventArgs)
+extern void FadePlaneOnBoundaryChange_PlaneOnBoundaryChanged_m1B9C8348F6EF60886A2BF9EA153200904FAE4D62 (void);
+// 0x0000000E System.Void FadePlaneOnBoundaryChange::.ctor()
+extern void FadePlaneOnBoundaryChange__ctor_mDE8DDF8CA4E12FF21BF827B0661DB61E4F36ADAF (void);
+// 0x0000000F System.Void ARGestureController::Update()
+extern void ARGestureController_Update_m0CEFE2104AAC9658B7BECCEF4C8538A17ACE7C13 (void);
+// 0x00000010 System.Void ARGestureController::.ctor()
+extern void ARGestureController__ctor_mD8838629145ABB931FBE48C045C050F2E8549310 (void);
+// 0x00000011 System.Void CinemachineShake::Awake()
+extern void CinemachineShake_Awake_m9BB1253042362A6923D26A2B72C53DF59B651B1D (void);
+// 0x00000012 System.Void CinemachineShake::Start()
+extern void CinemachineShake_Start_m5910B96E75C443EEA6440F8B21E5879F2DEAC28A (void);
+// 0x00000013 System.Void CinemachineShake::Update()
+extern void CinemachineShake_Update_m8933C8718845E29E7F56B44F3ADEA352BD1BD382 (void);
+// 0x00000014 System.Void CinemachineShake::ShakeCamera(System.Single,System.Single,System.Single)
+extern void CinemachineShake_ShakeCamera_mDAF86BCC45E94C7F1AB93C35A02276E094EFDDD5 (void);
+// 0x00000015 System.Void CinemachineShake::SetVirtualCamera(Cinemachine.CinemachineVirtualCamera)
+extern void CinemachineShake_SetVirtualCamera_m6DDD3D8269B1A4D5F1D724AF427A05968179B364 (void);
+// 0x00000016 System.Void CinemachineShake::.ctor()
+extern void CinemachineShake__ctor_m09BA9B47282D36DE9B11BA4ADB9CFA04921FC547 (void);
+// 0x00000017 System.Void HandleWitResponse::Start()
+extern void HandleWitResponse_Start_m0764445851E1C001E223C74B239F13FC747FBFB4 (void);
+// 0x00000018 System.Void HandleWitResponse::OnResponse(Meta.WitAi.Json.WitResponseNode)
+extern void HandleWitResponse_OnResponse_m6AA4ACDDD89C59CB7E432DD9A1FB6A145FE38E5E (void);
+// 0x00000019 System.Void HandleWitResponse::HandleResponse(System.Single,System.Single,System.Int32)
+extern void HandleWitResponse_HandleResponse_mE1917C809F7EEDE88865694DE9FDAA354FB81801 (void);
+// 0x0000001A System.Void HandleWitResponse::OnError(System.String,System.String)
+extern void HandleWitResponse_OnError_m0311286D59D8069870F9D34C368113C3AD9A1BA6 (void);
+// 0x0000001B System.Void HandleWitResponse::OnErrorDueToInactivity()
+extern void HandleWitResponse_OnErrorDueToInactivity_m97D814B960DABC01C2909B09C8D60C3CBCC0013B (void);
+// 0x0000001C System.Void HandleWitResponse::Update()
+extern void HandleWitResponse_Update_m6938E409B2419679BBE9AD15A69C8E7257985E69 (void);
+// 0x0000001D System.Void HandleWitResponse::NextAnim(System.Int32)
+extern void HandleWitResponse_NextAnim_m925AC028DC72CF0268C160953DE7B31BCC4CEF88 (void);
+// 0x0000001E System.Void HandleWitResponse::.ctor()
+extern void HandleWitResponse__ctor_mF36AF9C5DAF43BF07C6E5F885527773F95D83DEC (void);
+// 0x0000001F System.Void MainMenuManager::Start()
+extern void MainMenuManager_Start_m0DE5C20FF402B377BA9FD8819426F55C9289A55A (void);
+// 0x00000020 System.Void MainMenuManager::WalkToScene()
+extern void MainMenuManager_WalkToScene_m40C33011AF3079B87CA3097B5D5F09BB2A51B31B (void);
+// 0x00000021 System.Void MainMenuManager::Jumpoff()
+extern void MainMenuManager_Jumpoff_m124823FAFA0B973FB862E0D2E77F675A2E2E290A (void);
+// 0x00000022 System.Void MainMenuManager::.ctor()
+extern void MainMenuManager__ctor_m9CF8E7F30CE180004AA0DFF1229FC615B531542B (void);
+// 0x00000023 System.Void MainMenuManager::<WalkToScene>b__4_0()
+extern void MainMenuManager_U3CWalkToSceneU3Eb__4_0_m52E9CB98B85A843F514168F983966C15132A7F1A (void);
+// 0x00000024 System.Void MainMenuManager::<Jumpoff>b__5_0()
+extern void MainMenuManager_U3CJumpoffU3Eb__5_0_mE46EB1A1A09278817AC4B4454FB7176BC9F9AD2A (void);
+// 0x00000025 System.Void MainMenuManager::<Jumpoff>b__5_1()
+extern void MainMenuManager_U3CJumpoffU3Eb__5_1_m0E04346B5CF03C83BA89A738986F76714A3713DC (void);
+// 0x00000026 System.Void MainMenuManager/<>c::.cctor()
+extern void U3CU3Ec__cctor_m91DC8B6AE4FFF5C8D9246E75BA138EFB7AE731E7 (void);
+// 0x00000027 System.Void MainMenuManager/<>c::.ctor()
+extern void U3CU3Ec__ctor_m1777E50625D982D451CE335A9E0727D3E3942371 (void);
+// 0x00000028 System.Void MainMenuManager/<>c::<Jumpoff>b__5_2()
+extern void U3CU3Ec_U3CJumpoffU3Eb__5_2_mEDFCFE7A17C2BB8F951B4031E73D2D82C58D7B1A (void);
+// 0x00000029 System.Void MenuPikluManager::Start()
+extern void MenuPikluManager_Start_m999A1FD377C9EAFA4449A0999FF038D3E9079C62 (void);
+// 0x0000002A System.Void MenuPikluManager::Hi()
+extern void MenuPikluManager_Hi_mCEEE404990735C4FE4081916AC509A130E0F37BB (void);
+// 0x0000002B System.Void MenuPikluManager::FlyOff()
+extern void MenuPikluManager_FlyOff_m1426F254D301D8AF50DC4CE60C9E2AAEBE1350DD (void);
+// 0x0000002C System.Void MenuPikluManager::LookAtCam()
+extern void MenuPikluManager_LookAtCam_mB5426B339A20EBFBA480F4C4DCF9A7455A71D5FF (void);
+// 0x0000002D System.Void MenuPikluManager::.ctor()
+extern void MenuPikluManager__ctor_m122B38AD0760E5C56C6FB6F530C68814BBA98FEE (void);
+// 0x0000002E System.Void MicWitInteraction::OnValidate()
+extern void MicWitInteraction_OnValidate_m305446E321A286DFA0F81ABBF2D352D1297FD672 (void);
+// 0x0000002F System.Void MicWitInteraction::OnEnable()
+extern void MicWitInteraction_OnEnable_m518BE27A1F0E7A1E28CDECF084D72A8C6FCB30D8 (void);
+// 0x00000030 System.Void MicWitInteraction::OnDisable()
+extern void MicWitInteraction_OnDisable_m0364C7CB63620F40A13727EA1796650A453E5478 (void);
+// 0x00000031 System.Void MicWitInteraction::OnRequestStarted(Meta.WitAi.WitRequest)
+extern void MicWitInteraction_OnRequestStarted_m19E102D118F30041A104FE859805C712ADB912A6 (void);
+// 0x00000032 System.Void MicWitInteraction::OnResponse(Meta.WitAi.Json.WitResponseNode)
+extern void MicWitInteraction_OnResponse_mCA8CB7FE7ACF996D4743C8BCCF8CB3146D25DA03 (void);
+// 0x00000033 System.Void MicWitInteraction::OnError(System.String,System.String)
+extern void MicWitInteraction_OnError_mD6F59D706EC370858E454D7FBFE8CE264A454701 (void);
+// 0x00000034 System.Void MicWitInteraction::StopRecording()
+extern void MicWitInteraction_StopRecording_m67BB7EC5DB906C4E595F026ECFE2833899CF3884 (void);
+// 0x00000035 System.Void MicWitInteraction::StartRecording()
+extern void MicWitInteraction_StartRecording_m335CE7ED3C0BB4F6AE4A4DFFFEE86FD7E9973375 (void);
+// 0x00000036 System.Void MicWitInteraction::HandleException(System.Exception)
+extern void MicWitInteraction_HandleException_mC10CAC58B547CFA33F9000AB59D3C50BD6D78C30 (void);
+// 0x00000037 System.Void MicWitInteraction::.ctor()
+extern void MicWitInteraction__ctor_mBF296BCA0114EA88A2570593C37A416C8141B2C3 (void);
+// 0x00000038 System.Void MicWitInteraction::<OnRequestStarted>b__10_0(Meta.WitAi.WitRequest)
+extern void MicWitInteraction_U3COnRequestStartedU3Eb__10_0_m595F22FE67832C5A201D05872690EE6903450A97 (void);
+// 0x00000039 System.Void ToSpawnObject::.ctor()
+extern void ToSpawnObject__ctor_m89E2AC2E0EC3E07C43F3292E19F74F54E3AC68C0 (void);
+// 0x0000003A System.Void ObjectSpawner::Awake()
+extern void ObjectSpawner_Awake_m4CAB7A5201CAF72D44C72310AC38344AE34CEB6E (void);
+// 0x0000003B System.Void ObjectSpawner::SetSpawnPoint(UnityEngine.Vector3,UnityEngine.Quaternion)
+extern void ObjectSpawner_SetSpawnPoint_mFC2B3F22D4FD51B2236DDE8143E3B8AB1A156358 (void);
+// 0x0000003C System.Void ObjectSpawner::Start()
+extern void ObjectSpawner_Start_mE19667397EFFE281AF098051957A34B21C97B6C3 (void);
+// 0x0000003D System.Collections.IEnumerator ObjectSpawner::LookForInternetConnection()
+extern void ObjectSpawner_LookForInternetConnection_m35CD1B077E6E46985D9B373F271284F7E6AA425B (void);
+// 0x0000003E System.Void ObjectSpawner::CompleteMethod(GleyInternetAvailability.ConnectionResult)
+extern void ObjectSpawner_CompleteMethod_mE58E6AED84438CF3615FD2AAF0770F15497D2C42 (void);
+// 0x0000003F System.Void ObjectSpawner::CloseApplication()
+extern void ObjectSpawner_CloseApplication_mE67C7CEDF37E83AA4D076696A5CA42837533E2AA (void);
+// 0x00000040 System.Collections.IEnumerator ObjectSpawner::ShowMarkerAndReadyToSpawn()
+extern void ObjectSpawner_ShowMarkerAndReadyToSpawn_mFD199CBA109253A133D06CBE374BE10126E95DFC (void);
+// 0x00000041 System.Void ObjectSpawner::Update()
+extern void ObjectSpawner_Update_m9F373E88B27396D6EC93ACFF2EAFFDC63833BDE8 (void);
+// 0x00000042 System.Void ObjectSpawner::SpawnSystem()
+extern void ObjectSpawner_SpawnSystem_m467FCF9AF6399470B9072BBE3C9A4B962262D585 (void);
+// 0x00000043 System.Void ObjectSpawner::setScene()
+extern void ObjectSpawner_setScene_m15EE707ED497DA83AC789B808779AACF23087FCB (void);
+// 0x00000044 System.Collections.IEnumerator ObjectSpawner::SpawnWithDelay(System.Single)
+extern void ObjectSpawner_SpawnWithDelay_mF65851461513BA11825F12F71CF48706912D8F2A (void);
+// 0x00000045 System.Void ObjectSpawner::.ctor()
+extern void ObjectSpawner__ctor_mF75EFE9AB26EAEF6D1995A34FB35C2BDE08A083C (void);
+// 0x00000046 System.Void ObjectSpawner/<LookForInternetConnection>d__19::.ctor(System.Int32)
+extern void U3CLookForInternetConnectionU3Ed__19__ctor_mFECD402F5871657758D9F703F6806B7DA3E9ADDC (void);
+// 0x00000047 System.Void ObjectSpawner/<LookForInternetConnection>d__19::System.IDisposable.Dispose()
+extern void U3CLookForInternetConnectionU3Ed__19_System_IDisposable_Dispose_mB2BD4F0B0402B37974CA2449DFA1DA674D3EE66E (void);
+// 0x00000048 System.Boolean ObjectSpawner/<LookForInternetConnection>d__19::MoveNext()
+extern void U3CLookForInternetConnectionU3Ed__19_MoveNext_mC51B0962C948A6C7EA8B59CB3ECD17CA9294EEAD (void);
+// 0x00000049 System.Object ObjectSpawner/<LookForInternetConnection>d__19::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CLookForInternetConnectionU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mEBB2322BEA76BB855DA186B6B37B73BBA2DBC3EB (void);
+// 0x0000004A System.Void ObjectSpawner/<LookForInternetConnection>d__19::System.Collections.IEnumerator.Reset()
+extern void U3CLookForInternetConnectionU3Ed__19_System_Collections_IEnumerator_Reset_mBF2837B914B0016C500AFBB5DFE1EB21406CF70A (void);
+// 0x0000004B System.Object ObjectSpawner/<LookForInternetConnection>d__19::System.Collections.IEnumerator.get_Current()
+extern void U3CLookForInternetConnectionU3Ed__19_System_Collections_IEnumerator_get_Current_mE83814425829FE0ADDC537050C1ED615F2C35850 (void);
+// 0x0000004C System.Void ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__22::.ctor(System.Int32)
+extern void U3CShowMarkerAndReadyToSpawnU3Ed__22__ctor_m3A65F27E48D28B8AC4941FB08DCC17E78066249F (void);
+// 0x0000004D System.Void ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__22::System.IDisposable.Dispose()
+extern void U3CShowMarkerAndReadyToSpawnU3Ed__22_System_IDisposable_Dispose_m199A91999E0C41B919FD38B8933AD147FDA3680B (void);
+// 0x0000004E System.Boolean ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__22::MoveNext()
+extern void U3CShowMarkerAndReadyToSpawnU3Ed__22_MoveNext_m19DE0632A04B7CEF73C6F6ADA49AC915C9AE487A (void);
+// 0x0000004F System.Object ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__22::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CShowMarkerAndReadyToSpawnU3Ed__22_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFB890E7DAAE9969610C551E0A1BE7E99AF026487 (void);
+// 0x00000050 System.Void ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__22::System.Collections.IEnumerator.Reset()
+extern void U3CShowMarkerAndReadyToSpawnU3Ed__22_System_Collections_IEnumerator_Reset_m67D7F305324AB26D9492A4304C25D946E4D8A69A (void);
+// 0x00000051 System.Object ObjectSpawner/<ShowMarkerAndReadyToSpawn>d__22::System.Collections.IEnumerator.get_Current()
+extern void U3CShowMarkerAndReadyToSpawnU3Ed__22_System_Collections_IEnumerator_get_Current_mABF4C2BD94692752059F65877B02A4197148D412 (void);
+// 0x00000052 System.Void ObjectSpawner/<>c__DisplayClass25_0::.ctor()
+extern void U3CU3Ec__DisplayClass25_0__ctor_mF12E7852D590802CBE651E52FA13B7C81ACAEA54 (void);
+// 0x00000053 System.Void ObjectSpawner/<>c__DisplayClass25_0::<setScene>b__0()
+extern void U3CU3Ec__DisplayClass25_0_U3CsetSceneU3Eb__0_m492B246BC60421D6CCE57D4CBC6844EAA23C5389 (void);
+// 0x00000054 System.Void ObjectSpawner/<>c__DisplayClass25_0::<setScene>b__5()
+extern void U3CU3Ec__DisplayClass25_0_U3CsetSceneU3Eb__5_m8E7AD74DAC7D9BE97FEA95299FFC0842655E053F (void);
+// 0x00000055 System.Void ObjectSpawner/<>c__DisplayClass25_0::<setScene>b__6()
+extern void U3CU3Ec__DisplayClass25_0_U3CsetSceneU3Eb__6_mDABF33B698F623C14F2BEE17B7A1232943103EFB (void);
+// 0x00000056 System.Void ObjectSpawner/<>c__DisplayClass25_1::.ctor()
+extern void U3CU3Ec__DisplayClass25_1__ctor_mB105CBFBDC240359B27E45D467C5F330681ABFF6 (void);
+// 0x00000057 System.Void ObjectSpawner/<>c__DisplayClass25_1::<setScene>b__1()
+extern void U3CU3Ec__DisplayClass25_1_U3CsetSceneU3Eb__1_mE1FD1E8FDC02386C36815F0935B1407996DD7FAA (void);
+// 0x00000058 System.Void ObjectSpawner/<>c__DisplayClass25_1::<setScene>b__2()
+extern void U3CU3Ec__DisplayClass25_1_U3CsetSceneU3Eb__2_m1DBDE77C125EDCBD18C712E3CAC70431E84FCF62 (void);
+// 0x00000059 System.Void ObjectSpawner/<>c__DisplayClass25_1::<setScene>b__3()
+extern void U3CU3Ec__DisplayClass25_1_U3CsetSceneU3Eb__3_mAEDEBEFEC0176B6E45928CE9A31693653186D9E9 (void);
+// 0x0000005A System.Void ObjectSpawner/<>c__DisplayClass25_1::<setScene>b__4()
+extern void U3CU3Ec__DisplayClass25_1_U3CsetSceneU3Eb__4_m2D98620B7D577BF3920E9AF9583A44B655AD458D (void);
+// 0x0000005B System.Void ObjectSpawner/<>c__DisplayClass26_0::.ctor()
+extern void U3CU3Ec__DisplayClass26_0__ctor_mA6F7220534A4CDB574F031FC7646513CC4D27E8D (void);
+// 0x0000005C System.Void ObjectSpawner/<>c__DisplayClass26_0::<SpawnWithDelay>b__0(System.Double)
+extern void U3CU3Ec__DisplayClass26_0_U3CSpawnWithDelayU3Eb__0_m2214B629216F276166BE216B54DC2B312BD050FD (void);
+// 0x0000005D System.Void ObjectSpawner/<SpawnWithDelay>d__26::.ctor(System.Int32)
+extern void U3CSpawnWithDelayU3Ed__26__ctor_mF76D665AA5D6C62008E12ECD9345551FB5B823A8 (void);
+// 0x0000005E System.Void ObjectSpawner/<SpawnWithDelay>d__26::System.IDisposable.Dispose()
+extern void U3CSpawnWithDelayU3Ed__26_System_IDisposable_Dispose_m3C281D3AB15F0E18B3A415E7A23A3B7346F17283 (void);
+// 0x0000005F System.Boolean ObjectSpawner/<SpawnWithDelay>d__26::MoveNext()
+extern void U3CSpawnWithDelayU3Ed__26_MoveNext_m6956BD94B638C78D8CC2681A9966919B994A61A6 (void);
+// 0x00000060 System.Object ObjectSpawner/<SpawnWithDelay>d__26::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CSpawnWithDelayU3Ed__26_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5278C1B182147D632FF729A949E8D89E4F4A028C (void);
+// 0x00000061 System.Void ObjectSpawner/<SpawnWithDelay>d__26::System.Collections.IEnumerator.Reset()
+extern void U3CSpawnWithDelayU3Ed__26_System_Collections_IEnumerator_Reset_mBD2BAF7EE8AB6A13BCAE540E76D4D730BE043C50 (void);
+// 0x00000062 System.Object ObjectSpawner/<SpawnWithDelay>d__26::System.Collections.IEnumerator.get_Current()
+extern void U3CSpawnWithDelayU3Ed__26_System_Collections_IEnumerator_get_Current_m41DD198B3768A7B2B15653D3FC524FE16AECFFE8 (void);
+// 0x00000063 System.Void PermissionGranting::Start()
+extern void PermissionGranting_Start_m984386B3EA82F5B52DCD2A520E7E3B4BDEC7118D (void);
+// 0x00000064 System.Void PermissionGranting::.ctor()
+extern void PermissionGranting__ctor_m0D3A7EB1F7D72678E9831A25A8291723BC6BD356 (void);
+// 0x00000065 System.Void PlacementIndicator::Start()
+extern void PlacementIndicator_Start_m92791E0A4D6E907C1BA32A25E07872A9A2E6C9D7 (void);
+// 0x00000066 System.Void PlacementIndicator::Update()
+extern void PlacementIndicator_Update_mCC16B34A0C5216C7A2D0E61A9B2CD7AC068703B9 (void);
+// 0x00000067 System.Void PlacementIndicator::.ctor()
+extern void PlacementIndicator__ctor_mA2BDF502002E94CB872C1398E6506197E238AE09 (void);
+// 0x00000068 System.Void StateHandler::Start()
+extern void StateHandler_Start_m6CD7AE692F94C60B1A26BFA5AA7F67FC686DB0F1 (void);
+// 0x00000069 System.Collections.IEnumerator StateHandler::AppearButtons(System.Single)
+extern void StateHandler_AppearButtons_mCEA2C3C898F402E141C2DEB935F906625FFFF0E9 (void);
+// 0x0000006A System.Void StateHandler::TapWaterPot()
+extern void StateHandler_TapWaterPot_mAFF1463C17C6705BF21AE530E661ADBFE892F0A3 (void);
+// 0x0000006B System.Void StateHandler::DeactiveOtherModels(System.Int32)
+extern void StateHandler_DeactiveOtherModels_mA546C3E2C04216DE4982EEA80CE24A6F5418CB0F (void);
+// 0x0000006C System.Collections.IEnumerator StateHandler::PlayC1()
+extern void StateHandler_PlayC1_mB1E8F11EC041D1D771B281B8835AA0E1FD5363DE (void);
+// 0x0000006D System.Void StateHandler::PlayC2()
+extern void StateHandler_PlayC2_m76E7B241463838FCD8747B91E17A15C49CBB1149 (void);
+// 0x0000006E System.Void StateHandler::PlayC3()
+extern void StateHandler_PlayC3_m046A1628E59B68AB0C962D2B4B2907B683223204 (void);
+// 0x0000006F System.Void StateHandler::OnPlayConvo(System.String,UnityEngine.AudioClip)
+extern void StateHandler_OnPlayConvo_m7534E7707DDE843F42F53248F89780648A525227 (void);
+// 0x00000070 System.Void StateHandler::EndGame()
+extern void StateHandler_EndGame_mBF7F3CB1092F1D1B3850765C4E34448C70F6FFC2 (void);
+// 0x00000071 System.Void StateHandler::.ctor()
+extern void StateHandler__ctor_m52B8F9D12057DA7D6F098A781C07AFC18113D940 (void);
+// 0x00000072 System.Void StateHandler/<AppearButtons>d__15::.ctor(System.Int32)
+extern void U3CAppearButtonsU3Ed__15__ctor_m23D7CE2E134B8310C8AFF8539F5F01898FA9003F (void);
+// 0x00000073 System.Void StateHandler/<AppearButtons>d__15::System.IDisposable.Dispose()
+extern void U3CAppearButtonsU3Ed__15_System_IDisposable_Dispose_mAA9D9367A773D9227DC3FFA288E641BE45BA03C3 (void);
+// 0x00000074 System.Boolean StateHandler/<AppearButtons>d__15::MoveNext()
+extern void U3CAppearButtonsU3Ed__15_MoveNext_mE134845AA803BE5F49C19B079695C4BA0DCC978A (void);
+// 0x00000075 System.Object StateHandler/<AppearButtons>d__15::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CAppearButtonsU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m13A01BD4B96691795CF76E81B91C99CCF88EF439 (void);
+// 0x00000076 System.Void StateHandler/<AppearButtons>d__15::System.Collections.IEnumerator.Reset()
+extern void U3CAppearButtonsU3Ed__15_System_Collections_IEnumerator_Reset_m67741481F3F91A69F7C16E0A67E4187CE1D2EA9C (void);
+// 0x00000077 System.Object StateHandler/<AppearButtons>d__15::System.Collections.IEnumerator.get_Current()
+extern void U3CAppearButtonsU3Ed__15_System_Collections_IEnumerator_get_Current_mA2752FF35E58D9736EC29D3D0ACA89B9EBFF79DE (void);
+// 0x00000078 System.Void StateHandler/<PlayC1>d__18::.ctor(System.Int32)
+extern void U3CPlayC1U3Ed__18__ctor_m858DA3BFC06B8F1F69B8D5AA9FC1FDB1CE60E129 (void);
+// 0x00000079 System.Void StateHandler/<PlayC1>d__18::System.IDisposable.Dispose()
+extern void U3CPlayC1U3Ed__18_System_IDisposable_Dispose_mBF31E3FEFF8D9B9E7FE2C5EA6B645ECC322E88FF (void);
+// 0x0000007A System.Boolean StateHandler/<PlayC1>d__18::MoveNext()
+extern void U3CPlayC1U3Ed__18_MoveNext_m98547BB0965218DB0BE91203A51D8AA86EE45678 (void);
+// 0x0000007B System.Object StateHandler/<PlayC1>d__18::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CPlayC1U3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF6A80004D30A9560299556885134238FCE98C8D4 (void);
+// 0x0000007C System.Void StateHandler/<PlayC1>d__18::System.Collections.IEnumerator.Reset()
+extern void U3CPlayC1U3Ed__18_System_Collections_IEnumerator_Reset_m81FBCCBE54C0EF7AFA63854851363E231DB40AED (void);
+// 0x0000007D System.Object StateHandler/<PlayC1>d__18::System.Collections.IEnumerator.get_Current()
+extern void U3CPlayC1U3Ed__18_System_Collections_IEnumerator_get_Current_mC916331350AB032AB8BF19244CA97EDD88BF4305 (void);
+// 0x0000007E System.Void TextManager::Awake()
+extern void TextManager_Awake_m9A0FC8D44AC5B2EF5714DFEA87612D8086E87DFA (void);
+// 0x0000007F System.Void TextManager::LoadNextText()
+extern void TextManager_LoadNextText_m9EE76BFB7C2D89938B1F59B53499C5F15C66B3C2 (void);
+// 0x00000080 System.Void TextManager::ResetDisplayTexts()
+extern void TextManager_ResetDisplayTexts_m1F1BCDB374F2CBDB94F9EA84F8BE9252F88327D8 (void);
+// 0x00000081 System.Void TextManager::.ctor()
+extern void TextManager__ctor_mE8D11DAD772F51A380EF2569FEB3A2FBA34E14FF (void);
+// 0x00000082 System.Void UnityEngine.XR.ARFoundation.Samples.XROriginExtensions::MakeContentAppearAt(Unity.XR.CoreUtils.XROrigin,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion)
+extern void XROriginExtensions_MakeContentAppearAt_m27AB0690F711FD893A4396B5B330A448F1C99C0A (void);
+// 0x00000083 System.Void UnityEngine.XR.ARFoundation.Samples.XROriginExtensions::MakeContentAppearAt(Unity.XR.CoreUtils.XROrigin,UnityEngine.Transform,UnityEngine.Vector3)
+extern void XROriginExtensions_MakeContentAppearAt_mC32C4633CD78838E0B04967D22757BBB7902CF4C (void);
+// 0x00000084 System.Void UnityEngine.XR.ARFoundation.Samples.XROriginExtensions::MakeContentAppearAt(Unity.XR.CoreUtils.XROrigin,UnityEngine.Transform,UnityEngine.Quaternion)
+extern void XROriginExtensions_MakeContentAppearAt_m37DFC178F9060F19DCCBAB1E40BEA36C29301DE0 (void);
+// 0x00000085 System.Void Meta.WitAi.Samples.ResponseDebugger.WitUIInteractionHandler::OnValidate()
+extern void WitUIInteractionHandler_OnValidate_m6DE6B04DE7C912ED9679CBFDC5801CB06F22F1A7 (void);
+// 0x00000086 System.Void Meta.WitAi.Samples.ResponseDebugger.WitUIInteractionHandler::Update()
+extern void WitUIInteractionHandler_Update_mB9CF38DE998E4CA45763298739E1B33C424F8B4A (void);
+// 0x00000087 System.Void Meta.WitAi.Samples.ResponseDebugger.WitUIInteractionHandler::OnEnable()
+extern void WitUIInteractionHandler_OnEnable_mAC6D91D9B298079BA26C444FD6E89DF986666BAE (void);
+// 0x00000088 System.Void Meta.WitAi.Samples.ResponseDebugger.WitUIInteractionHandler::OnDisable()
+extern void WitUIInteractionHandler_OnDisable_m4F2ED392356A6B8E759F052393DB17CD582806E5 (void);
+// 0x00000089 System.Void Meta.WitAi.Samples.ResponseDebugger.WitUIInteractionHandler::OnRequestStarted(Meta.WitAi.WitRequest)
+extern void WitUIInteractionHandler_OnRequestStarted_mE18A2D26284FDD7CBA79E7CA0DFAB7D2E2B934B2 (void);
+// 0x0000008A System.Void Meta.WitAi.Samples.ResponseDebugger.WitUIInteractionHandler::OnResponse(Meta.WitAi.Json.WitResponseNode)
+extern void WitUIInteractionHandler_OnResponse_mCA35685B9155BD13D9B97AF28B89BCEC95764347 (void);
+// 0x0000008B System.Void Meta.WitAi.Samples.ResponseDebugger.WitUIInteractionHandler::OnError(System.String,System.String)
+extern void WitUIInteractionHandler_OnError_m0E09009B4F855F625649325451C7DD33BC0E7967 (void);
+// 0x0000008C System.Void Meta.WitAi.Samples.ResponseDebugger.WitUIInteractionHandler::ToggleActivation()
+extern void WitUIInteractionHandler_ToggleActivation_m7488F4AD42E6D05AB7C4EBC557D1C011CA291815 (void);
+// 0x0000008D System.Void Meta.WitAi.Samples.ResponseDebugger.WitUIInteractionHandler::Send()
+extern void WitUIInteractionHandler_Send_m17D930D54ACF1F98D4D9189859BE4B36877351EC (void);
+// 0x0000008E System.Void Meta.WitAi.Samples.ResponseDebugger.WitUIInteractionHandler::LogResults(System.String[])
+extern void WitUIInteractionHandler_LogResults_mA97A548A8EB370637156FC5FA229EDD7E36979D9 (void);
+// 0x0000008F System.Void Meta.WitAi.Samples.ResponseDebugger.WitUIInteractionHandler::.ctor()
+extern void WitUIInteractionHandler__ctor_m1E5414D9C45E07AD9109EBD48942AEE0CC7EE603 (void);
+// 0x00000090 System.Void Meta.WitAi.Samples.ResponseDebugger.WitUIInteractionHandler::<OnRequestStarted>b__9_1(System.String)
+extern void WitUIInteractionHandler_U3COnRequestStartedU3Eb__9_1_mAB8511C88EFAE14B6B772D5A94ACF493A11E135C (void);
+// 0x00000091 System.Void Meta.WitAi.Samples.ResponseDebugger.WitUIInteractionHandler::<OnRequestStarted>b__9_0(Meta.WitAi.WitRequest)
+extern void WitUIInteractionHandler_U3COnRequestStartedU3Eb__9_0_mF8BBD39FBF9B2D971B58CBD47D0440FDA88A90CE (void);
+// 0x00000092 System.Void Meta.WitAi.Samples.Shapes.ColorChanger::SetColor(UnityEngine.Transform,UnityEngine.Color)
+extern void ColorChanger_SetColor_mCFE656DB371290752B0D5329A09D24295E9C9A0B (void);
+// 0x00000093 System.Void Meta.WitAi.Samples.Shapes.ColorChanger::UpdateColor(Meta.WitAi.Json.WitResponseNode)
+extern void ColorChanger_UpdateColor_mD9E24A499D7AFFA7A9B3D397FC8F5CA947534FEA (void);
+// 0x00000094 System.Void Meta.WitAi.Samples.Shapes.ColorChanger::OnConduitFailed(System.String,System.Exception)
+extern void ColorChanger_OnConduitFailed_m5B7D0D7D947E8F77DC14BC69B359005D4E518F12 (void);
+// 0x00000095 System.Void Meta.WitAi.Samples.Shapes.ColorChanger::OnColorIntent()
+extern void ColorChanger_OnColorIntent_mE82A61DACBA1210A37746B5E58BA2C7F31BF87A3 (void);
+// 0x00000096 System.Void Meta.WitAi.Samples.Shapes.ColorChanger::OnHandleColorIntent(Meta.WitAi.Json.WitResponseNode)
+extern void ColorChanger_OnHandleColorIntent_m52603BBB7EBDA47A727F67FFC34B07EABB5C0E8D (void);
+// 0x00000097 System.Void Meta.WitAi.Samples.Shapes.ColorChanger::OnHandleColorIntentWithConduit(Meta.WitAi.Samples.Shapes.Color,Meta.WitAi.Samples.Shapes.Shape)
+extern void ColorChanger_OnHandleColorIntentWithConduit_m51B70A48F2E625BB6162382A559A3A6B580EB6D1 (void);
+// 0x00000098 System.Void Meta.WitAi.Samples.Shapes.ColorChanger::OnHandleSizeIntentWithConduit(System.Int32,Meta.WitAi.Samples.Shapes.Shape)
+extern void ColorChanger_OnHandleSizeIntentWithConduit_m89F86E7BD6EFA1066C4EA619BD9A058B987FD1D7 (void);
+// 0x00000099 System.Void Meta.WitAi.Samples.Shapes.ColorChanger::OnHandleSizeIntent(Meta.WitAi.Json.WitResponseNode)
+extern void ColorChanger_OnHandleSizeIntent_m353A18E574C1375B6EA3942197C529BCFCBFEA19 (void);
+// 0x0000009A System.Void Meta.WitAi.Samples.Shapes.ColorChanger::.ctor()
+extern void ColorChanger__ctor_m6A75551E812305BA291A41F10E65E01262FE170F (void);
+// 0x0000009B System.Void Meta.WitAi.Samples.Shapes.WitUIInteractionHandler::OnEnable()
+extern void WitUIInteractionHandler_OnEnable_m88C240BDC6E7A8656358087387D5BEA1B1505996 (void);
+// 0x0000009C System.Void Meta.WitAi.Samples.Shapes.WitUIInteractionHandler::OnDisable()
+extern void WitUIInteractionHandler_OnDisable_mF3B701D6831999BCB6168D4A88CC5FD4E6D401D2 (void);
+// 0x0000009D System.Void Meta.WitAi.Samples.Shapes.WitUIInteractionHandler::OnRequestStarted(Meta.WitAi.WitRequest)
+extern void WitUIInteractionHandler_OnRequestStarted_mB4799A703F0121617FD779A964BBC1BA27BD5EAC (void);
+// 0x0000009E System.Void Meta.WitAi.Samples.Shapes.WitUIInteractionHandler::Update()
+extern void WitUIInteractionHandler_Update_m512CEC68047A680A69414C28AB91892F5C2BA24D (void);
+// 0x0000009F System.Void Meta.WitAi.Samples.Shapes.WitUIInteractionHandler::OnResponse(Meta.WitAi.Json.WitResponseNode)
+extern void WitUIInteractionHandler_OnResponse_mF9049DCA672F6408DAA054EC4EE6A0622FA13F50 (void);
+// 0x000000A0 System.Void Meta.WitAi.Samples.Shapes.WitUIInteractionHandler::OnError(System.String,System.String)
+extern void WitUIInteractionHandler_OnError_m0A7CAA1A671A246A100A1B95F023BD9E57477FB5 (void);
+// 0x000000A1 System.Void Meta.WitAi.Samples.Shapes.WitUIInteractionHandler::ToggleActivation()
+extern void WitUIInteractionHandler_ToggleActivation_mA65169F498BF45D828F3A9143E95E376660677F1 (void);
+// 0x000000A2 System.Void Meta.WitAi.Samples.Shapes.WitUIInteractionHandler::.ctor()
+extern void WitUIInteractionHandler__ctor_mAF94EB6D743FB4CA2D3ECAC957B50DED9D4F0EFA (void);
+// 0x000000A3 System.Void Meta.WitAi.Samples.Shapes.WitUIInteractionHandler::<OnRequestStarted>b__6_0(System.String)
+extern void WitUIInteractionHandler_U3COnRequestStartedU3Eb__6_0_m099EAFB9B084262FAE7DE1DAFBFC4B8ABDCBBA27 (void);
+static Il2CppMethodPointer s_methodPointers[163] = 
+{
+	ARFeatheredPlaneMeshVisualizer_get_featheringWidth_m14D3A8BE3E9A745E6FD525B19ADDC892B8399B4D,
+	ARFeatheredPlaneMeshVisualizer_set_featheringWidth_mD616A09A3B426EA5DE1FA37334DD194E43EEC110,
+	ARFeatheredPlaneMeshVisualizer_Awake_mC5DB0414A2514BF4851266C25141C903F0AC57BA,
+	ARFeatheredPlaneMeshVisualizer_OnEnable_m8781C85CFED871C8A81A5B88DB1031856E0FC9F0,
+	ARFeatheredPlaneMeshVisualizer_OnDisable_m2343B05B1A8F14BAD4DD516C584281B66FE6A4E8,
+	ARFeatheredPlaneMeshVisualizer_ARPlane_boundaryUpdated_mB3D9BBD14EA1FE3ECDBACC2DB89C1B110B8B6B5F,
+	ARFeatheredPlaneMeshVisualizer_GenerateBoundaryUVs_mF756D3C1F7925A69CD8C7C8CCE56209AB321FEF5,
+	ARFeatheredPlaneMeshVisualizer__ctor_m9A77651BCAE58AA0B994FFF6C6B63B1CFF2729F6,
+	ARFeatheredPlaneMeshVisualizer__cctor_m56285A000EE27A1631BE9C5BCDA5C376E5D133C3,
+	FadePlaneOnBoundaryChange_OnEnable_m22E25DEBA5FBF6A21C8CFADE4146BD279B8ACBF5,
+	FadePlaneOnBoundaryChange_OnDisable_m6B4D5B7E454E979C71FCCAA70C51158FE500F714,
+	FadePlaneOnBoundaryChange_Update_mBC7766340522905237C9B5A3877866128C8E801C,
+	FadePlaneOnBoundaryChange_PlaneOnBoundaryChanged_m1B9C8348F6EF60886A2BF9EA153200904FAE4D62,
+	FadePlaneOnBoundaryChange__ctor_mDE8DDF8CA4E12FF21BF827B0661DB61E4F36ADAF,
+	ARGestureController_Update_m0CEFE2104AAC9658B7BECCEF4C8538A17ACE7C13,
+	ARGestureController__ctor_mD8838629145ABB931FBE48C045C050F2E8549310,
+	CinemachineShake_Awake_m9BB1253042362A6923D26A2B72C53DF59B651B1D,
+	CinemachineShake_Start_m5910B96E75C443EEA6440F8B21E5879F2DEAC28A,
+	CinemachineShake_Update_m8933C8718845E29E7F56B44F3ADEA352BD1BD382,
+	CinemachineShake_ShakeCamera_mDAF86BCC45E94C7F1AB93C35A02276E094EFDDD5,
+	CinemachineShake_SetVirtualCamera_m6DDD3D8269B1A4D5F1D724AF427A05968179B364,
+	CinemachineShake__ctor_m09BA9B47282D36DE9B11BA4ADB9CFA04921FC547,
+	HandleWitResponse_Start_m0764445851E1C001E223C74B239F13FC747FBFB4,
+	HandleWitResponse_OnResponse_m6AA4ACDDD89C59CB7E432DD9A1FB6A145FE38E5E,
+	HandleWitResponse_HandleResponse_mE1917C809F7EEDE88865694DE9FDAA354FB81801,
+	HandleWitResponse_OnError_m0311286D59D8069870F9D34C368113C3AD9A1BA6,
+	HandleWitResponse_OnErrorDueToInactivity_m97D814B960DABC01C2909B09C8D60C3CBCC0013B,
+	HandleWitResponse_Update_m6938E409B2419679BBE9AD15A69C8E7257985E69,
+	HandleWitResponse_NextAnim_m925AC028DC72CF0268C160953DE7B31BCC4CEF88,
+	HandleWitResponse__ctor_mF36AF9C5DAF43BF07C6E5F885527773F95D83DEC,
+	MainMenuManager_Start_m0DE5C20FF402B377BA9FD8819426F55C9289A55A,
+	MainMenuManager_WalkToScene_m40C33011AF3079B87CA3097B5D5F09BB2A51B31B,
+	MainMenuManager_Jumpoff_m124823FAFA0B973FB862E0D2E77F675A2E2E290A,
+	MainMenuManager__ctor_m9CF8E7F30CE180004AA0DFF1229FC615B531542B,
+	MainMenuManager_U3CWalkToSceneU3Eb__4_0_m52E9CB98B85A843F514168F983966C15132A7F1A,
+	MainMenuManager_U3CJumpoffU3Eb__5_0_mE46EB1A1A09278817AC4B4454FB7176BC9F9AD2A,
+	MainMenuManager_U3CJumpoffU3Eb__5_1_m0E04346B5CF03C83BA89A738986F76714A3713DC,
+	U3CU3Ec__cctor_m91DC8B6AE4FFF5C8D9246E75BA138EFB7AE731E7,
+	U3CU3Ec__ctor_m1777E50625D982D451CE335A9E0727D3E3942371,
+	U3CU3Ec_U3CJumpoffU3Eb__5_2_mEDFCFE7A17C2BB8F951B4031E73D2D82C58D7B1A,
+	MenuPikluManager_Start_m999A1FD377C9EAFA4449A0999FF038D3E9079C62,
+	MenuPikluManager_Hi_mCEEE404990735C4FE4081916AC509A130E0F37BB,
+	MenuPikluManager_FlyOff_m1426F254D301D8AF50DC4CE60C9E2AAEBE1350DD,
+	MenuPikluManager_LookAtCam_mB5426B339A20EBFBA480F4C4DCF9A7455A71D5FF,
+	MenuPikluManager__ctor_m122B38AD0760E5C56C6FB6F530C68814BBA98FEE,
+	MicWitInteraction_OnValidate_m305446E321A286DFA0F81ABBF2D352D1297FD672,
+	MicWitInteraction_OnEnable_m518BE27A1F0E7A1E28CDECF084D72A8C6FCB30D8,
+	MicWitInteraction_OnDisable_m0364C7CB63620F40A13727EA1796650A453E5478,
+	MicWitInteraction_OnRequestStarted_m19E102D118F30041A104FE859805C712ADB912A6,
+	MicWitInteraction_OnResponse_mCA8CB7FE7ACF996D4743C8BCCF8CB3146D25DA03,
+	MicWitInteraction_OnError_mD6F59D706EC370858E454D7FBFE8CE264A454701,
+	MicWitInteraction_StopRecording_m67BB7EC5DB906C4E595F026ECFE2833899CF3884,
+	MicWitInteraction_StartRecording_m335CE7ED3C0BB4F6AE4A4DFFFEE86FD7E9973375,
+	MicWitInteraction_HandleException_mC10CAC58B547CFA33F9000AB59D3C50BD6D78C30,
+	MicWitInteraction__ctor_mBF296BCA0114EA88A2570593C37A416C8141B2C3,
+	MicWitInteraction_U3COnRequestStartedU3Eb__10_0_m595F22FE67832C5A201D05872690EE6903450A97,
+	ToSpawnObject__ctor_m89E2AC2E0EC3E07C43F3292E19F74F54E3AC68C0,
+	ObjectSpawner_Awake_m4CAB7A5201CAF72D44C72310AC38344AE34CEB6E,
+	ObjectSpawner_SetSpawnPoint_mFC2B3F22D4FD51B2236DDE8143E3B8AB1A156358,
+	ObjectSpawner_Start_mE19667397EFFE281AF098051957A34B21C97B6C3,
+	ObjectSpawner_LookForInternetConnection_m35CD1B077E6E46985D9B373F271284F7E6AA425B,
+	ObjectSpawner_CompleteMethod_mE58E6AED84438CF3615FD2AAF0770F15497D2C42,
+	ObjectSpawner_CloseApplication_mE67C7CEDF37E83AA4D076696A5CA42837533E2AA,
+	ObjectSpawner_ShowMarkerAndReadyToSpawn_mFD199CBA109253A133D06CBE374BE10126E95DFC,
+	ObjectSpawner_Update_m9F373E88B27396D6EC93ACFF2EAFFDC63833BDE8,
+	ObjectSpawner_SpawnSystem_m467FCF9AF6399470B9072BBE3C9A4B962262D585,
+	ObjectSpawner_setScene_m15EE707ED497DA83AC789B808779AACF23087FCB,
+	ObjectSpawner_SpawnWithDelay_mF65851461513BA11825F12F71CF48706912D8F2A,
+	ObjectSpawner__ctor_mF75EFE9AB26EAEF6D1995A34FB35C2BDE08A083C,
+	U3CLookForInternetConnectionU3Ed__19__ctor_mFECD402F5871657758D9F703F6806B7DA3E9ADDC,
+	U3CLookForInternetConnectionU3Ed__19_System_IDisposable_Dispose_mB2BD4F0B0402B37974CA2449DFA1DA674D3EE66E,
+	U3CLookForInternetConnectionU3Ed__19_MoveNext_mC51B0962C948A6C7EA8B59CB3ECD17CA9294EEAD,
+	U3CLookForInternetConnectionU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mEBB2322BEA76BB855DA186B6B37B73BBA2DBC3EB,
+	U3CLookForInternetConnectionU3Ed__19_System_Collections_IEnumerator_Reset_mBF2837B914B0016C500AFBB5DFE1EB21406CF70A,
+	U3CLookForInternetConnectionU3Ed__19_System_Collections_IEnumerator_get_Current_mE83814425829FE0ADDC537050C1ED615F2C35850,
+	U3CShowMarkerAndReadyToSpawnU3Ed__22__ctor_m3A65F27E48D28B8AC4941FB08DCC17E78066249F,
+	U3CShowMarkerAndReadyToSpawnU3Ed__22_System_IDisposable_Dispose_m199A91999E0C41B919FD38B8933AD147FDA3680B,
+	U3CShowMarkerAndReadyToSpawnU3Ed__22_MoveNext_m19DE0632A04B7CEF73C6F6ADA49AC915C9AE487A,
+	U3CShowMarkerAndReadyToSpawnU3Ed__22_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFB890E7DAAE9969610C551E0A1BE7E99AF026487,
+	U3CShowMarkerAndReadyToSpawnU3Ed__22_System_Collections_IEnumerator_Reset_m67D7F305324AB26D9492A4304C25D946E4D8A69A,
+	U3CShowMarkerAndReadyToSpawnU3Ed__22_System_Collections_IEnumerator_get_Current_mABF4C2BD94692752059F65877B02A4197148D412,
+	U3CU3Ec__DisplayClass25_0__ctor_mF12E7852D590802CBE651E52FA13B7C81ACAEA54,
+	U3CU3Ec__DisplayClass25_0_U3CsetSceneU3Eb__0_m492B246BC60421D6CCE57D4CBC6844EAA23C5389,
+	U3CU3Ec__DisplayClass25_0_U3CsetSceneU3Eb__5_m8E7AD74DAC7D9BE97FEA95299FFC0842655E053F,
+	U3CU3Ec__DisplayClass25_0_U3CsetSceneU3Eb__6_mDABF33B698F623C14F2BEE17B7A1232943103EFB,
+	U3CU3Ec__DisplayClass25_1__ctor_mB105CBFBDC240359B27E45D467C5F330681ABFF6,
+	U3CU3Ec__DisplayClass25_1_U3CsetSceneU3Eb__1_mE1FD1E8FDC02386C36815F0935B1407996DD7FAA,
+	U3CU3Ec__DisplayClass25_1_U3CsetSceneU3Eb__2_m1DBDE77C125EDCBD18C712E3CAC70431E84FCF62,
+	U3CU3Ec__DisplayClass25_1_U3CsetSceneU3Eb__3_mAEDEBEFEC0176B6E45928CE9A31693653186D9E9,
+	U3CU3Ec__DisplayClass25_1_U3CsetSceneU3Eb__4_m2D98620B7D577BF3920E9AF9583A44B655AD458D,
+	U3CU3Ec__DisplayClass26_0__ctor_mA6F7220534A4CDB574F031FC7646513CC4D27E8D,
+	U3CU3Ec__DisplayClass26_0_U3CSpawnWithDelayU3Eb__0_m2214B629216F276166BE216B54DC2B312BD050FD,
+	U3CSpawnWithDelayU3Ed__26__ctor_mF76D665AA5D6C62008E12ECD9345551FB5B823A8,
+	U3CSpawnWithDelayU3Ed__26_System_IDisposable_Dispose_m3C281D3AB15F0E18B3A415E7A23A3B7346F17283,
+	U3CSpawnWithDelayU3Ed__26_MoveNext_m6956BD94B638C78D8CC2681A9966919B994A61A6,
+	U3CSpawnWithDelayU3Ed__26_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5278C1B182147D632FF729A949E8D89E4F4A028C,
+	U3CSpawnWithDelayU3Ed__26_System_Collections_IEnumerator_Reset_mBD2BAF7EE8AB6A13BCAE540E76D4D730BE043C50,
+	U3CSpawnWithDelayU3Ed__26_System_Collections_IEnumerator_get_Current_m41DD198B3768A7B2B15653D3FC524FE16AECFFE8,
+	PermissionGranting_Start_m984386B3EA82F5B52DCD2A520E7E3B4BDEC7118D,
+	PermissionGranting__ctor_m0D3A7EB1F7D72678E9831A25A8291723BC6BD356,
+	PlacementIndicator_Start_m92791E0A4D6E907C1BA32A25E07872A9A2E6C9D7,
+	PlacementIndicator_Update_mCC16B34A0C5216C7A2D0E61A9B2CD7AC068703B9,
+	PlacementIndicator__ctor_mA2BDF502002E94CB872C1398E6506197E238AE09,
+	StateHandler_Start_m6CD7AE692F94C60B1A26BFA5AA7F67FC686DB0F1,
+	StateHandler_AppearButtons_mCEA2C3C898F402E141C2DEB935F906625FFFF0E9,
+	StateHandler_TapWaterPot_mAFF1463C17C6705BF21AE530E661ADBFE892F0A3,
+	StateHandler_DeactiveOtherModels_mA546C3E2C04216DE4982EEA80CE24A6F5418CB0F,
+	StateHandler_PlayC1_mB1E8F11EC041D1D771B281B8835AA0E1FD5363DE,
+	StateHandler_PlayC2_m76E7B241463838FCD8747B91E17A15C49CBB1149,
+	StateHandler_PlayC3_m046A1628E59B68AB0C962D2B4B2907B683223204,
+	StateHandler_OnPlayConvo_m7534E7707DDE843F42F53248F89780648A525227,
+	StateHandler_EndGame_mBF7F3CB1092F1D1B3850765C4E34448C70F6FFC2,
+	StateHandler__ctor_m52B8F9D12057DA7D6F098A781C07AFC18113D940,
+	U3CAppearButtonsU3Ed__15__ctor_m23D7CE2E134B8310C8AFF8539F5F01898FA9003F,
+	U3CAppearButtonsU3Ed__15_System_IDisposable_Dispose_mAA9D9367A773D9227DC3FFA288E641BE45BA03C3,
+	U3CAppearButtonsU3Ed__15_MoveNext_mE134845AA803BE5F49C19B079695C4BA0DCC978A,
+	U3CAppearButtonsU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m13A01BD4B96691795CF76E81B91C99CCF88EF439,
+	U3CAppearButtonsU3Ed__15_System_Collections_IEnumerator_Reset_m67741481F3F91A69F7C16E0A67E4187CE1D2EA9C,
+	U3CAppearButtonsU3Ed__15_System_Collections_IEnumerator_get_Current_mA2752FF35E58D9736EC29D3D0ACA89B9EBFF79DE,
+	U3CPlayC1U3Ed__18__ctor_m858DA3BFC06B8F1F69B8D5AA9FC1FDB1CE60E129,
+	U3CPlayC1U3Ed__18_System_IDisposable_Dispose_mBF31E3FEFF8D9B9E7FE2C5EA6B645ECC322E88FF,
+	U3CPlayC1U3Ed__18_MoveNext_m98547BB0965218DB0BE91203A51D8AA86EE45678,
+	U3CPlayC1U3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF6A80004D30A9560299556885134238FCE98C8D4,
+	U3CPlayC1U3Ed__18_System_Collections_IEnumerator_Reset_m81FBCCBE54C0EF7AFA63854851363E231DB40AED,
+	U3CPlayC1U3Ed__18_System_Collections_IEnumerator_get_Current_mC916331350AB032AB8BF19244CA97EDD88BF4305,
+	TextManager_Awake_m9A0FC8D44AC5B2EF5714DFEA87612D8086E87DFA,
+	TextManager_LoadNextText_m9EE76BFB7C2D89938B1F59B53499C5F15C66B3C2,
+	TextManager_ResetDisplayTexts_m1F1BCDB374F2CBDB94F9EA84F8BE9252F88327D8,
+	TextManager__ctor_mE8D11DAD772F51A380EF2569FEB3A2FBA34E14FF,
+	XROriginExtensions_MakeContentAppearAt_m27AB0690F711FD893A4396B5B330A448F1C99C0A,
+	XROriginExtensions_MakeContentAppearAt_mC32C4633CD78838E0B04967D22757BBB7902CF4C,
+	XROriginExtensions_MakeContentAppearAt_m37DFC178F9060F19DCCBAB1E40BEA36C29301DE0,
+	WitUIInteractionHandler_OnValidate_m6DE6B04DE7C912ED9679CBFDC5801CB06F22F1A7,
+	WitUIInteractionHandler_Update_mB9CF38DE998E4CA45763298739E1B33C424F8B4A,
+	WitUIInteractionHandler_OnEnable_mAC6D91D9B298079BA26C444FD6E89DF986666BAE,
+	WitUIInteractionHandler_OnDisable_m4F2ED392356A6B8E759F052393DB17CD582806E5,
+	WitUIInteractionHandler_OnRequestStarted_mE18A2D26284FDD7CBA79E7CA0DFAB7D2E2B934B2,
+	WitUIInteractionHandler_OnResponse_mCA35685B9155BD13D9B97AF28B89BCEC95764347,
+	WitUIInteractionHandler_OnError_m0E09009B4F855F625649325451C7DD33BC0E7967,
+	WitUIInteractionHandler_ToggleActivation_m7488F4AD42E6D05AB7C4EBC557D1C011CA291815,
+	WitUIInteractionHandler_Send_m17D930D54ACF1F98D4D9189859BE4B36877351EC,
+	WitUIInteractionHandler_LogResults_mA97A548A8EB370637156FC5FA229EDD7E36979D9,
+	WitUIInteractionHandler__ctor_m1E5414D9C45E07AD9109EBD48942AEE0CC7EE603,
+	WitUIInteractionHandler_U3COnRequestStartedU3Eb__9_1_mAB8511C88EFAE14B6B772D5A94ACF493A11E135C,
+	WitUIInteractionHandler_U3COnRequestStartedU3Eb__9_0_mF8BBD39FBF9B2D971B58CBD47D0440FDA88A90CE,
+	ColorChanger_SetColor_mCFE656DB371290752B0D5329A09D24295E9C9A0B,
+	ColorChanger_UpdateColor_mD9E24A499D7AFFA7A9B3D397FC8F5CA947534FEA,
+	ColorChanger_OnConduitFailed_m5B7D0D7D947E8F77DC14BC69B359005D4E518F12,
+	ColorChanger_OnColorIntent_mE82A61DACBA1210A37746B5E58BA2C7F31BF87A3,
+	ColorChanger_OnHandleColorIntent_m52603BBB7EBDA47A727F67FFC34B07EABB5C0E8D,
+	ColorChanger_OnHandleColorIntentWithConduit_m51B70A48F2E625BB6162382A559A3A6B580EB6D1,
+	ColorChanger_OnHandleSizeIntentWithConduit_m89F86E7BD6EFA1066C4EA619BD9A058B987FD1D7,
+	ColorChanger_OnHandleSizeIntent_m353A18E574C1375B6EA3942197C529BCFCBFEA19,
+	ColorChanger__ctor_m6A75551E812305BA291A41F10E65E01262FE170F,
+	WitUIInteractionHandler_OnEnable_m88C240BDC6E7A8656358087387D5BEA1B1505996,
+	WitUIInteractionHandler_OnDisable_mF3B701D6831999BCB6168D4A88CC5FD4E6D401D2,
+	WitUIInteractionHandler_OnRequestStarted_mB4799A703F0121617FD779A964BBC1BA27BD5EAC,
+	WitUIInteractionHandler_Update_m512CEC68047A680A69414C28AB91892F5C2BA24D,
+	WitUIInteractionHandler_OnResponse_mF9049DCA672F6408DAA054EC4EE6A0622FA13F50,
+	WitUIInteractionHandler_OnError_m0A7CAA1A671A246A100A1B95F023BD9E57477FB5,
+	WitUIInteractionHandler_ToggleActivation_mA65169F498BF45D828F3A9143E95E376660677F1,
+	WitUIInteractionHandler__ctor_mAF94EB6D743FB4CA2D3ECAC957B50DED9D4F0EFA,
+	WitUIInteractionHandler_U3COnRequestStartedU3Eb__6_0_m099EAFB9B084262FAE7DE1DAFBFC4B8ABDCBBA27,
+};
+static const int32_t s_InvokerIndices[163] = 
+{
+	6800,
+	5523,
+	6871,
+	6871,
+	6871,
+	5358,
+	5487,
+	6871,
+	10680,
+	6871,
+	6871,
+	6871,
+	5358,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	1680,
+	5487,
+	6871,
+	6871,
+	5487,
+	1679,
+	3099,
+	6871,
+	6871,
+	5460,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	10680,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	5487,
+	5487,
+	3099,
+	6871,
+	6871,
+	5487,
+	6871,
+	5487,
+	6871,
+	6871,
+	3191,
+	6871,
+	6755,
+	5460,
+	6871,
+	6755,
+	6871,
+	6871,
+	6871,
+	4872,
+	6871,
+	5460,
+	6871,
+	6654,
+	6755,
+	6871,
+	6755,
+	5460,
+	6871,
+	6654,
+	6755,
+	6871,
+	6755,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	5414,
+	5460,
+	6871,
+	6654,
+	6755,
+	6871,
+	6755,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	6871,
+	4872,
+	6871,
+	5460,
+	6755,
+	6871,
+	6871,
+	3099,
+	6871,
+	6871,
+	5460,
+	6871,
+	6654,
+	6755,
+	6871,
+	6755,
+	5460,
+	6871,
+	6654,
+	6755,
+	6871,
+	6755,
+	6871,
+	6871,
+	6871,
+	6871,
+	8237,
+	8921,
+	8917,
+	6871,
+	6871,
+	6871,
+	6871,
+	5487,
+	5487,
+	3099,
+	6871,
+	6871,
+	5487,
+	6871,
+	5487,
+	5487,
+	3085,
+	5487,
+	3099,
+	6871,
+	5487,
+	2809,
+	2809,
+	5487,
+	6871,
+	6871,
+	6871,
+	5487,
+	6871,
+	5487,
+	3099,
+	6871,
+	6871,
+	5487,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
+{
+	"Assembly-CSharp.dll",
+	163,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

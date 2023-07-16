@@ -189,8 +189,6 @@ public class ObjectSpawner : MonoBehaviour
                     tmpParticle.transform.localScale = toSpawnObjects[k].VFXScale / initialScaleOfScene;
                     Destroy(tmpParticle, 5f);
 
-                    //waitTime = ((float)(toSpawnObjects[k].objectsToSpawn.transform.childCount - i) / toSpawnObjects[k].objectsToSpawn.transform.childCount) * 0.2f;
-
                     yield return null;
                 }
             }

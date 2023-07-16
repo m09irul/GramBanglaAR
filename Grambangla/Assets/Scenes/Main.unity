@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -479,7 +479,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57434020}
-  m_Mesh: {fileID: 4300000, guid: 1d8ceb86d4af427488b426b059cad0b7, type: 2}
+  m_Mesh: {fileID: 4300000, guid: f9b78d8b7493d16499f0fa6b1494c462, type: 2}
 --- !u!23 &57434023
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5010,7 +5010,7 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 884dd19320e74ca692ac007195f4483e
-  m_Mesh: {fileID: 4300000, guid: 1d8ceb86d4af427488b426b059cad0b7, type: 2}
+  m_Mesh: {fileID: 4300000, guid: f9b78d8b7493d16499f0fa6b1494c462, type: 2}
   m_VersionIndex: 906
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -25905,7 +25905,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: e69816e06c761984fb23b6061342acf5, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 3a68ffb7409c26e40afad6e848f273d2, type: 2}
 --- !u!33 &1485274043
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -25913,7 +25913,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485274041}
-  m_Mesh: {fileID: 4300000, guid: e69816e06c761984fb23b6061342acf5, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 3a68ffb7409c26e40afad6e848f273d2, type: 2}
 --- !u!23 &1485274044
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26314,7 +26314,7 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 1733f562ae524c3a86f6d1e4bb016cef
-  m_Mesh: {fileID: 4300000, guid: e69816e06c761984fb23b6061342acf5, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 3a68ffb7409c26e40afad6e848f273d2, type: 2}
   m_VersionIndex: 72
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -27655,7 +27655,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 4d0d08065d8b1ff478c58ab193b55132, type: 2}
     - target: {fileID: 2494780024417762852, guid: dc847e9f83e1d68469a4741be4840ccf, type: 3}
       propertyPath: witRuntimeConfiguration.maxRecordingTime
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2494780024417762852, guid: dc847e9f83e1d68469a4741be4840ccf, type: 3}
       propertyPath: witRuntimeConfiguration.witConfiguration
@@ -27663,7 +27663,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: bf45aad130a83b0498afd70fefe06b4f, type: 2}
     - target: {fileID: 2494780024417762852, guid: dc847e9f83e1d68469a4741be4840ccf, type: 3}
       propertyPath: witRuntimeConfiguration.minKeepAliveVolume
-      value: 0.01
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 2494780024417762852, guid: dc847e9f83e1d68469a4741be4840ccf, type: 3}
       propertyPath: witRuntimeConfiguration.soundWakeThreshold
@@ -31335,12 +31335,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 1230864083}
   splineForScene1: {fileID: 8651423479848081352, guid: 2c097bd1611d56243a5e2107abcf4621, type: 3}
-  afterPlacementScale: {x: 0, y: 0, z: 0}
-  afterPlacementOffset: {x: 0, y: 0, z: 0}
   canSpawn: 1
   tapToPlaceTxt: {fileID: 1135998629}
   aRPlaneManager: {fileID: 435154573}
-  startAudio: {fileID: 0}
   mainCharacter: {fileID: 1890861092}
   spawnVFXForScene1: {fileID: 163489355991279429, guid: ad9b7c02efba1be4fbb6fc4c36caa223, type: 3}
   planeVFXForScene1: {fileID: 2005724018619865074, guid: fb0221514658e8d428a08b57cea9baef, type: 3}

@@ -38,11 +38,6 @@ public class StateHandler : MonoBehaviour
         TextManager.instance.LoadNextText();
 
     }
-    public void TapWaterPot()
-    {
-        transform.GetChild(10).gameObject.SetActive(true);
-        TextManager.instance.LoadNextText();
-    }
 
     void DeactiveOtherModels(int currentModel)
     {

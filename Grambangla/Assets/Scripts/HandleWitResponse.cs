@@ -36,7 +36,7 @@ public class HandleWitResponse : MonoBehaviour
 			if (intent_Name.Equals("hello"))
 				HandleResponse(intent_Confidence, 0.97f, 1);
 			else if (intent_Name.Equals("ask_name"))
-				HandleResponse(intent_Confidence, 0.965f, 2);
+				HandleResponse(intent_Confidence, 0.9f, 2);
 			else if (intent_Name.Equals("ask_where_going"))
 				HandleResponse(intent_Confidence, 0.97f, 3);
 			else if (intent_Name.Equals("lets_go"))
