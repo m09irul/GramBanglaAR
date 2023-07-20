@@ -82,34 +82,32 @@ public class HandleWitResponse : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.Alpha1))
 		{
-			//character.GetComponent<Animator>().Play("start");
-			character.transform.GetChild(0).GetComponent<Animator>().enabled = true;
-			AudioSource s = character.GetComponent<AudioSource>();
-			s.clip = debugAudio;
-			s.Play();
+			NextAnim(1);
 		}
 		else if (Input.GetKeyDown(KeyCode.Alpha2))
 			NextAnim(2);
 		else if (Input.GetKeyDown(KeyCode.Alpha3))
 			NextAnim(3);
-		else if (Input.GetKeyDown(KeyCode.Alpha5))
-			NextAnim(1);
-		else if (Input.GetKeyDown(KeyCode.Alpha6))
-			NextAnim(2);
-		else if (Input.GetKeyDown(KeyCode.Alpha7))
-			NextAnim(3);
-		else if (Input.GetKeyDown(KeyCode.Alpha8))
+		else if (Input.GetKeyDown(KeyCode.Alpha4))
 			NextAnim(4);
+		else if (Input.GetKeyDown(KeyCode.Alpha5))
+			NextAnim(5);
+		else if (Input.GetKeyDown(KeyCode.Alpha6))
+			NextAnim(6);
+		else if (Input.GetKeyDown(KeyCode.Alpha7))
+			NextAnim(7);
+		else if (Input.GetKeyDown(KeyCode.Alpha8))
+			NextAnim(8);
 	}
 
 	void NextAnim(int which)
 	{
 		if (which == 1)
-			StartCoroutine(objectSpawner.stateHandler.PlayC1());
+			StartCoroutine(objectSpawner.stateHandler.PlayS1C1());
 		else if (which == 2)
-			objectSpawner.stateHandler.PlayC2();
+			objectSpawner.stateHandler.PlayS1C2();
 		else if (which == 3)
-			objectSpawner.stateHandler.PlayC3();
+			objectSpawner.stateHandler.PlayS1C3();
 		else if (which == 4)
 			objectSpawner.Spawn2ndScene();
 

@@ -37,6 +37,7 @@ public class ObjectSpawner : MonoBehaviour
 
     [SerializeField] GameObject objectToSpawn;
     [SerializeField] SplineComputer splineForScene1;
+    [SerializeField] SplineComputer splineForScene2;
 
     PlacementIndicator placementIndicator;
 
@@ -257,6 +258,21 @@ public class ObjectSpawner : MonoBehaviour
 
         objectToSpawn.transform.GetChild(0).gameObject.SetActive(false);
         objectToSpawn.transform.GetChild(1).gameObject.SetActive(true);
+
+        //setup splines
+        mainCharacter.transform.SetParent(objectToSpawn.transform.GetChild(1).transform);
+        mainCharacter.transform.GetChild(0).GetComponent<Animator>().Play("G_Normal_Walk");
+        var spline = Instantiate(splineForScene2, objectToSpawn.transform.GetChild(1).transform);
+        var sf = mainCharacter.GetComponent<SplineFollower>();
+        sf.spline = spline;
+        sf.enabled = true;
+        sf.follow = true;
+
+        sf.onEndReached += (o) =>
+        {
+            stateHandler.PlayS2C1();
+            sf.follow = false;
+        };
     }
 }
     

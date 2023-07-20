@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: df86ea49ccea168449a9cd6329ffd8b6
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      74: 3892590835380003148
+    second: G_2.1 Ei Dekho Ei Ekta Murgi.001
+  - first:
+      74: -2235400352281138808
+    second: G_2.10 Darao Lali ami aschi
+  - first:
+      74: -6245330407812159345
+    second: G_2.11 Lali holo goru
+  - first:
+      74: 8839999213761449488
+    second: G_2.12 Notun Bonduh
+  - first:
+      74: 3510325392692953791
+    second: G_2.13 Er age goru dekhecho
+  - first:
+      74: 2695622189850183533
+    second: G_2.14 Lej diye machi tarai
+  - first:
+      74: 3019119935575957970
+    second: G_2.15 Goru ghash khai
+  - first:
+      74: 8049834640227008205
+    second: G_2.16 Trinobhoji prani
+  - first:
+      74: 7287736643891133900
+    second: G_2.17 Chagol er sathe porichoy
+  - first:
+      74: -7512011395294513158
+    second: G_2.18 Mil ache
+  - first:
+      74: -4842438141064592134
+    second: G_2.19. Dudh and mangsho
+  - first:
+      74: 6768093164047410344
+    second: G_2.2 Grihopalito
+  - first:
+      74: 1236043722204203732
+    second: G_2.20 monty ke khuje dekhi
+  - first:
+      74: -4823484695354551964
+    second: G_2.3 Grihopalito
+  - first:
+      74: -7734297672736344343
+    second: G_2.4. Pare kintu kom
+  - first:
+      74: -5647491067582089865
+    second: G_2.5 Mangsho and Dim
+  - first:
+      74: 9323720550682193
+    second: G_2.6 Ogula palok
+  - first:
+      74: 8108153316770413060
+    second: G_2.7 Khelna mukhosh
+  - first:
+      74: 5814105160208914824
+    second: G_2.8 Hash O emon
+  - first:
+      74: 3272971708184050287
+    second: G_2.9 Murgi Satar Jane nA
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

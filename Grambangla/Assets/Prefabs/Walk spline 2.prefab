@@ -1,0 +1,781 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1004973556619229451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1004973556619229449}
+  - component: {fileID: 1004973556619229448}
+  m_Layer: 0
+  m_Name: Walk spline 2_Node_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1004973556619229449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004973556619229451}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0036327066, y: 0.0005300005, z: -0.0026553995}
+  m_LocalScale: {x: 0.27700832, y: 0.27700832, z: 0.27700832}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7859946583199208272}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1004973556619229448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004973556619229451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a212c074803b6824cae48ffa7abb84cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  connections:
+  - invertTangents: 0
+    _pointIndex: 0
+    _computer: {fileID: 7859946583199208275}
+    point:
+      _type: 0
+      position: {x: 0, y: 0, z: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      normal: {x: 0, y: 0.27700832, z: 0}
+      size: 3.61
+      tangent: {x: 0, y: 0, z: 0}
+      tangent2: {x: 0, y: 0, z: 0}
+  _transformSize: 1
+  _transformNormals: 1
+  _transformTangents: 1
+--- !u!1 &1004973556787897613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1004973556787897618}
+  - component: {fileID: 1004973556787897619}
+  m_Layer: 0
+  m_Name: Walk spline 2_Node_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1004973556787897618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004973556787897613}
+  m_LocalRotation: {x: -0, y: 0.5901736, z: -0, w: 0.8072764}
+  m_LocalPosition: {x: 0.019444048, y: 0.0005300005, z: -0.0002682509}
+  m_LocalScale: {x: 0.27700832, y: 0.27700832, z: 0.27700832}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7859946583199208272}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1004973556787897619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004973556787897613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a212c074803b6824cae48ffa7abb84cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  connections:
+  - invertTangents: 0
+    _pointIndex: 4
+    _computer: {fileID: 7859946583199208275}
+    point:
+      _type: 0
+      position: {x: 0, y: 0, z: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      normal: {x: 0, y: 0.27700832, z: 0}
+      size: 3.61
+      tangent: {x: 0.000000020802835, y: 0, z: -0.0039468524}
+      tangent2: {x: 0.00000007039343, y: 0, z: 0.0039470983}
+  _transformSize: 1
+  _transformNormals: 1
+  _transformTangents: 1
+--- !u!1 &1004973557364423853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1004973557364423859}
+  - component: {fileID: 1004973557364423858}
+  m_Layer: 0
+  m_Name: Walk spline 2_Node_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1004973557364423859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004973557364423853}
+  m_LocalRotation: {x: -0, y: 0.35588166, z: -0, w: 0.93453103}
+  m_LocalPosition: {x: 0.018190002, y: 0.0005300004, z: -0.0035700009}
+  m_LocalScale: {x: 0.27700832, y: 0.27700832, z: 0.27700832}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7859946583199208272}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1004973557364423858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004973557364423853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a212c074803b6824cae48ffa7abb84cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  connections:
+  - invertTangents: 0
+    _pointIndex: 3
+    _computer: {fileID: 7859946583199208275}
+    point:
+      _type: 0
+      position: {x: 0, y: 0, z: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      normal: {x: 0, y: 0.27700832, z: 0}
+      size: 3.61
+      tangent: {x: 0.000000012922974, y: 0, z: -0.003493855}
+      tangent2: {x: -0.00000003183464, y: 0, z: 0.0034938157}
+  _transformSize: 1
+  _transformNormals: 1
+  _transformTangents: 1
+--- !u!1 &1004973557638704795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1004973557638704793}
+  - component: {fileID: 1004973557638704792}
+  m_Layer: 0
+  m_Name: Walk spline 2_Node_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1004973557638704793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004973557638704795}
+  m_LocalRotation: {x: -0, y: 0.58030474, z: -0, w: 0.8143994}
+  m_LocalPosition: {x: 0.0095455805, y: 0.0005300005, z: -0.0022516162}
+  m_LocalScale: {x: 0.27700832, y: 0.27700832, z: 0.27700832}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7859946583199208272}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1004973557638704792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004973557638704795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a212c074803b6824cae48ffa7abb84cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  connections:
+  - invertTangents: 0
+    _pointIndex: 1
+    _computer: {fileID: 7859946583199208275}
+    point:
+      _type: 0
+      position: {x: 0, y: 0, z: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      normal: {x: 0, y: 0.27700832, z: 0}
+      size: 3.61
+      tangent: {x: 0.000000023009196, y: 0, z: -0.004640383}
+      tangent2: {x: 0.000000021853484, y: 0, z: 0.0046403892}
+  _transformSize: 1
+  _transformNormals: 1
+  _transformTangents: 1
+--- !u!1 &1004973558171361504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1004973558171361510}
+  - component: {fileID: 1004973558171361505}
+  m_Layer: 0
+  m_Name: Walk spline 2_Node_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1004973558171361510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004973558171361504}
+  m_LocalRotation: {x: 0.00000016387222, y: 0.68388075, z: -0.0000001536047, w: 0.7295938}
+  m_LocalPosition: {x: 0.014944366, y: 0.00053000095, z: -0.003428601}
+  m_LocalScale: {x: 0.27700832, y: 0.27700832, z: 0.27700832}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7859946583199208272}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1004973558171361505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004973558171361504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a212c074803b6824cae48ffa7abb84cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  connections:
+  - invertTangents: 0
+    _pointIndex: 2
+    _computer: {fileID: 7859946583199208275}
+    point:
+      _type: 0
+      position: {x: 0, y: 0, z: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      normal: {x: 7.906058e-15, y: 0.27700832, z: -0.00000012443627}
+      size: 3.61
+      tangent: {x: 0.000000024243707, y: -0.0000000018626691, z: -0.004146499}
+      tangent2: {x: 0.000000016022385, y: -0.000000012005917, z: 0.004146433}
+  _transformSize: 1
+  _transformNormals: 1
+  _transformTangents: 1
+--- !u!1 &3004321694380006755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 653799354336137904}
+  - component: {fileID: 6878034145573723925}
+  m_Layer: 0
+  m_Name: Walk spline 2_Node_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &653799354336137904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3004321694380006755}
+  m_LocalRotation: {x: -0, y: 0.81727594, z: -0, w: 0.57624656}
+  m_LocalPosition: {x: 0.022115, y: 0.0005300006, z: 0.0003089997}
+  m_LocalScale: {x: 0.27700832, y: 0.27700832, z: 0.27700832}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7859946583199208272}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6878034145573723925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3004321694380006755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a212c074803b6824cae48ffa7abb84cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  connections:
+  - invertTangents: 0
+    _pointIndex: 5
+    _computer: {fileID: 7859946583199208275}
+    point:
+      _type: 0
+      position: {x: 0, y: 0, z: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      normal: {x: 0, y: 0.2770083, z: 0}
+      size: 3.61
+      tangent: {x: -0.000000032920585, y: 0, z: -0.000042752235}
+      tangent2: {x: -0.000000011122097, y: 0, z: 0.00004281506}
+  _transformSize: 1
+  _transformNormals: 1
+  _transformTangents: 1
+--- !u!1 &7859946583199208273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7859946583199208272}
+  - component: {fileID: 7859946583199208275}
+  m_Layer: 0
+  m_Name: Walk spline 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7859946583199208272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7859946583199208273}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 14.664412, y: 14.664412, z: 14.664412}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1004973556619229449}
+  - {fileID: 1004973557638704793}
+  - {fileID: 1004973558171361510}
+  - {fileID: 1004973557364423859}
+  - {fileID: 1004973556787897618}
+  - {fileID: 653799354336137904}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7859946583199208275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7859946583199208273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598e68924c9f6324bbfd049d3bae754c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  editorDrawPivot: 1
+  editorPathColor: {r: 1, g: 1, b: 1, a: 1}
+  editorAlwaysDraw: 0
+  editorDrawThickness: 0
+  editorBillboardThickness: 1
+  isNewlyCreated: 0
+  editorUpdateMode: 0
+  multithreaded: 0
+  updateMode: 0
+  triggerGroups: []
+  _spline:
+    points:
+    - _type: 0
+      position: {x: 0.0036327066, y: 0.0005300004, z: -0.0026553995}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      normal: {x: 0, y: 0.27700832, z: 0}
+      size: 1
+      tangent: {x: 0.0036327066, y: 0.0005300004, z: -0.0026553995}
+      tangent2: {x: 0.0036327066, y: 0.0005300004, z: -0.0026553995}
+    - _type: 0
+      position: {x: 0.00954558, y: 0.0005300004, z: -0.0022516162}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      normal: {x: 0, y: 0.27700832, z: 0}
+      size: 1
+      tangent: {x: 0.008330599, y: 0.0005300004, z: -0.0026713037}
+      tangent2: {x: 0.010760567, y: 0.0005300004, z: -0.0018319391}
+    - _type: 0
+      position: {x: 0.014944366, y: 0.0005300009, z: -0.003428601}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      normal: {x: 5.108438e-16, y: 0.27700832, z: 0}
+      size: 1
+      tangent: {x: 0.013798152, y: 0.0005300009, z: -0.0035028246}
+      tangent2: {x: 0.016090563, y: 0.0005299971, z: -0.00335439}
+    - _type: 0
+      position: {x: 0.018190002, y: 0.00053000037, z: -0.0035700006}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      normal: {x: 0, y: 0.27700832, z: 0}
+      size: 1
+      tangent: {x: 0.01754624, y: 0.00053000037, z: -0.0042926758}
+      tangent2: {x: 0.018833753, y: 0.00053000037, z: -0.00284733}
+    - _type: 0
+      position: {x: 0.019444047, y: 0.0005300004, z: -0.00026825067}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      normal: {x: 0, y: 0.27700832, z: 0}
+      size: 1
+      tangent: {x: 0.018402271, y: 0.0005300004, z: -0.00059995626}
+      tangent2: {x: 0.020485898, y: 0.0005300004, z: 0.00006345133}
+    - _type: 0
+      position: {x: 0.022115, y: 0.0005300006, z: 0.0003089997}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      normal: {x: 0, y: 0.2770083, z: 0}
+      size: 1
+      tangent: {x: 0.022103848, y: 0.0005300006, z: 0.00031298603}
+      tangent2: {x: 0.022126172, y: 0.0005300006, z: 0.00030501903}
+    type: 2
+    linearAverageDirection: 1
+    customValueInterpolation:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    customNormalInterpolation:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    sampleRate: 10
+    closed: 0
+    _knotParametrization: 1
+  _originalSamplePercents: []
+  _is2D: 0
+  hasSamples: 1
+  _optimizeAngleThreshold: 0.5
+  _space: 1
+  _sampleMode: 0
+  _subscribers:
+  - {fileID: 0}
+  _rawSamples:
+  - position: {x: 0.0036327066, y: 0.0005300004, z: -0.0026553995}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0, y: 0, z: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0
+  - position: {x: 0.0037954806, y: 0.0005300004, z: -0.0026553692}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.9999977, y: -0.000000005143942, z: 0.0021630868}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.022222222222222223
+  - position: {x: 0.004238915, y: 0.0005300004, z: -0.0026528013}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.99995905, y: 0, z: 0.00904234}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.044444444444444446
+  - position: {x: 0.004895678, y: 0.00053000037, z: -0.0026439785}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.99984163, y: -0.0000000021817272, z: 0.017794883}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.06666666666666667
+  - position: {x: 0.0056984387, y: 0.0005300005, z: -0.002625187}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.9995706, y: 0, z: 0.029303424}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.08888888888888889
+  - position: {x: 0.006579863, y: 0.0005300004, z: -0.0025927084}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.99898225, y: 0, z: 0.045105085}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.1111111111111111
+  - position: {x: 0.007472622, y: 0.0005300004, z: -0.0025428287}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.9976765, y: 0.0000000073660154, z: 0.068130165}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.13333333333333333
+  - position: {x: 0.008309381, y: 0.0005300004, z: -0.0024718305}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.99450207, y: 0, z: 0.10471677}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.15555555555555556
+  - position: {x: 0.009022811, y: 0.0005300004, z: -0.0023759983}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.985201, y: 0, z: 0.17140304}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.17777777777777778
+  - position: {x: 0.00954558, y: 0.0005300004, z: -0.0022516162}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.94520116, y: 0, z: 0.3264884}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.2
+  - position: {x: 0.010012984, y: 0.0005300004, z: -0.0021838907}
+    up: {x: 5.6760426e-17, y: 0.27700832, z: 0}
+    forward: {x: 0.9999988, y: 0.00000005585063, z: 0.0015637128}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.2222222222222222
+  - position: {x: 0.010584829, y: 0.0005300005, z: -0.0022394522}
+    up: {x: 1.1352085e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.9852331, y: 0.00000008433736, z: -0.17121826}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.24444444444444444
+  - position: {x: 0.011230544, y: 0.0005300005, z: -0.002386731}
+    up: {x: 1.7028128e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.9650488, y: 0.000000097455825, z: -0.2620702}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.26666666666666666
+  - position: {x: 0.011919567, y: 0.00053000066, z: -0.0025941595}
+    up: {x: 2.270417e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.9513044, y: 0.00000010979164, z: -0.30825305}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.28888888888888886
+  - position: {x: 0.012621324, y: 0.0005300007, z: -0.0028301664}
+    up: {x: 2.8380215e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.9457457, y: 0.000000105166535, z: -0.3249078}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.3111111111111111
+  - position: {x: 0.013305249, y: 0.0005300008, z: -0.0030631837}
+    up: {x: 3.4056257e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.9489435, y: 0.00000010154662, z: -0.3154462}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.3333333333333333
+  - position: {x: 0.013940778, y: 0.00053000083, z: -0.0032616411}
+    up: {x: 3.9732299e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.96198726, y: 0.0000000724486, z: -0.27309448}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.35555555555555557
+  - position: {x: 0.014497338, y: 0.0005300009, z: -0.00339397}
+    up: {x: 4.540834e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.9850186, y: 0.000000050272345, z: -0.17244802}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.37777777777777777
+  - position: {x: 0.014944366, y: 0.0005300009, z: -0.003428601}
+    up: {x: 5.108438e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.99791056, y: -0.0000032771272, z: 0.064610355}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.4
+  - position: {x: 0.015336355, y: 0.00052999984, z: -0.0034376965}
+    up: {x: 4.540834e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.9952265, y: -0.000001933707, z: -0.097592294}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.4222222222222222
+  - position: {x: 0.015742041, y: 0.0005299993, z: -0.0034997885}
+    up: {x: 3.9732299e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.98087263, y: -0.00000091604045, z: -0.19465075}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.4444444444444444
+  - position: {x: 0.016152188, y: 0.00052999903, z: -0.0035928714}
+    up: {x: 3.4056254e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.9707428, y: -0.00000019173609, z: -0.24012157}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.4666666666666667
+  - position: {x: 0.016557576, y: 0.0005299992, z: -0.0036949445}
+    up: {x: 2.8380215e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.9705692, y: 0.00000035315566, z: -0.24082264}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.4888888888888889
+  - position: {x: 0.016948966, y: 0.0005299994, z: -0.0037840013}
+    up: {x: 2.2704168e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.98109627, y: 0.00000074881484, z: -0.19352044}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.5111111111111111
+  - position: {x: 0.017317135, y: 0.00052999967, z: -0.003838039}
+    up: {x: 1.7028127e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.9966068, y: 0.0000009664348, z: -0.08230946}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.5333333333333333
+  - position: {x: 0.01765285, y: 0.00053, z: -0.003835054}
+    up: {x: 1.1352084e-16, y: 0.27700832, z: 0}
+    forward: {x: 0.9925536, y: 0.0000009941098, z: 0.12180888}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.5555555555555556
+  - position: {x: 0.017946882, y: 0.00053000025, z: -0.0037530423}
+    up: {x: 5.676042e-17, y: 0.27700832, z: 0}
+    forward: {x: 0.9025575, y: 0.0000006483145, z: 0.43056932}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.5777777777777777
+  - position: {x: 0.018190002, y: 0.00053000037, z: -0.0035700006}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.6651585, y: 0, z: 0.7467022}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.6
+  - position: {x: 0.01836826, y: 0.0005300003, z: -0.003277359}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.39357623, y: 0.000000013127768, z: 0.919292}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.6222222222222222
+  - position: {x: 0.018487843, y: 0.00053000037, z: -0.0029000926}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.23069528, y: 0.000000015343675, z: 0.97302604}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.6444444444444445
+  - position: {x: 0.01856973, y: 0.00053000037, z: -0.0024665166}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.15301314, y: 0.000000010598286, z: 0.9882242}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.6666666666666666
+  - position: {x: 0.018634899, y: 0.0005300004, z: -0.0020049475}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.13560337, y: 0.000000027493664, z: 0.99076325}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.6888888888888889
+  - position: {x: 0.018704318, y: 0.0005300004, z: -0.0015437001}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.17132445, y: 0.000000028216233, z: 0.9852147}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.7111111111111111
+  - position: {x: 0.01879897, y: 0.0005300004, z: -0.0011110911}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.26914525, y: 0.000000015235031, z: 0.9630996}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.7333333333333333
+  - position: {x: 0.018939823, y: 0.0005300004, z: -0.000735436}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.45160243, y: 0, z: 0.8922193}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.7555555555555555
+  - position: {x: 0.019147858, y: 0.0005300004, z: -0.00044505057}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.721909, y: 0, z: 0.691988}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.7777777777777778
+  - position: {x: 0.019444047, y: 0.0005300004, z: -0.00026825067}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.9528719, y: 0, z: 0.30337277}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.8
+  - position: {x: 0.019809673, y: 0.0005300004, z: -0.00016096163}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.96484506, y: 0.000000022009882, z: 0.26281932}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.8222222222222222
+  - position: {x: 0.020200009, y: 0.0005300004, z: -0.00006116936}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.9721834, y: 0.00000005349317, z: 0.2342209}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.8444444444444444
+  - position: {x: 0.020597082, y: 0.0005300004, z: 0.000029715804}
+    up: {x: 0, y: 0.2770083, z: 0}
+    forward: {x: 0.97706836, y: 0.00000006007496, z: 0.21292591}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.8666666666666667
+  - position: {x: 0.020982936, y: 0.00053000054, z: 0.00011028352}
+    up: {x: 0, y: 0.27700832, z: 0}
+    forward: {x: 0.98053586, y: 0.00000007625214, z: 0.19634025}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.8888888888888888
+  - position: {x: 0.021339595, y: 0.00053000054, z: 0.00017912353}
+    up: {x: 0, y: 0.2770083, z: 0}
+    forward: {x: 0.9831404, y: 0.00000011351871, z: 0.18285227}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.9111111111111111
+  - position: {x: 0.021649098, y: 0.00053000054, z: 0.00023482545}
+    up: {x: 0, y: 0.2770083, z: 0}
+    forward: {x: 0.9852246, y: 0.0000001138111, z: 0.17126712}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.9333333333333333
+  - position: {x: 0.021893475, y: 0.0005300006, z: 0.000275979}
+    up: {x: 0, y: 0.2770083, z: 0}
+    forward: {x: 0.9870815, y: 0.000000093047674, z: 0.16021876}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.9555555555555556
+  - position: {x: 0.022054765, y: 0.0005300006, z: 0.00030117386}
+    up: {x: 0, y: 0.2770083, z: 0}
+    forward: {x: 0.9893384, y: 0.0000001124964, z: 0.1456353}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 0.9777777777777777
+  - position: {x: 0.022115, y: 0.0005300006, z: 0.0003089997}
+    up: {x: 0, y: 0.2770083, z: 0}
+    forward: {x: 0.9420036, y: 0, z: -0.33560285}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 1
+    percent: 1
+  _nodes:
+  - node: {fileID: 1004973556619229448}
+    pointIndex: 0
+  - node: {fileID: 1004973557638704792}
+    pointIndex: 1
+  - node: {fileID: 1004973558171361505}
+    pointIndex: 2
+  - node: {fileID: 1004973557364423858}
+    pointIndex: 3
+  - node: {fileID: 1004973556787897619}
+    pointIndex: 4
+  - node: {fileID: 6878034145573723925}
+    pointIndex: 5
