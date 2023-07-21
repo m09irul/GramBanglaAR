@@ -17,7 +17,7 @@ public class StateHandler : MonoBehaviour
     private void Start()
     {
         audioSource =  GetComponent<AudioSource>();
-        animator = ObjectSpawner.instance.mainCharacter.transform.GetChild(0).GetComponent<Animator>();
+        animator = ObjectSpawner.instance.mainCharacterForScene1.transform.GetChild(0).GetComponent<Animator>();
     }
 
     public IEnumerator AppearButtons(float time)
@@ -32,21 +32,20 @@ public class StateHandler : MonoBehaviour
         TextManager.instance.LoadNextText();
 
     }
-
-    void DeactiveOtherModels(int currentModel)
+    public void DisappearButtons()
     {
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            transform.GetChild(i).gameObject.SetActive(false);
-        }
-        transform.GetChild(currentModel).gameObject.SetActive(true);
+        recordButton.SetActive(false);
+        TextManager.instance.ResetDisplayTexts();
+
     }
+
     public IEnumerator PlayS1C1()
     {
         OnPlayConvo("G_1_1_Hi_Tomake", s1AudioClips[0]);
 
         yield return new WaitForSeconds(1.75f);
-        LeanTween.rotateY(ObjectSpawner.instance.mainCharacter, -160f, 1f);
+        ObjectSpawner.instance.lookCharScene1.doLookAtCamera = true;
+
     }
     public void PlayS1C2()
     {
@@ -58,6 +57,7 @@ public class StateHandler : MonoBehaviour
     }
     public void PlayS2C1() // scene 2 starts here
     {
+        animator = ObjectSpawner.instance.mainCharacterForScene2.transform.GetChild(0).GetComponent<Animator>();
         OnPlayConvo("G_2_1 Ei Dekho Ei Ekta Murgi_001", s2AudioClips[0]);
     }
     public void PlayS2C2()

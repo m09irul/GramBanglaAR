@@ -41,8 +41,47 @@ public class HandleWitResponse : MonoBehaviour
 				HandleResponse(intent_Confidence, 0.97f, 3);
 			else if (intent_Name.Equals("lets_go"))
 				HandleResponse(intent_Confidence, 0.97f, 4);
-			//Scene 1 donr above.
-			//scene 2 below..
+			else if (intent_Name.Equals("is_bird"))
+				HandleResponse(intent_Confidence, 0.97f, 5);
+
+			else if (intent_Name.Equals("domestic_mean"))
+				HandleResponse(intent_Confidence, 0.9f, 6);
+			else if (intent_Name.Equals("can_fly"))
+				HandleResponse(intent_Confidence, 0.97f, 7);
+			else if (intent_Name.Equals("say_then"))
+				HandleResponse(intent_Confidence, 0.97f, 8);
+			else if (intent_Name.Equals("feather"))
+				HandleResponse(intent_Confidence, 0.97f, 9);
+
+			else if (intent_Name.Equals("feather_usage"))
+				HandleResponse(intent_Confidence, 0.9f, 10);
+			else if (intent_Name.Equals("what_use"))
+				HandleResponse(intent_Confidence, 0.97f, 11);
+			else if (intent_Name.Equals("Who_lali"))
+				HandleResponse(intent_Confidence, 0.97f, 12);
+			else if (intent_Name.Equals("okay_go"))
+				HandleResponse(intent_Confidence, 0.97f, 13);
+
+			else if (intent_Name.Equals("saw"))
+				HandleResponse(intent_Confidence, 0.9f, 14);
+			else if (intent_Name.Equals("ki_kore"))
+				HandleResponse(intent_Confidence, 0.97f, 15);
+			else if (intent_Name.Equals("what_eat"))
+				HandleResponse(intent_Confidence, 0.97f, 16);
+			else if (intent_Name.Equals("vegiterian"))
+				HandleResponse(intent_Confidence, 0.97f, 17);
+
+			else if (intent_Name.Equals("has_goat"))
+				HandleResponse(intent_Confidence, 0.9f, 18);
+			else if (intent_Name.Equals("okay"))
+				HandleResponse(intent_Confidence, 0.97f, 19);
+			else if (intent_Name.Equals("goat"))
+				HandleResponse(intent_Confidence, 0.97f, 20);
+			else if (intent_Name.Equals("cow_goat"))
+				HandleResponse(intent_Confidence, 0.97f, 21);
+
+			else if (intent_Name.Equals("done"))
+				HandleResponse(intent_Confidence, 0.9f, 22);
 
 			else
 			{

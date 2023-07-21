@@ -46,7 +46,8 @@ public class ObjectSpawner : MonoBehaviour
 
     [SerializeField] GameObject tapToPlaceTxt;
     [SerializeField] ARPlaneManager aRPlaneManager;
-    public GameObject mainCharacter;
+    public GameObject mainCharacterForScene1, mainCharacterForScene2;
+    public LookAtCamera lookCharScene1, lookCharScene2;
     [SerializeField] GameObject spawnVFXForScene1;
     [SerializeField] GameObject planeVFXForScene1;
     [SerializeField] GameObject noInternetPanel;
@@ -227,23 +228,29 @@ public class ObjectSpawner : MonoBehaviour
         //audioSource.PlayOneShot(birdsChrimpClip);
         audioSource.Play();
 
-        mainCharacter.SetActive(true);
+        mainCharacterForScene1.SetActive(true);
         var spline = Instantiate(splineForScene1, objectToSpawn.transform);
-        var sf = mainCharacter.GetComponent<SplineFollower>();
+        var sf = mainCharacterForScene1.GetComponent<SplineFollower>();
         sf.spline = spline;
         sf.enabled = true;
         sf.follow = true;
+        sf.SetDistance(0);
 
-        sf.onEndReached += (o) =>
+        Action<double> myHandler = (o) => 
         {
             StartCoroutine(stateHandler.AppearButtons(0));
             sf.follow = false;
+
         };
-        
+
+        sf.onEndReached += myHandler;
     }
 
     public void Spawn2ndScene()
     {
+        //text off, record off
+        stateHandler.DisappearButtons();
+
         GameObject particle1 = Instantiate(spawnVFXForScene1, objectToSpawn.transform.position, Quaternion.Euler(90, 0, 0));
         particle1.transform.localScale /= initialScaleOfScene;
         GameObject particle2 = Instantiate(spawnVFXForScene1, objectToSpawn.transform.position, Quaternion.Euler(90, 0, 0));
@@ -260,14 +267,13 @@ public class ObjectSpawner : MonoBehaviour
         objectToSpawn.transform.GetChild(1).gameObject.SetActive(true);
 
         //setup splines
-        mainCharacter.transform.SetParent(objectToSpawn.transform.GetChild(1).transform);
-        mainCharacter.transform.GetChild(0).GetComponent<Animator>().Play("G_Normal_Walk");
+        mainCharacterForScene2.transform.GetChild(0).GetComponent<Animator>().Play("G_Normal_Walk");
         var spline = Instantiate(splineForScene2, objectToSpawn.transform.GetChild(1).transform);
-        var sf = mainCharacter.GetComponent<SplineFollower>();
+        var sf = mainCharacterForScene2.GetComponent<SplineFollower>();
         sf.spline = spline;
         sf.enabled = true;
         sf.follow = true;
-
+        sf.SetDistance(0);
         sf.onEndReached += (o) =>
         {
             stateHandler.PlayS2C1();
