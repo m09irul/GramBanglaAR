@@ -61,6 +61,8 @@ public class ObjectSpawner : MonoBehaviour
     AudioSource audioSource;
     public AudioClip spawnRingClip;
     public AudioClip spawnClip, popClip;
+    public GameObject endPanel;
+
     public void SetSpawnPoint(Vector3 pos, Quaternion rot)
     {
         spawnPoint = pos;
@@ -75,7 +77,8 @@ public class ObjectSpawner : MonoBehaviour
 
         placementIndicator = FindObjectOfType<PlacementIndicator>();
 
-        StartCoroutine(LookForInternetConnection());
+        //StartCoroutine(LookForInternetConnection());
+        hasInternet = true;
 
         initialScaleOfScene = objectToSpawn.transform.localScale.x;
     }
@@ -101,11 +104,6 @@ public class ObjectSpawner : MonoBehaviour
             noInternetPanel.SetActive(true);
             hasInternet = false;
         }
-    }
-
-    public void CloseApplication()
-    {
-        Application.Quit();
     }
 
     public IEnumerator ShowMarkerAndReadyToSpawn()
@@ -201,6 +199,8 @@ public class ObjectSpawner : MonoBehaviour
                 
                 for (int i = 0; i < toSpawnObjects[k].objectsToSpawn.transform.childCount; i++)
                 {
+                    audioSource.PlayOneShot(popClip);
+
                     toSpawnObjects[k].objectsToSpawn.transform.GetChild(i).gameObject.SetActive(true);
 
                     GameObject tmpParticle = Instantiate(toSpawnObjects[k].VFX, toSpawnObjects[k].objectsToSpawn.transform.GetChild(i).transform.position, Quaternion.Euler(90, 0, 0));

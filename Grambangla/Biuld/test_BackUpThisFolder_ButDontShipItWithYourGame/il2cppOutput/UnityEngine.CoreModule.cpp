@@ -4026,8 +4026,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPtr_Equals_m0F39AB64A7BBD67190E745FF8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AnimationCurve_Internal_Equals_mEBA61732FE57654C4E3AF5B317918D1641E36050 (AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* __this, intptr_t ___other0, const RuntimeMethod* method) ;
 // System.Int32 System.IntPtr::GetHashCode()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t IntPtr_GetHashCode_m669B16AD7483C1C396E48F41D9CAC4B719E38F3D (intptr_t* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Application::Quit(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_Quit_m911F09318DCF5EBDD7E406B99A3E31865E732ADC (int32_t ___exitCode0, const RuntimeMethod* method) ;
 // UnityEngine.RuntimePlatform UnityEngine.Application::get_platform()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Application_get_platform_m59EF7D6155D18891B24767F83F388160B1FF2138 (const RuntimeMethod* method) ;
 // UnityEngine.DeviceType UnityEngine.SystemInfo::get_deviceType()
@@ -7909,14 +7907,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_Quit_m911F09318DCF5EBDD7E406
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Application_Quit_m911F09318DCF5EBDD7E406B99A3E31865E732ADC_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::Quit(System.Int32)");
 	_il2cpp_icall_func(___exitCode0);
-}
-// System.Void UnityEngine.Application::Quit()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_Quit_mE304382DB9A6455C2A474C8F364C7387F37E9281 (const RuntimeMethod* method) 
-{
-	{
-		Application_Quit_m911F09318DCF5EBDD7E406B99A3E31865E732ADC(0, NULL);
-		return;
-	}
 }
 // System.Boolean UnityEngine.Application::get_isPlaying()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Application_get_isPlaying_m25B0ABDFEF54F5370CD3F263A813540843D00F34 (const RuntimeMethod* method) 

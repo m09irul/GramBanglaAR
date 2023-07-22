@@ -10,6 +10,7 @@ public class StateHandler : MonoBehaviour
     [SerializeField] GameObject rainPrefab;
     [SerializeField] List<AudioClip> s1AudioClips;
     [SerializeField] List<AudioClip> s2AudioClips;
+    [SerializeField] AudioClip cow, goat;
 
     AudioSource audioSource;
     Animator animator;
@@ -63,6 +64,9 @@ public class StateHandler : MonoBehaviour
     public void PlayS2C2()
     {
         OnPlayConvo("G_2_2 Grihopalito", s2AudioClips[1]);
+        ObjectSpawner.instance.lookCharScene2.doLookAtCamera = true;
+
+
     }
     public void PlayS2C3()
     {
@@ -80,21 +84,32 @@ public class StateHandler : MonoBehaviour
     {
         OnPlayConvo("G_2_6 Ogula palok", s2AudioClips[5]);
     }
-    public void PlayS2C7()
+    public IEnumerator PlayS2C7()
     {
-        OnPlayConvo("G_2_7 Khelna mukhosh", s2AudioClips[6]);
+        animator.Play("G_2_7 Khelna mukhosh");
+        audioSource.PlayOneShot(s2AudioClips[6]);
+        yield return new WaitForSeconds(s2AudioClips[6].length);
+        PlayS2C8();
+
     }
     public void PlayS2C8()
     {
         OnPlayConvo("G_2_8 Hash O emon", s2AudioClips[7]);
     }
-    public void PlayS2C9()
+    public IEnumerator PlayS2C9()
     {
-        OnPlayConvo("G_2_9 Murgi Satar Jane nA", s2AudioClips[8]);
+        animator.Play("G_2_9 Murgi Satar Jane nA");
+        audioSource.PlayOneShot(s2AudioClips[8]);
+        yield return new WaitForSeconds(s2AudioClips[8].length);
+        audioSource.PlayOneShot(cow);
+        yield return new WaitForSeconds(5f);
+        PlayS2C10();
     }
     public void PlayS2C10()
     {
-        OnPlayConvo("G_2_10 Darao Lali ami aschi", s2AudioClips[9]);
+        ObjectSpawner.instance.lookCharScene2.doLookAtCamera = false;
+        LeanTween.rotate(ObjectSpawner.instance.mainCharacterForScene2, new Vector3(0, 180, 0), 0.4f);
+        OnPlayConvo("G_2_10 Darao Lali ami aschi", s2AudioClips[9]);    
     }
     public void PlayS2C11()
     {
@@ -102,10 +117,18 @@ public class StateHandler : MonoBehaviour
     }
     public void PlayS2C12()
     {
-        OnPlayConvo("G_2_12 Notun Bonduh", s2AudioClips[11]);
+        LeanTween.rotate(ObjectSpawner.instance.mainCharacterForScene2, new Vector3(0, 270, 0), 0.4f);
+        animator.Play("G_Normal_Walk");
+        LeanTween.moveLocal(ObjectSpawner.instance.mainCharacterForScene2, new Vector3(0.18f, 0.008f, 0.003f), 5f).setOnComplete(() =>
+            StartCoroutine(PlayS2C13())
+        );       
     }
-    public void PlayS2C13()
+    public IEnumerator PlayS2C13()
     {
+        animator.Play("G_2_12 Notun Bonduh");
+        audioSource.PlayOneShot(s2AudioClips[11]);
+        yield return new WaitForSeconds(s2AudioClips[11].length);
+        ObjectSpawner.instance.lookCharScene2.doLookAtCamera = true;
         OnPlayConvo("G_2_13 Er age goru dekhecho", s2AudioClips[12]);
     }
     public void PlayS2C14()
@@ -124,17 +147,35 @@ public class StateHandler : MonoBehaviour
     {
         OnPlayConvo("G_2_17 Chagol er sathe porichoy", s2AudioClips[16]);
     }
+    public void GoToChagol()
+    {
+        ObjectSpawner.instance.lookCharScene2.doLookAtCamera = false;
+        audioSource.PlayOneShot(goat);
+        LeanTween.rotate(ObjectSpawner.instance.mainCharacterForScene2, new Vector3(0, 130, 0), 0.4f);
+        animator.Play("G_Normal_Walk");
+        LeanTween.moveLocal(ObjectSpawner.instance.mainCharacterForScene2, new Vector3(0.21f, 0.008f, -0.0043f), 5f).setOnComplete(() =>
+            StartCoroutine(AppearButtons(0.1f))
+        );
+    }
     public void PlayS2C18()
     {
+        ObjectSpawner.instance.lookCharScene2.doLookAtCamera = true;
         OnPlayConvo("G_2_18 Mil ache", s2AudioClips[17]);
     }
-    public void PlayS2C19()
+    public IEnumerator PlayS2C19()
     {
-        OnPlayConvo("G_2_19_ Dudh and mangsho", s2AudioClips[18]);
+        animator.Play("G_2_19_ Dudh and mangsho");
+        audioSource.PlayOneShot(s2AudioClips[18]);
+        yield return new WaitForSeconds(s2AudioClips[18].length);
+        PlayS2C20();
     }
     public void PlayS2C20()
     {
         OnPlayConvo("G_2_20 monty ke khuje dekhi", s2AudioClips[19]);
+    }
+    public void OnGameFinish()
+    {
+        ObjectSpawner.instance.endPanel.SetActive(true);
     }
     private void OnPlayConvo(string anim, AudioClip clip)
     {

@@ -13,7 +13,7 @@ public class MicWitInteraction : MonoBehaviour
     public GameObject tryAgainTxt;
 
     [SerializeField] GameObject tutPanel;
-    [SerializeField] private TextMeshProUGUI textArea;
+    public TextMeshProUGUI textArea;
     [Header("Configuration")]
     [SerializeField] private bool showJson;
 
@@ -53,7 +53,7 @@ public class MicWitInteraction : MonoBehaviour
     public void OnResponse(WitResponseNode response)
     {
         handleWitResponse.OnResponse(response);
-        textArea.text = response["text"];
+        //textArea.text = response["text"];
     }
 
     public void OnError(string error, string message)
@@ -95,7 +95,6 @@ public class MicWitInteraction : MonoBehaviour
     {
         tryAgainTxt.SetActive(true);
         textArea.text = e.ToString();
-        print(e.ToString());
-        //recordingButton.SetActive(true);
+        recordingButton.SetActive(true);
     }
 }                                                                                                                                                                                                                                              
