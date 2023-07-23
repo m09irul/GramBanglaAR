@@ -479,7 +479,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57434020}
-  m_Mesh: {fileID: 4300000, guid: 9ddb1ad2c214b3a458b28e4a5a61efe4, type: 2}
+  m_Mesh: {fileID: 4300000, guid: a1f749f7edb4ce247b9b9e4d3e5f2dad, type: 2}
 --- !u!23 &57434023
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5010,7 +5010,7 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: fccc448ffa5448cf987a971031004bcb
-  m_Mesh: {fileID: 4300000, guid: 9ddb1ad2c214b3a458b28e4a5a61efe4, type: 2}
+  m_Mesh: {fileID: 4300000, guid: a1f749f7edb4ce247b9b9e4d3e5f2dad, type: 2}
   m_VersionIndex: 918
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -5640,7 +5640,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000076293945, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &111452053
@@ -5697,7 +5697,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &111452054
 MonoBehaviour:
@@ -22542,7 +22542,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &730781432
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22970,8 +22970,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.0191, y: 0.1137}
-  m_SizeDelta: {x: 89.204, y: 80.7096}
+  m_AnchoredPosition: {x: 0.482, y: 0.464}
+  m_SizeDelta: {x: 262.663, y: 219.801}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &743354673
 MonoBehaviour:
@@ -34077,7 +34077,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 0a98e37475582b14f841183ddd90758b, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 419d04620b1423b47a4045c34cd90387, type: 2}
 --- !u!33 &1485274043
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -34085,7 +34085,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485274041}
-  m_Mesh: {fileID: 4300000, guid: 0a98e37475582b14f841183ddd90758b, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 419d04620b1423b47a4045c34cd90387, type: 2}
 --- !u!23 &1485274044
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34486,7 +34486,7 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 235726e9f7734ace965ab513daff9125
-  m_Mesh: {fileID: 4300000, guid: 0a98e37475582b14f841183ddd90758b, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 419d04620b1423b47a4045c34cd90387, type: 2}
   m_VersionIndex: 84
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -36710,7 +36710,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 4d0d08065d8b1ff478c58ab193b55132, type: 2}
     - target: {fileID: 2494780024417762852, guid: dc847e9f83e1d68469a4741be4840ccf, type: 3}
       propertyPath: witRuntimeConfiguration.maxRecordingTime
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2494780024417762852, guid: dc847e9f83e1d68469a4741be4840ccf, type: 3}
       propertyPath: witRuntimeConfiguration.witConfiguration
@@ -36770,7 +36770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2494780024417762852, guid: dc847e9f83e1d68469a4741be4840ccf, type: 3}
       propertyPath: witRuntimeConfiguration.minTranscriptionKeepAliveTimeInSeconds
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2494780024417762852, guid: dc847e9f83e1d68469a4741be4840ccf, type: 3}
       propertyPath: events.OnError.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -37108,6 +37108,28 @@ MonoBehaviour:
   rainPrefab: {fileID: 0}
   character: {fileID: 0}
   mwi: {fileID: 1644830896}
+  intents:
+  - hello
+  - ask_name
+  - ask_where_going
+  - lets_go
+  - is_bird
+  - domestic_mean
+  - can_fly
+  - say_then
+  - feather
+  - feather_usage
+  - what_use
+  - who_lali
+  - okay_go
+  - saw
+  - what_eat
+  - vegiterian
+  - has_goat
+  - okay
+  - goat
+  - cow_goat
+  - lets_go
 --- !u!114 &1644830896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41142,7 +41164,7 @@ MonoBehaviour:
   _follow: 0
   _startPosition: 0
   preserveUniformSpeedWithOffset: 0
-  _followSpeed: 0.035
+  _followSpeed: 0.045
   _followDuration: 1
   _speedModifier:
     blend: 1
@@ -42359,7 +42381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ca6ebbc6af78584e952c64c00992c0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.155
+      value: -0.84
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ca6ebbc6af78584e952c64c00992c0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -42367,7 +42389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ca6ebbc6af78584e952c64c00992c0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.067056
+      value: -0.18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ca6ebbc6af78584e952c64c00992c0f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -43820,7 +43842,7 @@ MonoBehaviour:
   _follow: 0
   _startPosition: 0
   preserveUniformSpeedWithOffset: 0
-  _followSpeed: 0.04
+  _followSpeed: 0.045
   _followDuration: 1
   _speedModifier:
     blend: 1
@@ -44093,7 +44115,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.31978, y: 0.0122, z: -0.00694}
   m_LocalScale: {x: 0.020126518, y: 0.020126518, z: 0.020126518}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2010176895}
   - {fileID: 442841292504754715}

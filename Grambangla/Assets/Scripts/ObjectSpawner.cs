@@ -77,8 +77,7 @@ public class ObjectSpawner : MonoBehaviour
 
         placementIndicator = FindObjectOfType<PlacementIndicator>();
 
-        //StartCoroutine(LookForInternetConnection());
-        hasInternet = true;
+        StartCoroutine(LookForInternetConnection());
 
         initialScaleOfScene = objectToSpawn.transform.localScale.x;
     }

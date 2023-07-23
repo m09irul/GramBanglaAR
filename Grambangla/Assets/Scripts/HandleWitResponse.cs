@@ -13,9 +13,11 @@ public class HandleWitResponse : MonoBehaviour
 	[SerializeField] GameObject character;
 	public MicWitInteraction mwi;
 	ObjectSpawner objectSpawner;
-
+	int index;
+	public string[] intents;
     private void Start()
     {
+		index = 0;
         micWitInteraction = GetComponent<MicWitInteraction>();
 		objectSpawner = ObjectSpawner.instance;
 	}
@@ -33,65 +35,23 @@ public class HandleWitResponse : MonoBehaviour
 			Debug.LogError(userSpoken_text);
 			mwi.textArea.text = intent_Confidence.ToString() + "     " + intent_Name + "     " + userSpoken_text;
 			//Debug.Log("I heard: " + response[""]);
-
-			// what function should I call?
-			if (intent_Name.Equals("hello"))
-				HandleResponse(intent_Confidence, 0.9f, 1);
-			else if (intent_Name.Equals("ask_name"))
-				HandleResponse(intent_Confidence, 0.9f, 2);
-			else if (intent_Name.Equals("ask_where_going"))
-				HandleResponse(intent_Confidence, 0.9f, 3);
-			else if (intent_Name.Equals("lets_go"))
-				HandleResponse(intent_Confidence, 0.9f, 4);
-			else if (intent_Name.Equals("is_bird"))
-				HandleResponse(intent_Confidence, 0.9f, 5);
-
-			else if (intent_Name.Equals("domestic_mean"))
-				HandleResponse(intent_Confidence, 0.9f, 6);
-			else if (intent_Name.Equals("can_fly"))
-				HandleResponse(intent_Confidence, 0.9f, 7);
-			else if (intent_Name.Equals("say_then"))
-				HandleResponse(intent_Confidence, 0.9f, 8);
-			else if (intent_Name.Equals("feather"))
-				HandleResponse(intent_Confidence, 0.9f, 9);
-
-			else if (intent_Name.Equals("feather_usage"))
-				HandleResponse(intent_Confidence, 0.8f, 10);
-			else if (intent_Name.Equals("what_use"))
-				HandleResponse(intent_Confidence, 0.9f, 11);
-			else if (intent_Name.Equals("Who_lali"))
-				HandleResponse(intent_Confidence, 0.9f, 12);
-			else if (intent_Name.Equals("okay_go"))
-				HandleResponse(intent_Confidence, 0.9f, 13);
-
-			else if (intent_Name.Equals("saw"))
-				HandleResponse(intent_Confidence, 0.9f, 14);
-/*			else if (intent_Name.Equals("ki_kore"))
-				HandleResponse(intent_Confidence, 0.97f, 15);*/
-			else if (intent_Name.Equals("what_eat"))
-				HandleResponse(intent_Confidence, 0.9f, 15);
-			else if (intent_Name.Equals("vegiterian"))
-				HandleResponse(intent_Confidence, 0.9f, 16);
-
-			else if (intent_Name.Equals("has_goat"))
-				HandleResponse(intent_Confidence, 0.9f, 17);
-			else if (intent_Name.Equals("okay"))
-				HandleResponse(intent_Confidence, 0.9f, 18);
-			else if (intent_Name.Equals("goat"))
-				HandleResponse(intent_Confidence, 0.9f, 19);
-			else if (intent_Name.Equals("cow_goat"))
-				HandleResponse(intent_Confidence, 0.9f, 20);
-
-			else if (intent_Name.Equals("done"))
-				HandleResponse(intent_Confidence, 0.9f, 21);
-
+			Debug.Log(intents[index]);
+			Debug.Log(intent_Name);
+			if (intents[index].Equals(intent_Name))
+			{
+				HandleResponse(intent_Confidence, 0.5f, index + 1);
+				index++;
+				Debug.LogError("inside: " + intent_Name);
+			}
 			else
 			{
+				Debug.Log("bal");
 				micWitInteraction.HandleException();
 			}
 		}
 		else
 		{
+			print("shawa");
 			micWitInteraction.HandleException();
 		}
 	}
@@ -100,7 +60,8 @@ public class HandleWitResponse : MonoBehaviour
     {
         if (intent_Confidence >= threshold)
         {
-            micWitInteraction.recordingButton.SetActive(false);
+			Debug.LogError("inside: ");
+			micWitInteraction.recordingButton.SetActive(false);
             TextManager.instance.ResetDisplayTexts();
 
             NextAnim(index);
