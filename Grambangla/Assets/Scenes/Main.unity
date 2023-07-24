@@ -479,7 +479,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57434020}
-  m_Mesh: {fileID: 4300000, guid: a1f749f7edb4ce247b9b9e4d3e5f2dad, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 56da4f66b42e6ef4b980e440042dfaac, type: 2}
 --- !u!23 &57434023
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5010,7 +5010,7 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: fccc448ffa5448cf987a971031004bcb
-  m_Mesh: {fileID: 4300000, guid: a1f749f7edb4ce247b9b9e4d3e5f2dad, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 56da4f66b42e6ef4b980e440042dfaac, type: 2}
   m_VersionIndex: 918
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -33248,7 +33248,7 @@ MonoBehaviour:
     wK?"
   - "evn! wK\u0161\u2018 GB cvjK \xB8\u2021jv gyiMxi wK Kv\u2021R jv\u2021M?"
   - "\u2020Kgb cv_\xA9K\xA8?"
-  - "jvjx? jvjx \u2020K?"
+  - "jvjx \u2020K?"
   - "wVK Av\u2021Q| P\u2021jv|"
   - "n\xA8vu \u2020`\u2021LwQ!"
   - "Mi\u201C wK Lvq?"
@@ -34077,7 +34077,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 419d04620b1423b47a4045c34cd90387, type: 2}
+  m_Mesh: {fileID: 4300000, guid: e7c7ab47741be5043b342f1c855fcc26, type: 2}
 --- !u!33 &1485274043
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -34085,7 +34085,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485274041}
-  m_Mesh: {fileID: 4300000, guid: 419d04620b1423b47a4045c34cd90387, type: 2}
+  m_Mesh: {fileID: 4300000, guid: e7c7ab47741be5043b342f1c855fcc26, type: 2}
 --- !u!23 &1485274044
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34486,7 +34486,7 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 235726e9f7734ace965ab513daff9125
-  m_Mesh: {fileID: 4300000, guid: 419d04620b1423b47a4045c34cd90387, type: 2}
+  m_Mesh: {fileID: 4300000, guid: e7c7ab47741be5043b342f1c855fcc26, type: 2}
   m_VersionIndex: 84
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -41164,7 +41164,7 @@ MonoBehaviour:
   _follow: 0
   _startPosition: 0
   preserveUniformSpeedWithOffset: 0
-  _followSpeed: 0.045
+  _followSpeed: 0.035
   _followDuration: 1
   _speedModifier:
     blend: 1
